@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b943ffc4-64d5-45d1-b0a2-ddfe91d4d056" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/question014u/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/question015e/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/question016e/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/question001/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/question001p/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/question007/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/question007p/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/question008shitty/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/question008s/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/question009/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/question009p/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/question014/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/question017/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/question017/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/question017/Solution.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -31,10 +24,25 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/question017/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="43" column="45" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
+            <state relative-caret-position="462">
+              <caret line="47" column="5" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="47" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/src.zip!/java/lang/Character.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="268">
+              <caret line="6637" column="36" lean-forward="true" selection-start-line="6637" selection-start-column="36" selection-end-line="6637" selection-end-column="36" />
+              <folding>
+                <element signature="e#238047#238048#0" expanded="true" />
+                <element signature="e#238094#238095#0" expanded="true" />
+                <element signature="e#239612#239613#0" expanded="true" />
+                <element signature="e#239689#239690#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -101,6 +109,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -130,7 +139,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -217,18 +225,19 @@
       <workItem from="1570331328656" duration="2649000" />
       <workItem from="1570415544912" duration="1924000" />
       <workItem from="1570502713302" duration="1653000" />
-      <workItem from="1570589065963" duration="4101000" />
+      <workItem from="1570589065963" duration="4144000" />
+      <workItem from="1570613535220" duration="1089000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19692000" />
+    <option name="totallyTimeSpent" value="20824000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19957082" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20243205" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -236,7 +245,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.29277107" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.29277107" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -244,7 +253,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="SonarLint" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.46024096" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.23975904" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="13" weight="0.32880434" />
       <window_info anchor="bottom" id="Messages" order="14" />
@@ -405,10 +414,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/src.zip!/java/lang/Character.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="6637" column="36" lean-forward="true" selection-start-line="6637" selection-start-column="36" selection-end-line="6637" selection-end-column="36" />
+          <folding>
+            <element signature="e#238047#238048#0" expanded="true" />
+            <element signature="e#238094#238095#0" expanded="true" />
+            <element signature="e#239612#239613#0" expanded="true" />
+            <element signature="e#239689#239690#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/question017/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="43" column="45" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
+        <state relative-caret-position="462">
+          <caret line="47" column="5" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="47" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

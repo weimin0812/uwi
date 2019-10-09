@@ -1,4 +1,4 @@
-package question017;
+package question017e;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,22 +25,24 @@ public class Solution {
 
     public List<String> letterCombinations(String digits) {
         List<String> ret = new ArrayList<>();
-        dfs(ret, digits, 0, new StringBuffer());
+        if (digits == null || digits.isEmpty()) {
+            return ret;
+        }
+        dfs(digits, 0, ret, new StringBuffer());
         return ret;
     }
 
-    private void dfs(List<String> ret, String digits, int i, StringBuffer sb) {
-        if (i == digits.length()) {
+    private void dfs(String digits, int index, List<String> ret, StringBuffer sb) {
+        if (index == digits.length()) {
             ret.add(sb.toString());
             return;
         }
 
-        int index = Character.getNumericValue(digits.charAt(i));
-        char[] chars = letters[index].toCharArray();
-
-        for (int j = 0; j < chars.length; j++) {
-            sb.append(chars[j]);
-            dfs(ret, digits, i + 1, sb);
+        int num = Character.getNumericValue(digits.charAt(index));
+        char[] chars = letters[num].toCharArray();
+        for (int i = 0; i < chars.length; i++) {
+            sb.append(chars[i]);
+            dfs(digits, index + 1, ret, sb);
             sb.deleteCharAt(sb.length() - 1);
         }
     }
