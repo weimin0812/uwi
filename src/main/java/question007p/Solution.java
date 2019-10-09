@@ -1,4 +1,4 @@
-package question007;
+package question007p;
 
 public class Solution {
     public int reverse(int x) {

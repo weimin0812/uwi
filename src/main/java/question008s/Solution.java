@@ -1,4 +1,4 @@
-package question008shitty;
+package question008s;
 
 public class Solution {
     public int myAtoi(String str) {
