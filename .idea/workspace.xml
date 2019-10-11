@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b943ffc4-64d5-45d1-b0a2-ddfe91d4d056" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/question018e/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/question019/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/question20/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/question021/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/question022/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/question023/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -22,15 +22,12 @@
     </projectState>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/question20/Solution.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/question023/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="37" column="31" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="37" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="270">
+              <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -87,6 +84,11 @@
         <option value="$PROJECT_DIR$/src/main/java/question018/Solution.java" />
         <option value="$PROJECT_DIR$/src/main/java/question019/Solution.java" />
         <option value="$PROJECT_DIR$/src/main/java/question20/Solution.java" />
+        <option value="$PROJECT_DIR$/src/main/java/question020/Solution.java" />
+        <option value="$PROJECT_DIR$/src/main/java/question021/Solution.java" />
+        <option value="$PROJECT_DIR$/src/main/java/question022.java" />
+        <option value="$PROJECT_DIR$/src/main/java/question022/Solution.java" />
+        <option value="$PROJECT_DIR$/src/main/java/question023/Solution.java" />
       </list>
     </option>
   </component>
@@ -102,6 +104,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -131,7 +134,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -157,11 +159,11 @@
   </component>
   <component name="RunManager" selected="Application.Solution (1)">
     <configuration name="Solution (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="question20.Solution" />
+      <option name="MAIN_CLASS_NAME" value="question022.Solution" />
       <module name="com.free.uwi.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="question20.*" />
+          <option name="PATTERN" value="question022.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -175,6 +177,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="question005e.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="question020.Solution" />
+      <module name="com.free.uwi.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="question020.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -232,18 +247,19 @@
       <workItem from="1570502713302" duration="1653000" />
       <workItem from="1570589065963" duration="4144000" />
       <workItem from="1570613535220" duration="1210000" />
-      <workItem from="1570675059531" duration="3977000" />
+      <workItem from="1570675059531" duration="4113000" />
+      <workItem from="1570762279903" duration="2723000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24922000" />
+    <option name="totallyTimeSpent" value="27781000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20529328" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2081545" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -251,7 +267,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.413253" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.14216867" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -259,7 +275,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="SonarLint" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.15542169" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.21566264" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="13" weight="0.32880434" />
       <window_info anchor="bottom" id="Messages" order="14" />
@@ -460,13 +476,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/question20/Solution.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/question020/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="37" column="31" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="37" selection-end-column="31" />
+        <state relative-caret-position="131">
+          <caret line="28" column="19" selection-start-line="13" selection-start-column="7" selection-end-line="37" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/question022.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/question021/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/question022/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="41" column="5" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="41" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/question023/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
         </state>
       </provider>
     </entry>
