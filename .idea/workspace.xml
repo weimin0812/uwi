@@ -5,16 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b943ffc4-64d5-45d1-b0a2-ddfe91d4d056" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/common/CallableTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/common/FunctionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/common/IOUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/common/MallUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/common/SynchronizedDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/swordoffer/common/ListNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/swordoffer/common/TreeNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/swordoffer/question01/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/swordoffer/question02/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/swordoffer/question03/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/swordoffer/question04/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/swordoffer/question05/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/swordoffer/question06/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/question030/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/question030/Solution.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -33,13 +32,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/common/FunctionTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/swordoffer/question06/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="150">
+              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="26" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -60,15 +56,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/question004/Solution.java" />
-        <option value="$PROJECT_DIR$/src/main/java/question004ee/SolutionCopy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/question004ee/Solution.java" />
-        <option value="$PROJECT_DIR$/src/main/java/question005/Solution.java" />
-        <option value="$PROJECT_DIR$/src/main/java/question005e/Solution.java" />
-        <option value="$PROJECT_DIR$/src/main/java/question006/Solution.java" />
-        <option value="$PROJECT_DIR$/src/main/java/question006e/Solution.java" />
-        <option value="$PROJECT_DIR$/src/main/java/question007/Solution.java" />
-        <option value="$PROJECT_DIR$/src/main/java/question008/Solution.java" />
         <option value="$PROJECT_DIR$/src/main/java/question008shitty/Solution.java" />
         <option value="$PROJECT_DIR$/src/main/java/question009/Solution.java" />
         <option value="$PROJECT_DIR$/src/main/java/question10/Solution.java" />
@@ -111,6 +98,15 @@
         <option value="$PROJECT_DIR$/src/main/java/common/SynchronizedDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/common/MallUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/common/FunctionTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/leetcode/common/FunctionTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/swordoffer/question01/Solution.java" />
+        <option value="$PROJECT_DIR$/src/main/java/swordoffer/question02/Solution.java" />
+        <option value="$PROJECT_DIR$/src/main/java/swordoffer/common/ListNode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/swordoffer/question03/Solution.java" />
+        <option value="$PROJECT_DIR$/src/main/java/swordoffer/common/TreeNode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/swordoffer/question04/Solution.java" />
+        <option value="$PROJECT_DIR$/src/main/java/swordoffer/question05/Solution.java" />
+        <option value="$PROJECT_DIR$/src/main/java/swordoffer/question06/Solution.java" />
       </list>
     </option>
   </component>
@@ -124,6 +120,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -155,14 +153,21 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="swordoffer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="uwi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="uwi" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="swordoffer" type="462c0819:PsiDirectoryNode" />
+              <item name="question06" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -177,6 +182,11 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="EzioGenTurbo" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="swordoffer" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -189,7 +199,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.FunctionTest">
+  <component name="RunManager" selected="Application.Solution">
     <configuration name="CallableTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.common.CallableTest" />
       <module name="com.free.uwi.main" />
@@ -216,8 +226,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IOUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.common.IOUtil" />
+    <configuration name="MallUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.common.MallUtil" />
       <module name="com.free.uwi.main" />
       <extension name="coverage">
         <pattern>
@@ -229,12 +239,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MallUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.common.MallUtil" />
+    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="swordoffer.question05.Solution" />
       <module name="com.free.uwi.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.common.*" />
+          <option name="PATTERN" value="swordoffer.question05.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -257,11 +267,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Solution" />
         <item itemvalue="Application.FunctionTest" />
         <item itemvalue="Application.MallUtil" />
         <item itemvalue="Application.SynchronizedDemo" />
         <item itemvalue="Application.CallableTest" />
-        <item itemvalue="Application.IOUtil" />
       </list>
     </recent_temporary>
   </component>
@@ -306,17 +316,18 @@
       <workItem from="1573715090063" duration="292000" />
       <workItem from="1573801673802" duration="1645000" />
       <workItem from="1573804249128" duration="608000" />
+      <workItem from="1574046415816" duration="3435000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61135000" />
+    <option name="totallyTimeSpent" value="64570000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19384836" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19670959" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -326,7 +337,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.5" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.24698795" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -334,7 +345,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="SonarLint" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.13493976" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.48915663" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="13" weight="0.32880434" />
       <window_info anchor="bottom" id="Messages" order="14" />
@@ -382,62 +393,9 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/question022/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/common/TestFinally.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/question027/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/question024/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/question025/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/question028/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/question029/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/impl/SolutionServiceImpl.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/service/SolutionService.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/dao/SolutionDao.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/question030/Solution.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/question030/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
@@ -579,7 +537,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/common/CallableTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/common/CallableTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
@@ -629,7 +587,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/common/IOUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/common/IOUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
@@ -698,7 +656,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/common/SynchronizedDemo.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/common/SynchronizedDemo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
           <caret line="46" selection-start-line="46" selection-end-line="46" />
@@ -766,14 +724,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/common/MallUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/common/MallUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/common/ToolUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/common/ToolUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="750">
           <caret line="51" column="32" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
@@ -801,13 +759,83 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/common/FunctionTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/common/FunctionTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/swordoffer/question01/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/swordoffer/question02/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/swordoffer/common/ListNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+          <folding>
+            <element signature="e#128#129#0" expanded="true" />
+            <element signature="e#158#159#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/swordoffer/question03/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/swordoffer/common/TreeNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+          <folding>
+            <element signature="e#185#186#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/swordoffer/question04/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="33" column="5" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="33" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/swordoffer/question05/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="23" column="28" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="28" />
+          <folding>
+            <element signature="e#262#263#0" expanded="true" />
+            <element signature="e#295#296#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/swordoffer/question06/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="26" selection-end-column="24" />
         </state>
       </provider>
     </entry>
