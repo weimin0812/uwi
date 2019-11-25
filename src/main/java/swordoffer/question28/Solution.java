@@ -23,9 +23,35 @@ public class Solution {
         return maxCount > array.length / 2 ? maxValue : 0;
     }
 
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+        int[] array = {1, 2, 3, 2, 2, 2, 5, 4, 2};
+        System.out.println(solution.MoreThanHalfNum_Solution(array));
+    }
+
     public int MoreThanHalfNum_Solution(int[] array) {
         // todo o(n) method
-
-        return 0;
+        if (array == null || array.length == 0) {
+            return 0;
+        }
+        int ret = array[0], count = 1;
+        for (int i = 1; i < array.length; i++) {
+            if (ret == array[i]) {
+                count++;
+            } else {
+                count--;
+            }
+            if (count == 0) {
+                ret = array[i];
+                count = 1;
+            }
+        }
+        count = 0;
+        for (int i : array) {
+            if (i == ret) {
+                count++;
+            }
+        }
+        return count > array.length / 2 ? ret : 0;
     }
 }
