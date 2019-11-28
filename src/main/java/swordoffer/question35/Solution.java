@@ -8,40 +8,43 @@ public class Solution {
         if (array == null || array.length < 2) {
             return 0;
         }
-        return mergeSort(array, 0, array.length - 1);
+        int[] t = new int[array.length];
+        for (int i = 0; i < array.length; i++) {
+            t[i] = array[i];
+        }
+        return mergeSort(array, t, 0, array.length - 1);
     }
 
-    private int mergeSort(int[] array, int l, int h) {
+    // todo only mod where count update
+
+    private int mergeSort(int[] array, int[] t, int l, int h) {
         if (l < h) {
             int m = l + (h - l) / 2;
-            int leftCount = mergeSort(array, l, m);
-            int rightCount = mergeSort(array, m + 1, h);
-            int count = merge(array, l, m, h);
+            int leftCount = mergeSort(array, t, l, m);
+            int rightCount = mergeSort(array, t, m + 1, h);
+            int count = merge(array, t, l, m, h);
             return (leftCount + rightCount + count) % 1000000007;
         }
         return 0;
     }
 
-    private int merge(int[] array, int l, int m, int h) {
-        int[] t = new int[array.length];
-        for (int i = 0; i < array.length; i++) {
+    private int merge(int[] array, int[] t, int l, int m, int h) {
+        for (int i = l; i <= h; i++) {
             t[i] = array[i];
         }
-        int index = l, leftIndex = l, rightIndex = m + 1, count = 0;
-        while (leftIndex <= m && rightIndex <= h) {
-            if (t[leftIndex] <= t[rightIndex]) {
-                array[index++] = t[leftIndex++];
+        int count = 0, leftIndex = l, rightIndex = m + 1;
+        for (int index = l; index <= h; index++) {
+            if (leftIndex > m) {
+                array[index] = t[rightIndex++];
+            } else if (rightIndex > h) {
+                array[index] = t[leftIndex++];
+            } else if (t[leftIndex] <= t[rightIndex]) {
+                array[index] = t[leftIndex++];
             } else {
-                // why (m-leftindex+1) not (rightIndex-m)
                 count += (m - leftIndex + 1);
-                array[index++] = t[rightIndex++];
+                count = count % 1000000007;
+                array[index] = t[rightIndex++];
             }
-        }
-        while (leftIndex <= m) {
-            array[index++] = t[leftIndex++];
-        }
-        while (rightIndex <= h) {
-            array[index++] = t[rightIndex++];
         }
         return count;
     }
