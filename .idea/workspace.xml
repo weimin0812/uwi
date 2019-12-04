@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b943ffc4-64d5-45d1-b0a2-ddfe91d4d056" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/swordoffer/question41/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/swordoffer/question42/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/swordoffer/question43/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/swordoffer/question44/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/swordoffer/question45/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/swordoffer/question46/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/swordoffer/question47/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/swordoffer/question48/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/swordoffer/question45/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/swordoffer/question45/Solution.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -28,34 +26,12 @@
     </projectState>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/swordoffer/question45/Solution.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/swordoffer/question44/Solution.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="64" selection-start-line="6" selection-start-column="64" selection-end-line="6" selection-end-column="64" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/src.zip!/java/lang/String.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/swordoffer/question48/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="2866" column="26" lean-forward="true" selection-start-line="2866" selection-start-column="26" selection-end-line="2866" selection-end-column="26" />
-              <folding>
-                <element signature="e#94598#94599#0" expanded="true" />
-                <element signature="e#94636#94637#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="75">
+              <caret line="5" column="50" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -76,9 +52,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/swordoffer/question01/Solution.java" />
-        <option value="$PROJECT_DIR$/src/main/java/swordoffer/question02/Solution.java" />
-        <option value="$PROJECT_DIR$/src/main/java/swordoffer/common/ListNode.java" />
         <option value="$PROJECT_DIR$/src/main/java/swordoffer/question03/Solution.java" />
         <option value="$PROJECT_DIR$/src/main/java/swordoffer/common/TreeNode.java" />
         <option value="$PROJECT_DIR$/src/main/java/swordoffer/question04/Solution.java" />
@@ -125,14 +98,18 @@
         <option value="$PROJECT_DIR$/src/main/java/swordoffer/question42/SOlution.java" />
         <option value="$PROJECT_DIR$/src/main/java/swordoffer/question42/Solution.java" />
         <option value="$PROJECT_DIR$/src/main/java/swordoffer/question43/Solution.java" />
-        <option value="$PROJECT_DIR$/src/main/java/swordoffer/question45/Solution.java" />
         <option value="$PROJECT_DIR$/src/main/java/swordoffer/question44/Solution.java" />
+        <option value="$PROJECT_DIR$/src/main/java/swordoffer/question45/Solution.java" />
+        <option value="$PROJECT_DIR$/src/main/java/swordoffer/question46/Solution.java" />
+        <option value="$PROJECT_DIR$/src/main/java/swordoffer/question47/Solution.java" />
+        <option value="$PROJECT_DIR$/src/main/java/swordoffer/question48/Solution.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="height" value="824" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -140,7 +117,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -182,12 +158,13 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="swordoffer" type="462c0819:PsiDirectoryNode" />
-              <item name="question44" type="462c0819:PsiDirectoryNode" />
+              <item name="question47" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -225,13 +202,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Solution">
-    <configuration name="Solution (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="swordoffer.question27.Solution" />
+  <component name="RunManager" selected="Application.Solution (2)">
+    <configuration name="Solution (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="swordoffer.question47.Solution" />
       <module name="com.free.uwi.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="swordoffer.question27.*" />
+          <option name="PATTERN" value="swordoffer.question47.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -239,12 +216,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="swordoffer.question28.Solution" />
+    <configuration name="Solution (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="swordoffer.question48.Solution" />
       <module name="com.free.uwi.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="swordoffer.question28.*" />
+          <option name="PATTERN" value="swordoffer.question48.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -293,11 +270,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Solution (2)" />
+        <item itemvalue="Application.Solution (1)" />
         <item itemvalue="Application.Solution" />
         <item itemvalue="Application.Sort" />
         <item itemvalue="Application.Solution (5)" />
-        <item itemvalue="Application.Solution (4)" />
-        <item itemvalue="Application.Solution (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -353,17 +330,19 @@
       <workItem from="1574912876538" duration="870000" />
       <workItem from="1574924154720" duration="1975000" />
       <workItem from="1574989976513" duration="3635000" />
-      <workItem from="1575341708320" duration="3479000" />
+      <workItem from="1575341708320" duration="3642000" />
+      <workItem from="1575428243299" duration="4273000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101955000" />
+    <option name="totallyTimeSpent" value="106391000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2639485" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19957082" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -373,7 +352,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.7108434" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.36024097" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -381,7 +360,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32891566" />
       <window_info anchor="bottom" id="SonarLint" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.37228915" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.4554217" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="13" weight="0.32880434" />
       <window_info anchor="bottom" id="Messages" order="14" />
@@ -429,27 +408,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/swordoffer/question09/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="12" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/swordoffer/question10/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/swordoffer/question11/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/swordoffer/question12/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -796,13 +754,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/swordoffer/question41/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/swordoffer/question42/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -819,26 +770,57 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/swordoffer/question45/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="255">
+          <caret line="17" column="31" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/swordoffer/question44/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="64" selection-start-line="6" selection-start-column="64" selection-end-line="6" selection-end-column="64" />
+        <state relative-caret-position="75">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="17" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/swordoffer/question41/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="2866" column="26" lean-forward="true" selection-start-line="2866" selection-start-column="26" selection-end-line="2866" selection-end-column="26" />
+        <state relative-caret-position="41775">
+          <caret line="2866" column="26" selection-start-line="2866" selection-start-column="26" selection-end-line="2866" selection-end-column="26" />
           <folding>
             <element signature="e#94598#94599#0" expanded="true" />
             <element signature="e#94636#94637#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/swordoffer/question46/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="26" lean-forward="true" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/swordoffer/question47/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="50" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/swordoffer/question48/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="50" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
         </state>
       </provider>
     </entry>
