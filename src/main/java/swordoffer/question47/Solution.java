@@ -1,4 +1,4 @@
-package swordoffer.question47ToTest;
+package swordoffer.question47;
 
 public class Solution {
     public static void main(String[] args) {

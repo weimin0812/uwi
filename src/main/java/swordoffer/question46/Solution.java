@@ -1,4 +1,4 @@
-package swordoffer.question46ToTest;
+package swordoffer.question46;
 
 import java.util.LinkedList;
 import java.util.Queue;
