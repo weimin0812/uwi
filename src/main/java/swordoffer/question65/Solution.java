@@ -8,9 +8,15 @@ public class Solution {
 //    但是矩阵中不包含"abcb"路径，因为字符串的第一个字符b占据了矩阵中的第一行第二个格子之后，路径不能再次进入该格子。
     public static void main(String[] args) {
         String matrix = "abcesfcsadee";
+        matrix = "ABCEHJIG" +
+                "SFCSLOPQ" +
+                "ADEEMNOE" +
+                "ADIDEJFM" +
+                "VCEIFGGS";
         String str = "bcced";
+        str = "SLHECCEIDEJFGGFIE";
         Solution solution = new Solution();
-        boolean has = solution.hasPath(matrix.toCharArray(), 3, 4, str.toCharArray());
+        boolean has = solution.hasPath(matrix.toCharArray(), 5, 8, str.toCharArray());
         System.out.println(has);
     }
 
@@ -18,7 +24,7 @@ public class Solution {
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
                 boolean[][] visited = new boolean[rows][cols];
-                if (hasPath(matrix, i, j, rows, cols, visited, str, 0)) {
+                if (hasPath(matrix, rows, cols, i, j, str, 0, visited)) {
                     return true;
                 }
             }
@@ -26,25 +32,23 @@ public class Solution {
         return false;
     }
 
-    private boolean hasPath(char[] matrix, int i, int j, int rows, int cols, boolean[][] visited, char[] str, int strIndex) {
-        if (i >= rows || i < 0 || j >= cols || j < 0 || visited[i][j]) {
+    private boolean hasPath(char[] matrix, int rows, int cols, int i, int j, char[] str, int strIndex, boolean[][] visited) {
+        if (i < 0 || i >= rows || j < 0 || j >= cols || visited[i][j] || str[strIndex] != matrix[i * cols + j]) {
             return false;
         }
         visited[i][j] = true;
-        int matrixIndex = i * cols + j;
-        if (matrix[matrixIndex] != str[strIndex]) {
-            return false;
-        }
-
         if (strIndex == str.length - 1) {
             return true;
         }
-
-        return hasPath(matrix, i + 1, j, rows, cols, visited, str, strIndex + 1) ||
-                hasPath(matrix, i - 1, j, rows, cols, visited, str, strIndex + 1) ||
-                hasPath(matrix, i, j + 1, rows, cols, visited, str, strIndex + 1) ||
-                hasPath(matrix, i, j - 1, rows, cols, visited, str, strIndex + 1);
+        if (hasPath(matrix, rows, cols, i + 1, j, str, strIndex + 1, visited) ||
+                hasPath(matrix, rows, cols, i - 1, j, str, strIndex + 1, visited) ||
+                hasPath(matrix, rows, cols, i, j + 1, str, strIndex + 1, visited) ||
+                hasPath(matrix, rows, cols, i, j - 1, str, strIndex + 1, visited)
+        ) {
+            return true;
+        }
+        visited[i][j] = false;
+        return false;
     }
-
 
 }

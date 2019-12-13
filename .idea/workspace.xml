@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b943ffc4-64d5-45d1-b0a2-ddfe91d4d056" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/swordoffer/question63/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/swordoffer/question64/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/swordoffer/question65/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/swordoffer/question66/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/swordoffer/question67/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.bin" afterDir="false" />
@@ -12,7 +11,7 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hop/RateLimiterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hop/RateLimiterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/swordoffer/question62/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/swordoffer/question62/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/swordoffer/question65/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/swordoffer/question65/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +45,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsbtTreeLayoutManager">
+    <layout place="tools.popupGrunt">
+      <scroll-view-position x="0" y="0" />
+    </layout>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1440" />
@@ -275,7 +279,9 @@
       <workItem from="1576046785724" duration="628000" />
       <workItem from="1576055913023" duration="182000" />
       <workItem from="1576056813234" duration="3980000" />
-      <workItem from="1576118930135" duration="5585000" />
+      <workItem from="1576118930135" duration="10152000" />
+      <workItem from="1576150697859" duration="1267000" />
+      <workItem from="1576205009271" duration="4577000" />
     </task>
     <servers />
   </component>
@@ -291,57 +297,52 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="533" y="174" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1575948002379" />
-    <state width="454" height="466" key="DebuggerActiveHint" timestamp="1576123217631">
+    <state width="538" height="466" key="DebuggerActiveHint" timestamp="1576205429979">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="454" height="466" key="DebuggerActiveHint/0.0.1440.900@0.0.1440.900" timestamp="1576123217631" />
-    <state width="1398" height="205" key="GridCell.Tab.0.bottom" timestamp="1576133481939">
+    <state width="538" height="466" key="DebuggerActiveHint/0.0.1440.900@0.0.1440.900" timestamp="1576205429979" />
+    <state width="1398" height="36" key="GridCell.Tab.0.bottom" timestamp="1576205977552">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="205" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1576133481939" />
-    <state width="1398" height="205" key="GridCell.Tab.0.center" timestamp="1576133481938">
+    <state width="1398" height="36" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1576205977552" />
+    <state width="1398" height="36" key="GridCell.Tab.0.center" timestamp="1576205977551">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="205" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1576133481938" />
-    <state width="1398" height="205" key="GridCell.Tab.0.left" timestamp="1576133481937">
+    <state width="1398" height="36" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1576205977551" />
+    <state width="1398" height="36" key="GridCell.Tab.0.left" timestamp="1576205977551">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="205" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1576133481937" />
-    <state width="1398" height="205" key="GridCell.Tab.0.right" timestamp="1576133481939">
+    <state width="1398" height="36" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1576205977551" />
+    <state width="1398" height="36" key="GridCell.Tab.0.right" timestamp="1576205977552">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="205" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1576133481939" />
-    <state width="1398" height="205" key="GridCell.Tab.1.bottom" timestamp="1576133481941">
+    <state width="1398" height="36" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1576205977552" />
+    <state width="1398" height="36" key="GridCell.Tab.1.bottom" timestamp="1576205977421">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="205" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1576133481941" />
-    <state width="1398" height="205" key="GridCell.Tab.1.center" timestamp="1576133481940">
+    <state width="1398" height="36" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1576205977421" />
+    <state width="1398" height="36" key="GridCell.Tab.1.center" timestamp="1576205977420">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="205" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1576133481940" />
-    <state width="1398" height="205" key="GridCell.Tab.1.left" timestamp="1576133481940">
+    <state width="1398" height="36" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1576205977420" />
+    <state width="1398" height="36" key="GridCell.Tab.1.left" timestamp="1576205977420">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="205" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1576133481940" />
-    <state width="1398" height="205" key="GridCell.Tab.1.right" timestamp="1576133481940">
+    <state width="1398" height="36" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1576205977420" />
+    <state width="1398" height="36" key="GridCell.Tab.1.right" timestamp="1576205977421">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="205" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1576133481940" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1576133178251">
+    <state width="1398" height="36" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1576205977421" />
+    <state x="595" y="325" width="250" height="278" key="jetbrains.javascript.buildTools.run-task-popup" timestamp="1576151400993">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1576133178251" />
+    <state x="595" y="325" width="250" height="278" key="jetbrains.javascript.buildTools.run-task-popup/0.0.1440.900@0.0.1440.900" timestamp="1576151400993" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1576209250368">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1576209250368" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/hop/RateLimiterTest.java</url>
-          <line>8</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="Remote">
         <watch expression="coolDownIntervalMicros()" language="JAVA" />
