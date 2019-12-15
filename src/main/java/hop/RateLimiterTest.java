@@ -6,9 +6,12 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Hashtable;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class RateLimiterTest {
     public static void main(String[] args) {
+        AtomicInteger atomicInteger = new AtomicInteger(0);
+
         ConcurrentHashMap<Object, Object> concurrentHashMap = new ConcurrentHashMap<>();
         concurrentHashMap.put(1, 1);
         HashMap<Object, Object> map = new HashMap();
