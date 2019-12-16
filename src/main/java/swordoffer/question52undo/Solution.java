@@ -24,7 +24,7 @@ public class Solution {
         System.out.println(match);
     }
 
-    // todo sth wrong
+    // logic operator priority
     public boolean isMatch(String s, String p) {
         if (s == null || p == null) {
             return s == p;
@@ -32,12 +32,15 @@ public class Solution {
         if (p.isEmpty()) {
             return s.isEmpty();
         }
-        boolean first_match = !s.isEmpty() && s.charAt(0) == p.charAt(0) || p.charAt(0) == '.';
+        boolean firstMatch = !s.isEmpty() && (s.charAt(0) == p.charAt(0) || p.charAt(0) == '.');
         if (p.length() > 1 && p.charAt(1) == '*') {
-            // 短路
-            return isMatch(s, p.substring(2)) || (first_match && isMatch(s.substring(1), p));
+            if (firstMatch) {
+                return isMatch(s, p.substring(2)) || isMatch(s.substring(1), p);
+            } else {
+                return isMatch(s, p.substring(2));
+            }
         } else {
-            return first_match && isMatch(s.substring(1), p.substring(1));
+            return firstMatch && isMatch(s.substring(1), p.substring(1));
         }
     }
 }
