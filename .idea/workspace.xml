@@ -2,20 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b943ffc4-64d5-45d1-b0a2-ddfe91d4d056" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/DecodeWays.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/LongestPalindromicSubstring.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/MinimumPathSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/UniqueBinarySearchTrees.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/UniqueBinarySearchTreesIi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/UniquePaths.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/UniquePathsIi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/LongestSubstringWithoutRepeatingCharacters.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hop/ExecutorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hop/ExecutorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +83,7 @@
       <recent name="swordoffer.common" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.UniqueBinarySearchTrees">
+  <component name="RunManager" selected="Application.LongestSubstringWithoutRepeatingCharacters">
     <configuration name="DecodeWays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.editor.en.DecodeWays" />
       <module name="uwi.main" />
@@ -104,12 +97,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JOLTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hop.JOLTest" />
+    <configuration name="LongestSubstringWithoutRepeatingCharacters" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.editor.en.LongestSubstringWithoutRepeatingCharacters" />
       <module name="uwi.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hop.*" />
+          <option name="PATTERN" value="leetcode.editor.en.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -171,11 +164,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LongestSubstringWithoutRepeatingCharacters" />
         <item itemvalue="Application.UniqueBinarySearchTrees" />
         <item itemvalue="Application.DecodeWays" />
         <item itemvalue="Application.WaitAndNotify" />
         <item itemvalue="Application.ReentrantLockTest" />
-        <item itemvalue="Application.JOLTest" />
       </list>
     </recent_temporary>
   </component>
@@ -284,7 +277,7 @@
       <workItem from="1577084865588" duration="2606000" />
       <workItem from="1577093669328" duration="5873000" />
       <workItem from="1577157029945" duration="67000" />
-      <workItem from="1577157166791" duration="4959000" />
+      <workItem from="1577157166791" duration="7510000" />
     </task>
     <servers />
   </component>
@@ -311,42 +304,42 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="550" y="329" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1440.900@0.0.1440.900" timestamp="1576728187335" />
-    <state width="538" height="164" key="DebuggerActiveHint" timestamp="1577171401930">
+    <state width="538" height="164" key="DebuggerActiveHint" timestamp="1577174761669">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="538" height="164" key="DebuggerActiveHint/0.0.1440.900@0.0.1440.900" timestamp="1577171401930" />
-    <state width="852" height="286" key="GridCell.Tab.0.bottom" timestamp="1577172464543">
+    <state width="538" height="164" key="DebuggerActiveHint/0.0.1440.900@0.0.1440.900" timestamp="1577174761669" />
+    <state width="851" height="160" key="GridCell.Tab.0.bottom" timestamp="1577174873466">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="852" height="286" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1577172464543" />
-    <state width="852" height="286" key="GridCell.Tab.0.center" timestamp="1577172464537">
+    <state width="851" height="160" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1577174873466" />
+    <state width="851" height="160" key="GridCell.Tab.0.center" timestamp="1577174873465">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="852" height="286" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1577172464537" />
-    <state width="852" height="286" key="GridCell.Tab.0.left" timestamp="1577172464537">
+    <state width="851" height="160" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1577174873465" />
+    <state width="851" height="160" key="GridCell.Tab.0.left" timestamp="1577174873465">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="852" height="286" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1577172464537" />
-    <state width="852" height="286" key="GridCell.Tab.0.right" timestamp="1577172464542">
+    <state width="851" height="160" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1577174873465" />
+    <state width="851" height="160" key="GridCell.Tab.0.right" timestamp="1577174873466">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="852" height="286" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1577172464542" />
-    <state width="852" height="286" key="GridCell.Tab.1.bottom" timestamp="1577172464545">
+    <state width="851" height="160" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1577174873466" />
+    <state width="851" height="160" key="GridCell.Tab.1.bottom" timestamp="1577174873468">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="852" height="286" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1577172464545" />
-    <state width="852" height="286" key="GridCell.Tab.1.center" timestamp="1577172464544">
+    <state width="851" height="160" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1577174873468" />
+    <state width="851" height="160" key="GridCell.Tab.1.center" timestamp="1577174873467">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="852" height="286" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1577172464544" />
-    <state width="852" height="286" key="GridCell.Tab.1.left" timestamp="1577172464544">
+    <state width="851" height="160" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1577174873467" />
+    <state width="851" height="160" key="GridCell.Tab.1.left" timestamp="1577174873466">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="852" height="286" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1577172464544" />
-    <state width="852" height="286" key="GridCell.Tab.1.right" timestamp="1577172464545">
+    <state width="851" height="160" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1577174873466" />
+    <state width="851" height="160" key="GridCell.Tab.1.right" timestamp="1577174873468">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="852" height="286" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1577172464545" />
+    <state width="851" height="160" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1577174873468" />
     <state x="308" y="201" key="IDE.errors.dialog" timestamp="1576811742100">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -367,10 +360,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="595" y="325" width="250" height="278" key="jetbrains.javascript.buildTools.run-task-popup/0.0.1440.900@0.0.1440.900" timestamp="1576151400993" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1577172010422">
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1577173522491">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1577172010422" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1577173522491" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -385,14 +378,9 @@
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/leetcode/editor/en/UniqueBinarySearchTrees.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/leetcode/editor/en/UniqueBinarySearchTrees.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="5" />
+          <url>file://$PROJECT_DIR$/src/main/java/leetcode/editor/en/LongestSubstringWithoutRepeatingCharacters.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
