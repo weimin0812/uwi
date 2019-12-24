@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b943ffc4-64d5-45d1-b0a2-ddfe91d4d056" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/hop/ReentrantLockTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hop/ipc/WaitAndNotify.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/DecodeWays.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/LongestPalindromicSubstring.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/MinimumPathSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/UniqueBinarySearchTrees.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/UniqueBinarySearchTreesIi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/UniquePaths.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/UniquePathsIi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.bin" afterDir="false" />
@@ -51,13 +56,16 @@
     </layout>
   </component>
   <component name="ProjectId" id="1Um0VCFYSicIlt77IIDJMvDZXSb" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -82,13 +90,13 @@
       <recent name="swordoffer.common" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.WaitAndNotify">
-    <configuration name="HashMapTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hop.HashMapTest" />
+  <component name="RunManager" selected="Application.UniqueBinarySearchTrees">
+    <configuration name="DecodeWays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.editor.en.DecodeWays" />
       <module name="uwi.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hop.*" />
+          <option name="PATTERN" value="leetcode.editor.en.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -122,38 +130,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.dp.easy.question0053.Solution" />
-      <module name="uwi.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.dp.easy.question0053.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="swordoffer.question47ToTest.Solution" />
-      <module name="com.free.uwi.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="swordoffer.question47ToTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="swordoffer.question48ToTest.Solution" />
       <module name="com.free.uwi.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="swordoffer.question48ToTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UniqueBinarySearchTrees" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.editor.en.UniqueBinarySearchTrees" />
+      <module name="uwi.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.editor.en.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -176,11 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.UniqueBinarySearchTrees" />
+        <item itemvalue="Application.DecodeWays" />
         <item itemvalue="Application.WaitAndNotify" />
         <item itemvalue="Application.ReentrantLockTest" />
         <item itemvalue="Application.JOLTest" />
-        <item itemvalue="Application.Solution (2)" />
-        <item itemvalue="Application.HashMapTest" />
       </list>
     </recent_temporary>
   </component>
@@ -282,14 +277,28 @@
       <workItem from="1576748255322" duration="716000" />
       <workItem from="1576754705636" duration="4137000" />
       <workItem from="1576802570710" duration="236000" />
-      <workItem from="1576809749672" duration="25000" />
+      <workItem from="1576809749672" duration="4885000" />
+      <workItem from="1576828354760" duration="199000" />
+      <workItem from="1576830527925" duration="4799000" />
+      <workItem from="1577070255428" duration="778000" />
+      <workItem from="1577084865588" duration="2606000" />
+      <workItem from="1577093669328" duration="5873000" />
+      <workItem from="1577157029945" duration="67000" />
+      <workItem from="1577157166791" duration="4959000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="320" y="117" key="#Notifications" timestamp="1577108495267">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="117" key="#Notifications/0.0.1440.900@0.0.1440.900" timestamp="1577108495267" />
     <state x="403" y="111" key="#Solution_(2)" timestamp="1575946952953">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -302,54 +311,54 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="550" y="329" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1440.900@0.0.1440.900" timestamp="1576728187335" />
-    <state width="538" height="84" key="DebuggerActiveHint" timestamp="1576486821788">
+    <state width="538" height="164" key="DebuggerActiveHint" timestamp="1577171401930">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="538" height="84" key="DebuggerActiveHint/0.0.1440.900@0.0.1440.900" timestamp="1576486821788" />
-    <state width="1245" height="328" key="GridCell.Tab.0.bottom" timestamp="1576802545227">
+    <state width="538" height="164" key="DebuggerActiveHint/0.0.1440.900@0.0.1440.900" timestamp="1577171401930" />
+    <state width="852" height="286" key="GridCell.Tab.0.bottom" timestamp="1577172464543">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1245" height="328" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1576802545227" />
-    <state width="1245" height="328" key="GridCell.Tab.0.center" timestamp="1576802545226">
+    <state width="852" height="286" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1577172464543" />
+    <state width="852" height="286" key="GridCell.Tab.0.center" timestamp="1577172464537">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1245" height="328" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1576802545226" />
-    <state width="1245" height="328" key="GridCell.Tab.0.left" timestamp="1576802545225">
+    <state width="852" height="286" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1577172464537" />
+    <state width="852" height="286" key="GridCell.Tab.0.left" timestamp="1577172464537">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1245" height="328" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1576802545225" />
-    <state width="1245" height="328" key="GridCell.Tab.0.right" timestamp="1576802545226">
+    <state width="852" height="286" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1577172464537" />
+    <state width="852" height="286" key="GridCell.Tab.0.right" timestamp="1577172464542">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1245" height="328" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1576802545226" />
-    <state width="1245" height="328" key="GridCell.Tab.1.bottom" timestamp="1576802545229">
+    <state width="852" height="286" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1577172464542" />
+    <state width="852" height="286" key="GridCell.Tab.1.bottom" timestamp="1577172464545">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1245" height="328" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1576802545229" />
-    <state width="1245" height="328" key="GridCell.Tab.1.center" timestamp="1576802545228">
+    <state width="852" height="286" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1577172464545" />
+    <state width="852" height="286" key="GridCell.Tab.1.center" timestamp="1577172464544">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1245" height="328" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1576802545228" />
-    <state width="1245" height="328" key="GridCell.Tab.1.left" timestamp="1576802545227">
+    <state width="852" height="286" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1577172464544" />
+    <state width="852" height="286" key="GridCell.Tab.1.left" timestamp="1577172464544">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1245" height="328" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1576802545227" />
-    <state width="1245" height="328" key="GridCell.Tab.1.right" timestamp="1576802545228">
+    <state width="852" height="286" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1577172464544" />
+    <state width="852" height="286" key="GridCell.Tab.1.right" timestamp="1577172464545">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1245" height="328" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1576802545228" />
-    <state x="308" y="201" key="IDE.errors.dialog" timestamp="1576670140276">
+    <state width="852" height="286" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1577172464545" />
+    <state x="308" y="201" key="IDE.errors.dialog" timestamp="1576811742100">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="308" y="201" key="IDE.errors.dialog/0.0.1440.900@0.0.1440.900" timestamp="1576670140276" />
-    <state x="80" y="24" key="SettingsEditor" timestamp="1576809773711">
+    <state x="308" y="201" key="IDE.errors.dialog/0.0.1440.900@0.0.1440.900" timestamp="1576811742100" />
+    <state x="80" y="24" key="SettingsEditor" timestamp="1576812431518">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="80" y="24" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1576809773711" />
-    <state x="450" y="200" width="543" height="524" key="StructurePopup" timestamp="1576761182362">
+    <state x="80" y="24" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1576812431518" />
+    <state x="450" y="200" width="543" height="524" key="StructurePopup" timestamp="1576831427003">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="450" y="200" width="543" height="524" key="StructurePopup/0.0.1440.900@0.0.1440.900" timestamp="1576761182362" />
+    <state x="450" y="200" width="543" height="524" key="StructurePopup/0.0.1440.900@0.0.1440.900" timestamp="1576831427003" />
     <state width="600" height="335" key="javadoc.popup" timestamp="1576226823025">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -358,12 +367,35 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="595" y="325" width="250" height="278" key="jetbrains.javascript.buildTools.run-task-popup/0.0.1440.900@0.0.1440.900" timestamp="1576151400993" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1576760940447">
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1577172010422">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1576760940447" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1577172010422" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/leetcode/editor/en/MinCostClimbingStairs.java</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/leetcode/editor/en/DecodeWays.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/leetcode/editor/en/UniqueBinarySearchTrees.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/leetcode/editor/en/UniqueBinarySearchTrees.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="Remote">
         <watch expression="coolDownIntervalMicros()" language="JAVA" />

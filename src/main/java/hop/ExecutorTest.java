@@ -1,11 +1,25 @@
 package hop;
 
 import java.util.concurrent.*;
+import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class ExecutorTest {
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException, ExecutionException {
         ReentrantLock reentrantLock = new ReentrantLock();
+        reentrantLock.lock();
+        reentrantLock.tryLock(1, TimeUnit.MILLISECONDS);
+        reentrantLock.unlock();
+        // 重入
+        // 公平锁、不公平锁
+        // 显示unlock
+        // 支持超时
+        // 支持调用 Condition
+        Condition condition = reentrantLock.newCondition();
+        condition.wait();
+        condition.signal();
+        Callable<String> callable = () -> "1";
+
         BlockingQueue<Integer> blockingQueue = new LinkedBlockingQueue<>();
         ArrayBlockingQueue<Integer> integers = new ArrayBlockingQueue<>(10);
         blockingQueue.offer(1);
@@ -25,11 +39,19 @@ public class ExecutorTest {
         ExecutorService executor = new ThreadPoolExecutor(10, 10, 0, TimeUnit.MILLISECONDS, new LinkedBlockingQueue<>());
         executor.execute(() -> System.out.println("Hello"));
         executor.submit(() -> System.out.printf("Hello"));
+        Future<String> submit = executor.submit(callable);
+        submit.get();
+        new Thread(() -> {
+        }).join();
     }
 
     //  ReentrantLock
     //  BlockingQueue是怎么实现的
     //  Callable是怎么实现的
-    // 线程间怎么通信的
+    //  线程间怎么通信的
+    //  wait notify notifyall
+    //  Thread.join
+    //  Thread.yield();
+
 
 }
