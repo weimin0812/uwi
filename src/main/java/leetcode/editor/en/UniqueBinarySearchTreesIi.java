@@ -24,8 +24,10 @@
 // Related Topics Dynamic Programming Tree
 package leetcode.editor.en;
 
+import swordoffer.common.ListNode;
 import swordoffer.common.TreeNode;
 
+import java.util.LinkedList;
 import java.util.List;
 
 public class UniqueBinarySearchTreesIi {
@@ -48,9 +50,32 @@ public class UniqueBinarySearchTreesIi {
      */
     class Solution {
         public List<TreeNode> generateTrees(int n) {
-            return null;
+            if (n <= 0) {
+                return new LinkedList<>();
+            }
 
+            return generateTrees(1, n);
+        }
 
+        private List<TreeNode> generateTrees(int start, int end) {
+            List<TreeNode> allTrees = new LinkedList<>();
+            if (start > end) {
+                allTrees.add(null);
+                return allTrees;
+            }
+            for (int i = start; i <= end; i++) {
+                List<TreeNode> lefts = generateTrees(start, i - 1);
+                List<TreeNode> rights = generateTrees(i + 1, end);
+                for (TreeNode l : lefts) {
+                    for (TreeNode r : rights) {
+                        TreeNode current = new TreeNode(i);
+                        current.left = l;
+                        current.right = r;
+                        allTrees.add(current);
+                    }
+                }
+            }
+            return allTrees;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)

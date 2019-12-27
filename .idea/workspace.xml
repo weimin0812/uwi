@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b943ffc4-64d5-45d1-b0a2-ddfe91d4d056" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/AddTwoNumbers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/MedianOfTwoSortedArrays.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/MedianOfTwoSortedArrays265577926.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/SameTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/SymmetricTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/Triangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/TwoSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/WordBreak.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/LongestSubstringWithoutRepeatingCharacters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/LongestSubstringWithoutRepeatingCharacters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/UniqueBinarySearchTreesIi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/UniqueBinarySearchTreesIi.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -273,6 +283,9 @@
       <workItem from="1577157029945" duration="67000" />
       <workItem from="1577157166791" duration="7583000" />
       <workItem from="1577188747944" duration="324000" />
+      <workItem from="1577243415490" duration="3318000" />
+      <workItem from="1577330291475" duration="2340000" />
+      <workItem from="1577414705978" duration="3644000" />
     </task>
     <servers />
   </component>
@@ -339,10 +352,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="308" y="201" key="IDE.errors.dialog/0.0.1440.900@0.0.1440.900" timestamp="1576811742100" />
-    <state x="80" y="24" key="SettingsEditor" timestamp="1576812431518">
+    <state x="80" y="24" key="SettingsEditor" timestamp="1577415146647">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="80" y="24" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1576812431518" />
+    <state x="80" y="24" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1577415146647" />
     <state x="450" y="200" width="543" height="524" key="StructurePopup" timestamp="1576831427003">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -355,10 +368,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="595" y="325" width="250" height="278" key="jetbrains.javascript.buildTools.run-task-popup/0.0.1440.900@0.0.1440.900" timestamp="1576151400993" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1577173522491">
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1577419313566">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1577173522491" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1577419313566" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -371,11 +384,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/leetcode/editor/en/DecodeWays.java</url>
           <line>33</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/leetcode/editor/en/LongestSubstringWithoutRepeatingCharacters.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
