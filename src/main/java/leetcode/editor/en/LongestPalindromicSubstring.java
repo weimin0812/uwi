@@ -30,26 +30,30 @@ public class LongestPalindromicSubstring {
         private int end = 0;
 
         public String longestPalindrome(String s) {
-            if (s == null || s.isEmpty()) {
+            if (s == null || s.length() == 0) {
                 return "";
             }
+            start = 0;
+            end = 0;
             for (int i = 0; i < s.length(); i++) {
-                expandAroundCenter(s, i, i);
-                expandAroundCenter(s, i, i + 1);
+                expand(s, i, i);
+                expand(s, i, i + 1);
             }
             return s.substring(start + 1, end);
         }
 
-        private void expandAroundCenter(String s, int l, int r) {
-            while (l >= 0 && r < s.length() && s.charAt(l) == s.charAt(r)) {
+        private void expand(String s, int l, int h) {
+            while (l >= 0 && h < s.length() && s.charAt(l) == s.charAt(h)) {
                 l--;
-                r++;
+                h++;
             }
-            if (r - l > end - start) {
+            if (h - l > end - start) {
                 start = l;
-                end = r;
+                end = h;
             }
         }
+
+
     }
 
 
