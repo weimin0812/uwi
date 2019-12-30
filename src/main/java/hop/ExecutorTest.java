@@ -20,6 +20,13 @@ public class ExecutorTest {
         condition.signal();
         Callable<String> callable = () -> "1";
 
+        CountDownLatch countDownLatch = new CountDownLatch(10);
+        countDownLatch.await();
+        countDownLatch.countDown();
+        Thread thread = new Thread(() -> {
+        });
+        thread.join();
+
         BlockingQueue<Integer> blockingQueue = new LinkedBlockingQueue<>();
         ArrayBlockingQueue<Integer> integers = new ArrayBlockingQueue<>(10);
         blockingQueue.offer(1);

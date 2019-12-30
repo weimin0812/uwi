@@ -39,9 +39,9 @@ public class HouseRobber {
             for (int i = 2; i < dp.length; i++) {
                 // rob or not rob
                 dp[i] = Math.max(nums[i - 2] + dp[i - 2], dp[i - 1]);
-                ret = Math.max(ret, dp[i]);
+//                ret = Math.max(ret, dp[i]);
             }
-            return ret;
+            return dp[dp.length - 1];
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
