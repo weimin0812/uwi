@@ -48,7 +48,7 @@ public class UglyNumberIii {
 
     public static void main(String[] args) {
         Solution solution = new UglyNumberIii().new Solution();
-        int n = 5, a = 2, b = 11, c = 13;
+        int n = 1000000000, a = 2, b = 217983653, c = 336916467;
         int nthUglyNumber = solution.nthUglyNumber(n, a, b, c);
         System.out.println(nthUglyNumber);
     }
@@ -57,11 +57,40 @@ public class UglyNumberIii {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int nthUglyNumber(int n, int a, int b, int c) {
-            // binary search
-            // daxiongdi
-            // todo
+            //todo 到底哪儿有问题
+            int l = Math.min(a, Math.min(b, c)), h = 2_000_000_000;
+            while (l <= h) {
+                int m = l + (h - l) / 2;
+                int count = uglyCount(m, a, b, c);
+                if (count == n) {
+                    return m - Math.min(m % a, Math.min(m % b, m % c));
+                } else if (count > n) {
+                    h = m - 1;
+                } else {
+                    l = m + 1;
+                }
+            }
             return 0;
         }
+
+        private int uglyCount(int n, int a, int b, int c) {
+            return n / a + n / b + n / c - n / lcm(a, b) - n / lcm(a, c) - n / lcm(b, c) + n / lcm(a * b, c);
+        }
+
+        private int lcm(int a, int b) {
+            return a * b / gcd(a, b);
+        }
+
+        private int gcd(int a, int b) {
+            while (b > 0) {
+                int t = b;
+                b = a % b;
+                a = t;
+            }
+            return a;
+        }
+
+
     }
 //leetcode submit region end(Prohibit modification and deletion)
 

@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b943ffc4-64d5-45d1-b0a2-ddfe91d4d056" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/SuperUglyNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/UglyNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/UglyNumberIi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/UglyNumberIii.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/UglyNumberIii.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/UglyNumberIii.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -277,7 +274,8 @@
       <workItem from="1577603592990" duration="490000" />
       <workItem from="1577617920806" duration="3080000" />
       <workItem from="1577673804964" duration="4935000" />
-      <workItem from="1577761491199" duration="4298000" />
+      <workItem from="1577761491199" duration="4425000" />
+      <workItem from="1577934764469" duration="3158000" />
     </task>
     <servers />
   </component>
@@ -308,38 +306,38 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="538" height="164" key="DebuggerActiveHint/0.0.1440.900@0.0.1440.900" timestamp="1577174761669" />
-    <state width="890" height="294" key="GridCell.Tab.0.bottom" timestamp="1577777996054">
+    <state width="889" height="354" key="GridCell.Tab.0.bottom" timestamp="1577946025107">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="890" height="294" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1577777996054" />
-    <state width="890" height="294" key="GridCell.Tab.0.center" timestamp="1577777996052">
+    <state width="889" height="354" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1577946025107" />
+    <state width="889" height="354" key="GridCell.Tab.0.center" timestamp="1577946025106">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="890" height="294" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1577777996052" />
-    <state width="890" height="294" key="GridCell.Tab.0.left" timestamp="1577777996051">
+    <state width="889" height="354" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1577946025106" />
+    <state width="889" height="354" key="GridCell.Tab.0.left" timestamp="1577946025105">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="890" height="294" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1577777996051" />
-    <state width="890" height="294" key="GridCell.Tab.0.right" timestamp="1577777996053">
+    <state width="889" height="354" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1577946025105" />
+    <state width="889" height="354" key="GridCell.Tab.0.right" timestamp="1577946025107">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="890" height="294" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1577777996053" />
-    <state width="890" height="294" key="GridCell.Tab.1.bottom" timestamp="1577777996056">
+    <state width="889" height="354" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1577946025107" />
+    <state width="889" height="354" key="GridCell.Tab.1.bottom" timestamp="1577946025109">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="890" height="294" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1577777996056" />
-    <state width="890" height="294" key="GridCell.Tab.1.center" timestamp="1577777996055">
+    <state width="889" height="354" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1577946025109" />
+    <state width="889" height="354" key="GridCell.Tab.1.center" timestamp="1577946025108">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="890" height="294" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1577777996055" />
-    <state width="890" height="294" key="GridCell.Tab.1.left" timestamp="1577777996054">
+    <state width="889" height="354" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1577946025108" />
+    <state width="889" height="354" key="GridCell.Tab.1.left" timestamp="1577946025108">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="890" height="294" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1577777996054" />
-    <state width="890" height="294" key="GridCell.Tab.1.right" timestamp="1577777996055">
+    <state width="889" height="354" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1577946025108" />
+    <state width="889" height="354" key="GridCell.Tab.1.right" timestamp="1577946025109">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="890" height="294" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1577777996055" />
+    <state width="889" height="354" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1577946025109" />
     <state x="308" y="201" key="IDE.errors.dialog" timestamp="1577762183121">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -382,11 +380,20 @@
           <line>24</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/leetcode/editor/en/UglyNumberIii.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Remote">
         <watch expression="coolDownIntervalMicros()" language="JAVA" />
+        <watch expression="uglyCount()" language="JAVA" />
+        <watch expression="uglyCount(1999999982)" language="JAVA" />
+        <watch expression="uglyCount(1999999982,a,b,c)" language="JAVA" />
+        <watch expression="uglyCount(1999999984,a,b,c)" language="JAVA" />
       </configuration>
       <configuration name="Application">
         <watch expression="key.hashCode()" language="JAVA" />
