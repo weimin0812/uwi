@@ -275,7 +275,8 @@
       <workItem from="1577617920806" duration="3080000" />
       <workItem from="1577673804964" duration="4935000" />
       <workItem from="1577761491199" duration="4425000" />
-      <workItem from="1577934764469" duration="3158000" />
+      <workItem from="1577934764469" duration="3239000" />
+      <workItem from="1578019368170" duration="3516000" />
     </task>
     <servers />
   </component>
@@ -306,38 +307,38 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="538" height="164" key="DebuggerActiveHint/0.0.1440.900@0.0.1440.900" timestamp="1577174761669" />
-    <state width="889" height="354" key="GridCell.Tab.0.bottom" timestamp="1577946025107">
+    <state width="887" height="316" key="GridCell.Tab.0.bottom" timestamp="1578022099377">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="889" height="354" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1577946025107" />
-    <state width="889" height="354" key="GridCell.Tab.0.center" timestamp="1577946025106">
+    <state width="887" height="316" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1578022099377" />
+    <state width="887" height="316" key="GridCell.Tab.0.center" timestamp="1578022099376">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="889" height="354" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1577946025106" />
-    <state width="889" height="354" key="GridCell.Tab.0.left" timestamp="1577946025105">
+    <state width="887" height="316" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1578022099376" />
+    <state width="887" height="316" key="GridCell.Tab.0.left" timestamp="1578022099375">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="889" height="354" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1577946025105" />
-    <state width="889" height="354" key="GridCell.Tab.0.right" timestamp="1577946025107">
+    <state width="887" height="316" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1578022099375" />
+    <state width="887" height="316" key="GridCell.Tab.0.right" timestamp="1578022099376">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="889" height="354" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1577946025107" />
-    <state width="889" height="354" key="GridCell.Tab.1.bottom" timestamp="1577946025109">
+    <state width="887" height="316" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1578022099376" />
+    <state width="887" height="316" key="GridCell.Tab.1.bottom" timestamp="1578022099378">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="889" height="354" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1577946025109" />
-    <state width="889" height="354" key="GridCell.Tab.1.center" timestamp="1577946025108">
+    <state width="887" height="316" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1578022099378" />
+    <state width="887" height="316" key="GridCell.Tab.1.center" timestamp="1578022099377">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="889" height="354" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1577946025108" />
-    <state width="889" height="354" key="GridCell.Tab.1.left" timestamp="1577946025108">
+    <state width="887" height="316" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1578022099377" />
+    <state width="887" height="316" key="GridCell.Tab.1.left" timestamp="1578022099377">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="889" height="354" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1577946025108" />
-    <state width="889" height="354" key="GridCell.Tab.1.right" timestamp="1577946025109">
+    <state width="887" height="316" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1578022099377" />
+    <state width="887" height="316" key="GridCell.Tab.1.right" timestamp="1578022099378">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="889" height="354" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1577946025109" />
+    <state width="887" height="316" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1578022099378" />
     <state x="308" y="201" key="IDE.errors.dialog" timestamp="1577762183121">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -358,10 +359,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="595" y="325" width="250" height="278" key="jetbrains.javascript.buildTools.run-task-popup/0.0.1440.900@0.0.1440.900" timestamp="1576151400993" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1577676726933">
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1578022578367">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1577676726933" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1578022578367" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -380,20 +381,14 @@
           <line>24</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/leetcode/editor/en/UglyNumberIii.java</url>
-          <line>51</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Remote">
-        <watch expression="coolDownIntervalMicros()" language="JAVA" />
-        <watch expression="uglyCount()" language="JAVA" />
-        <watch expression="uglyCount(1999999982)" language="JAVA" />
-        <watch expression="uglyCount(1999999982,a,b,c)" language="JAVA" />
-        <watch expression="uglyCount(1999999984,a,b,c)" language="JAVA" />
+        <watch expression="uglyCount(2, a, b, c)" language="JAVA" />
+        <watch expression="lcm(a, b)" language="JAVA" />
+        <watch expression="lcm(a, c)" language="JAVA" />
+        <watch expression="lcm(b, c)" language="JAVA" />
       </configuration>
       <configuration name="Application">
         <watch expression="key.hashCode()" language="JAVA" />
