@@ -14,8 +14,6 @@ package leetcode.editor.en;
 
 import leetcode.common.ListNode;
 
-import javax.crypto.NullCipher;
-
 public class SwapNodesInPairs {
 
     public static void main(String[] args) {
@@ -34,15 +32,34 @@ public class SwapNodesInPairs {
      * }
      */
     class Solution {
+
         public ListNode swapPairs(ListNode head) {
             if (head == null || head.next == null) {
                 return head;
             }
-            ListNode first = head, second = head.next;
-            first.next = swapPairs(second.next);
-            second.next = first;
-            return second;
+            ListNode dummy = new ListNode(0);
+            dummy.next = head;
+            ListNode current = dummy;
+            while (current.next != null && current.next.next != null) {
+                ListNode first = current.next, second = current.next.next;
+                first.next = second.next;
+                second.next = first;
+                current.next = second;
+                current = current.next.next;
+            }
+            return dummy.next;
         }
+
+
+//        public ListNode swapPairs(ListNode head) {
+//            if (head == null || head.next == null) {
+//                return head;
+//            }
+//            ListNode first = head, second = head.next;
+//            first.next = swapPairs(second.next);
+//            second.next = first;
+//            return second;
+//        }
     }
 //leetcode submit region end(Prohibit modification and deletion)
 
