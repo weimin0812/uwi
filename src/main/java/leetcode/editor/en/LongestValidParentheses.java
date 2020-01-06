@@ -29,10 +29,35 @@ public class LongestValidParentheses {
     class Solution {
         public int longestValidParentheses(String s) {
             // longest valid parentheses
-            // dp[i][j] =
-            // todo
-            return 0;
+            int[] dp = new int[s.length()];
+            int ret = 0;
+            for (int i = 1; i < s.length(); i++) {
+                if (s.charAt(i) == ')') {
+                    if (s.charAt(i - 1) == '(') {
+                        dp[i] = 2 + (i - 2 >= 0 ? dp[i - 2] : 0);
+                    } else {
+                        int index = i - 1 - dp[i - 1];
+                        if (index >= 0 && s.charAt(index) == '(') {
+                            dp[i] = dp[i - 1] + (index - 1 >= 0 ? dp[index - 1] : 0) + 2;
+                        }
+                    }
+                    ret = Math.max(ret, dp[i]);
+                }
+            }
+            return ret;
         }
+
+        // todo stack
+        // todo 不需要辅助内存
+
+
+
+
+
+
+
+
+
     }
 //leetcode submit region end(Prohibit modification and deletion)
 
