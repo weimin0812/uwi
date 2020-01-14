@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b943ffc4-64d5-45d1-b0a2-ddfe91d4d056" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/LongestValidParentheses160421802.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/common/TestInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/common/TestInterfaceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/LongestValidParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/LongestValidParentheses.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +66,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="leetcode.id" />
+    <property name="settings.editor.selected.configurable" value="plugins.codemaker" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -76,6 +76,7 @@
       <recent name="swordoffer.question35" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="leetcode.common" />
       <recent name="swordoffer.common" />
     </key>
   </component>
@@ -275,7 +276,9 @@
       <workItem from="1578019368170" duration="4419000" />
       <workItem from="1578193539977" duration="6153000" />
       <workItem from="1578282349775" duration="1057000" />
-      <workItem from="1578297116319" duration="1913000" />
+      <workItem from="1578297116319" duration="1990000" />
+      <workItem from="1578657514720" duration="112000" />
+      <workItem from="1578657639182" duration="432000" />
     </task>
     <servers />
   </component>
@@ -294,10 +297,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="403" y="111" key="#Solution_(2)/0.0.1440.900@0.0.1440.900" timestamp="1575946952953" />
-    <state x="533" y="174" key="#com.intellij.ide.util.MemberChooser" timestamp="1576576434414">
+    <state x="533" y="174" key="#com.intellij.ide.util.MemberChooser" timestamp="1578657962775">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="533" y="174" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1576576434414" />
+    <state x="533" y="174" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1578657962775" />
     <state x="550" y="329" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1576728187335">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -350,10 +353,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="308" y="201" key="IDE.errors.dialog/0.0.1440.900@0.0.1440.900" timestamp="1577762183121" />
-    <state x="130" y="91" key="SettingsEditor" timestamp="1577603728506">
+    <state x="130" y="91" width="1097" height="722" key="SettingsEditor" timestamp="1578657794167">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="130" y="91" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1577603728506" />
+    <state x="130" y="91" width="1097" height="722" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1578657794167" />
     <state x="450" y="200" width="543" height="524" key="StructurePopup" timestamp="1577440305207">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
