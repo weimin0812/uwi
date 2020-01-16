@@ -9,6 +9,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class HashMapTest {
+    static final int MAXIMUM_CAPACITY = 1 << 30;
     // hashmap
     // 多线程hash碰撞的时候会丢
     // 多线程扩容的时候会丢
@@ -16,10 +17,17 @@ public class HashMapTest {
     // table是volatile的
     // synchronized + cas
     public static void main(String[] args) throws InterruptedException {
-        HashMap<Integer, Integer> map = new HashMap<>();
-        map.put(1, null);
-        boolean b = map.containsKey(1);
-        map.get(1);
+        int tab = tableSizeFor(1);
+
+        HashMap<Long, String> map = new HashMap<>();
+        Integer i = 8;
+        i.equals(2);
+        map.put(1L, "1L");
+        map.put(789L, "789L");
+        String s = map.get(1L);
+        String s1 = map.get(789L);
+        map.containsValue(null);
+
         Hashtable<Integer, Integer> hashtable = new Hashtable<>();
         hashtable.put(1, 1);
         HashSet<Integer> set = new HashSet<>();
@@ -27,6 +35,8 @@ public class HashMapTest {
         ConcurrentHashMap<Integer, Integer> concurrentHashMap = new ConcurrentHashMap<>();
         concurrentHashMap.put(1, 1);
         concurrentHashMap.get(1);
+        concurrentHashMap.containsKey(1);
+        concurrentHashMap.containsValue(null);
         AtomicInteger atomicInteger = new AtomicInteger();
         atomicInteger.getAndIncrement();
         atomicInteger.addAndGet(1);
@@ -47,5 +57,15 @@ public class HashMapTest {
 
     private int getV(int v) {
         return v;
+    }
+
+    static final int tableSizeFor(int cap) {
+        int n = cap - 1;
+        n |= n >>> 1;
+        n |= n >>> 2;
+        n |= n >>> 4;
+        n |= n >>> 8;
+        n |= n >>> 16;
+        return (n < 0) ? 1 : (n >= MAXIMUM_CAPACITY) ? MAXIMUM_CAPACITY : n + 1;
     }
 }
