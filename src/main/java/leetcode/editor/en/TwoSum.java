@@ -18,27 +18,27 @@ import java.util.Map;
 
 public class TwoSum {
 
- public static void main(String[] args) {
+    public static void main(String[] args) {
         Solution solution = new TwoSum().new Solution();
- }
-
-
-
-//leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
-    public int[] twoSum(int[] nums, int target) {
-        Map<Integer, Integer> map = new HashMap<>();
-        for (int i = 0; i < nums.length; i++) {
-            int num = nums[i];
-            if (map.containsKey(num)) {
-                return new int[]{map.get(num), i};
-            }
-            map.put(target - num, i);
-        }
-        return null;
-        
     }
-}
+
+
+    //leetcode submit region begin(Prohibit modification and deletion)
+    class Solution {
+        public int[] twoSum(int[] nums, int target) {
+            if (nums == null || nums.length < 2) {
+                return new int[]{};
+            }
+            Map<Integer, Integer> map = new HashMap<>();
+            for (int i = 0; i < nums.length; i++) {
+                if (map.containsKey(nums[i])) {
+                    return new int[]{map.get(nums[i]), i};
+                }
+                map.put(target - nums[i], i);
+            }
+            return new int[]{};
+        }
+    }
 //leetcode submit region end(Prohibit modification and deletion)
 
 }

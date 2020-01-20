@@ -33,17 +33,18 @@ public class AddTwoNumbers {
      */
     class Solution {
         public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-            ListNode ret = new ListNode(0);
-            ListNode current = ret, node1 = l1, node2 = l2;
             int carry = 0;
-            while (carry != 0 || node1 != null || node2 != null) {
-                int x = node1 == null ? 0 : node1.val, y = node2 == null ? 0 : node2.val;
-                int sum = (x + y + carry) % 10;
-                carry = (x + y + carry) / 10;
-                current.next = new ListNode(sum);
+            ListNode ret = new ListNode(0);
+            ListNode current = ret;
+            while (l1 != null || l2 != null || carry != 0) {
+                int x = l1 == null ? 0 : l1.val;
+                int y = l2 == null ? 0 : l2.val;
+                int sum = x + y + carry;
+                current.next = new ListNode(sum % 10);
+                carry = sum / 10;
+                l1 = l1 == null ? null : l1.next;
+                l2 = l2 == null ? l2 : l2.next;
                 current = current.next;
-                node1 = node1 == null ? null : node1.next;
-                node2 = node2 == null ? null : node2.next;
             }
             return ret.next;
         }

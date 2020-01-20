@@ -34,7 +34,7 @@
 package leetcode.editor.en;
 
 import java.util.HashMap;
-import java.util.HashSet;
+import java.util.Map;
 
 public class LongestSubstringWithoutRepeatingCharacters {
 
@@ -52,13 +52,16 @@ public class LongestSubstringWithoutRepeatingCharacters {
             if (s == null || s.isEmpty()) {
                 return 0;
             }
-            int ret = 0, index = 0;
-            HashMap<Character, Integer> map = new HashMap<>();
+            int index = -1;
+            int ret = 0;
+            Map<Character, Integer> map = new HashMap<>();
             for (int i = 0; i < s.length(); i++) {
                 char c = s.charAt(i);
-                index = Math.max(index, map.getOrDefault(c, 0));
-                ret = Math.max(ret, i - index + 1);
-                map.put(c, i + 1);
+                if (map.containsKey(c)) {
+                    index = Math.max(index, map.get(c));
+                }
+                map.put(c, i);
+                ret = Math.max(ret, i - index);
             }
             return ret;
         }

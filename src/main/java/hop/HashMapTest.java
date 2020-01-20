@@ -37,6 +37,7 @@ public class HashMapTest {
         concurrentHashMap.get(1);
         concurrentHashMap.containsKey(1);
         concurrentHashMap.containsValue(null);
+        concurrentHashMap.contains(1);
         AtomicInteger atomicInteger = new AtomicInteger();
         atomicInteger.getAndIncrement();
         atomicInteger.addAndGet(1);
