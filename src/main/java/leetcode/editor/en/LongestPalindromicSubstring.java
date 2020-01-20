@@ -21,38 +21,30 @@ public class LongestPalindromicSubstring {
 
     public static void main(String[] args) {
         Solution solution = new LongestPalindromicSubstring().new Solution();
+        String s = "";
+        System.out.println(solution.longestPalindrome(s));
     }
 
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
-        private int start = 0;
-        private int end = 0;
-
         public String longestPalindrome(String s) {
-            if (s == null || s.length() == 0) {
-                return "";
+            boolean[][] dp = new boolean[s.length()][s.length()];
+            int start = 0, end = -1;
+            for (int d = 0; d < s.length(); d++) {
+                for (int i = 0; i < s.length() - d; i++) {
+                    int j = i + d;
+                    dp[i][j] = (s.charAt(i) == s.charAt(j)) && (i + 1 > j - 1 || dp[i + 1][j - 1]);
+                    if (dp[i][j]) {
+                        if (j - i > end - start) {
+                            start = i;
+                            end = j;
+                        }
+                    }
+                }
             }
-            start = 0;
-            end = 0;
-            for (int i = 0; i < s.length(); i++) {
-                expand(s, i, i);
-                expand(s, i, i + 1);
-            }
-            return s.substring(start + 1, end);
+            return s.substring(start, end + 1);
         }
-
-        private void expand(String s, int l, int h) {
-            while (l >= 0 && h < s.length() && s.charAt(l) == s.charAt(h)) {
-                l--;
-                h++;
-            }
-            if (h - l > end - start) {
-                start = l;
-                end = h;
-            }
-        }
-
 
     }
 

@@ -41,8 +41,7 @@ public class MedianOfTwoSortedArrays {
             }
             int l = 0, h = nums1.length, half = (nums1.length + nums2.length + 1) / 2;
             while (l <= h) {
-                int i = l + (h - l) / 2;
-                int j = half - i;
+                int i = l + (h - l) / 2, j = half - i;
                 if (i > 0 && nums1[i - 1] > nums2[j]) {
                     h = i - 1;
                 } else if (i < nums1.length && nums2[j - 1] > nums1[i]) {
