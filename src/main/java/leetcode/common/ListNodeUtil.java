@@ -14,4 +14,12 @@ public class ListNodeUtil {
         }
         return nodes[0];
     }
+
+    public static void printListNode(ListNode node) {
+        while (node != null) {
+            System.out.print(node.val + "->");
+            node = node.next;
+        }
+        System.out.println("null");
+    }
 }
