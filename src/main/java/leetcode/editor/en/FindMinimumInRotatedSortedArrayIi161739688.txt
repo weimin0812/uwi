@@ -1,0 +1,28 @@
+class Solution {
+    public int findMin(int[] nums) {
+        if (nums == null || nums.length == 0){
+            return -1;
+        }
+        
+        int l = 0;
+        int h = nums.length - 1;
+        
+        while (l < h){
+            int m = l + (h - l) / 2;
+            
+            if (nums[m] < nums[h]){
+                h = m;
+            }else if (nums[m] == nums[h]){
+                h--;
+            }else{
+                l = m + 1;
+            }
+
+        }
+        
+        return nums[l];
+        
+    }
+}
+//runtime:0 ms
+//memory:N/A
