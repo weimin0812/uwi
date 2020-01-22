@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b943ffc4-64d5-45d1-b0a2-ddfe91d4d056" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/FindMinimumInRotatedSortedArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/FindMinimumInRotatedSortedArray149062716.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/FindMinimumInRotatedSortedArrayIi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/SearchInRotatedSortedArrayIi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/FindFirstAndLastPositionOfElementInSortedArray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -296,7 +293,7 @@
       <workItem from="1579490531093" duration="10798000" />
       <workItem from="1579575071599" duration="4332000" />
       <workItem from="1579599331768" duration="4513000" />
-      <workItem from="1579677284817" duration="5389000" />
+      <workItem from="1579677284817" duration="6431000" />
     </task>
     <servers />
   </component>
