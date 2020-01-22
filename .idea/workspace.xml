@@ -2,27 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b943ffc4-64d5-45d1-b0a2-ddfe91d4d056" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/SearchInRotatedSortedArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/SearchInRotatedSortedArray121007781.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/GenerateParentheses268814951.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/GenerateParentheses268822690.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/LeafSimilarTrees249848402.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/LongestValidParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/LongestValidParentheses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/LongestValidParentheses160421802.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/MergeKSortedLists296157016.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/NextPermutation162160951.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/PalindromicSubstrings253218966.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/RegularExpressionMatching286281897.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/RemoveNthNodeFromEndOfList268524722.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/SwapNodesInPairs271780325.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/ThreeSum268217594.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/TwoSum294615288.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/TwoSum294615491.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/ZigzagConversion267277083.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +88,7 @@
       <recent name="swordoffer.common" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LongestValidParentheses">
+  <component name="RunManager" selected="Application.SearchInRotatedSortedArray">
     <configuration name="LongestValidParentheses" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.editor.en.LongestValidParentheses" />
       <module name="uwi.main" />
@@ -141,8 +128,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegularExpressionMatching" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.editor.en.RegularExpressionMatching" />
+    <configuration name="SearchInRotatedSortedArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.editor.en.SearchInRotatedSortedArray" />
       <module name="uwi.main" />
       <extension name="coverage">
         <pattern>
@@ -169,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SearchInRotatedSortedArray" />
         <item itemvalue="Application.LongestValidParentheses" />
         <item itemvalue="Application.MergeKSortedLists" />
         <item itemvalue="Application.MergeTwoSortedLists" />
         <item itemvalue="Application.ThreeSum" />
-        <item itemvalue="Application.RegularExpressionMatching" />
       </list>
     </recent_temporary>
   </component>
@@ -312,7 +299,7 @@
       <workItem from="1579490531093" duration="10798000" />
       <workItem from="1579575071599" duration="4332000" />
       <workItem from="1579599331768" duration="4513000" />
-      <workItem from="1579677284817" duration="2142000" />
+      <workItem from="1579677284817" duration="4101000" />
     </task>
     <servers />
   </component>
@@ -343,52 +330,52 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="538" height="436" key="DebuggerActiveHint/0.0.1440.900@0.0.1440.900" timestamp="1579678918954" />
-    <state width="894" height="315" key="GridCell.Tab.0.bottom" timestamp="1579678921771">
+    <state width="893" height="181" key="GridCell.Tab.0.bottom" timestamp="1579681288796">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="894" height="315" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1579678921771" />
+    <state width="893" height="181" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1579681288796" />
     <state width="874" height="268" key="GridCell.Tab.0.bottom/0.23.1440.821@0.23.1440.821" timestamp="1578268366719" />
     <state width="879" height="152" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1579168826497" />
-    <state width="894" height="315" key="GridCell.Tab.0.center" timestamp="1579678921769">
+    <state width="893" height="181" key="GridCell.Tab.0.center" timestamp="1579681288795">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="894" height="315" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1579678921769" />
+    <state width="893" height="181" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1579681288795" />
     <state width="874" height="268" key="GridCell.Tab.0.center/0.23.1440.821@0.23.1440.821" timestamp="1578268366716" />
     <state width="879" height="152" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1579168826496" />
-    <state width="894" height="315" key="GridCell.Tab.0.left" timestamp="1579678921769">
+    <state width="893" height="181" key="GridCell.Tab.0.left" timestamp="1579681288794">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="894" height="315" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1579678921769" />
+    <state width="893" height="181" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1579681288794" />
     <state width="874" height="268" key="GridCell.Tab.0.left/0.23.1440.821@0.23.1440.821" timestamp="1578268366716" />
     <state width="879" height="152" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1579168826495" />
-    <state width="894" height="315" key="GridCell.Tab.0.right" timestamp="1579678921770">
+    <state width="893" height="181" key="GridCell.Tab.0.right" timestamp="1579681288795">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="894" height="315" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1579678921770" />
+    <state width="893" height="181" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1579681288795" />
     <state width="874" height="268" key="GridCell.Tab.0.right/0.23.1440.821@0.23.1440.821" timestamp="1578268366718" />
     <state width="879" height="152" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1579168826614" />
-    <state width="894" height="315" key="GridCell.Tab.1.bottom" timestamp="1579678921773">
+    <state width="893" height="181" key="GridCell.Tab.1.bottom" timestamp="1579681288680">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="894" height="315" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1579678921773" />
+    <state width="893" height="181" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1579681288680" />
     <state width="874" height="268" key="GridCell.Tab.1.bottom/0.23.1440.821@0.23.1440.821" timestamp="1578268366721" />
     <state width="879" height="152" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1579168826505" />
-    <state width="894" height="315" key="GridCell.Tab.1.center" timestamp="1579678921772">
+    <state width="893" height="181" key="GridCell.Tab.1.center" timestamp="1579681288679">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="894" height="315" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1579678921772" />
+    <state width="893" height="181" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1579681288679" />
     <state width="874" height="268" key="GridCell.Tab.1.center/0.23.1440.821@0.23.1440.821" timestamp="1578268366720" />
     <state width="879" height="152" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1579168826503" />
-    <state width="894" height="315" key="GridCell.Tab.1.left" timestamp="1579678921771">
+    <state width="893" height="181" key="GridCell.Tab.1.left" timestamp="1579681288678">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="894" height="315" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1579678921771" />
+    <state width="893" height="181" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1579681288678" />
     <state width="874" height="268" key="GridCell.Tab.1.left/0.23.1440.821@0.23.1440.821" timestamp="1578268366719" />
     <state width="879" height="152" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1579168826498" />
-    <state width="894" height="315" key="GridCell.Tab.1.right" timestamp="1579678921772">
+    <state width="893" height="181" key="GridCell.Tab.1.right" timestamp="1579681288679">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="894" height="315" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1579678921772" />
+    <state width="893" height="181" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1579681288679" />
     <state width="874" height="268" key="GridCell.Tab.1.right/0.23.1440.821@0.23.1440.821" timestamp="1578268366720" />
     <state width="879" height="152" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1579168826504" />
     <state x="308" y="201" key="IDE.errors.dialog" timestamp="1577762183121">
@@ -474,6 +461,8 @@
         <watch expression="lcm(a, c)" language="JAVA" />
         <watch expression="lcm(b, c)" language="JAVA" />
         <watch expression="l1.val &lt;= l2.val ? l1.next : l1" language="JAVA" />
+        <watch expression="nums[m]" language="JAVA" />
+        <watch expression="nums[h]" language="JAVA" />
       </configuration>
       <configuration name="Application">
         <watch expression="key.hashCode()" language="JAVA" />
