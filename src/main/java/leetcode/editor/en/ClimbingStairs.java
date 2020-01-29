@@ -37,9 +37,6 @@ public class ClimbingStairs {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int climbStairs(int n) {
-            if (n <= 0) {
-                throw new IllegalArgumentException("n should > 0");
-            }
             if (n <= 2) {
                 return n;
             }
