@@ -19,20 +19,40 @@
 // Related Topics Array Sort
 package leetcode.editor.en;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
+
 public class MergeIntervals {
 
- public static void main(String[] args) {
+    public static void main(String[] args) {
         Solution solution = new MergeIntervals().new Solution();
- }
-
-
-
-//leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
-    public int[][] merge(int[][] intervals) {
-        
     }
-}
+
+
+    //leetcode submit region begin(Prohibit modification and deletion)
+    class Solution {
+        public int[][] merge(int[][] intervals) {
+            if (intervals == null || intervals.length <= 1) {
+                return intervals;
+            }
+            Arrays.sort(intervals, Comparator.comparingInt(a -> a[0]));
+            List<int[]> ret = new ArrayList<>();
+            int[] pre = intervals[0];
+            ret.add(pre);
+            for (int i = 1; i < intervals.length; i++) {
+                int[] current = intervals[i];
+                if (current[0] <= pre[1]) {
+                    pre[1] = Math.max(current[1], pre[1]);
+                } else {
+                    ret.add(current);
+                    pre = current;
+                }
+            }
+            return ret.toArray(new int[ret.size()][]);
+        }
+    }
 //leetcode submit region end(Prohibit modification and deletion)
 
 }
