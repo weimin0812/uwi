@@ -27,13 +27,14 @@ public class MaximumSubarray {
             if (nums == null || nums.length == 0) {
                 return 0;
             }
-            int sum = 0, ret = nums[0];
+            int ret = nums[0];
+            int pre = 0;
             for (int num : nums) {
-                if (sum < 0) {
-                    sum = 0;
+                if (pre < 0) {
+                    pre = 0;
                 }
-                sum += num;
-                ret = Math.max(ret, sum);
+                pre += num;
+                ret = Math.max(ret, pre);
             }
             return ret;
         }
