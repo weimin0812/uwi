@@ -1,0 +1,40 @@
+class Solution {
+   public List<List<Integer>> permute(int[] nums) {
+        List<List<Integer>> ret = new ArrayList<List<Integer>>();
+        if (nums == null || nums.length < 1){
+            return ret;
+        }
+
+        permutation(nums, 0, ret);
+        return ret;
+    }
+
+    private void permutation(int[] nums, int begin, List<List<Integer>> ret){
+        if (begin == nums.length-1){
+            ret.add(toList(nums));
+        }else{
+            for (int i = begin; i < nums.length; i++){
+                swap(nums, begin, i);
+                permutation(nums, begin+1, ret);
+                swap(nums, begin, i);
+            }
+        }
+
+    }
+    private void swap(int[] nums, int i, int j){
+        int t = nums[i];
+        nums[i] = nums[j];
+        nums[j] = t;
+    }
+
+    private ArrayList<Integer> toList(int[] nums){
+        ArrayList<Integer> ret = new ArrayList<>();
+        for (int i = 0; i < nums.length; i++) {
+            ret.add(nums[i]);
+        }
+
+        return ret;
+    }
+}
+//runtime:2 ms
+//memory:N/A
