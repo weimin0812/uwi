@@ -18,19 +18,17 @@ package leetcode.editor.en;
 
 public class MinimumWindowSubstring {
 
- public static void main(String[] args) {
+    public static void main(String[] args) {
         Solution solution = new MinimumWindowSubstring().new Solution();
- }
-
-
-
-//leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
-    public String minWindow(String s, String t) {
-
-        
     }
-}
+
+
+    //leetcode submit region begin(Prohibit modification and deletion)
+    class Solution {
+        public String minWindow(String s, String t) {
+            return null;
+        }
+    }
 //leetcode submit region end(Prohibit modification and deletion)
 
 }

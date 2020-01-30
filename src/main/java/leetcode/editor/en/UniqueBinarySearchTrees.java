@@ -30,19 +30,18 @@ public class UniqueBinarySearchTrees {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int numTrees(int n) {
-            // dp[n]代表长度为n的个数
-            // dp[0] = 1 dp[1] = 1
-            // dp[n] = f(i,n) i = 1,...,n
-            // f(i,n) = dp[i-1] + dp[n-i]
+            // dp[n] 代表n个数可以构成的bst的个数
+            // dp[0] = 1
+            // dp[n] = f(n,1) + f(n,2) + f(n,3) + ... + f(n,n)
+            // f(n,i) = dp[i-1] + dp[n-i]
             int[] dp = new int[n + 1];
             dp[0] = 1;
-            dp[1] = 1;
-            for (int i = 2; i <= n; i++) {
+            for (int i = 1; i < dp.length; i++) {
                 for (int j = 1; j <= i; j++) {
                     dp[i] += dp[j - 1] * dp[i - j];
                 }
             }
-            return dp[n];
+            return dp[dp.length - 1];
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
