@@ -1,4 +1,5 @@
-//Given an integer array nums, find the contiguous subarray within an array (containing at least one number) which has the largest product. 
+//Given an integer array nums, find the contiguous subarray within an array (con
+//taining at least one number) which has the largest product. 
 //
 // Example 1: 
 //
@@ -15,30 +16,29 @@
 //Output: 0
 //Explanation: The result cannot be 2, because [-2,-1] is not a subarray. 
 // Related Topics Array Dynamic Programming
+
 package leetcode.editor.en;
 
 public class MaximumProductSubarray {
 
     public static void main(String[] args) {
         Solution solution = new MaximumProductSubarray().new Solution();
-        int[] nums = {-2, 0, -1};
-        solution.maxProduct(nums);
+        int[] nums = {2, 3, -2, 4};
     }
-
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int maxProduct(int[] nums) {
-            int max = 1, min = 1, ret = nums[0];
+            int preMax = 1, preMin = 1, ret = nums[0];
             for (int i = 0; i < nums.length; i++) {
                 if (nums[i] < 0) {
-                    int t = max;
-                    max = min;
-                    min = t;
+                    int t = preMax;
+                    preMax = preMin;
+                    preMin = t;
                 }
-                max = Math.max(max * nums[i], nums[i]);
-                min = Math.min(min * nums[i], nums[i]);
-                ret = Math.max(ret, max);
+                preMax = Math.max(preMax * nums[i], nums[i]);
+                preMin = Math.min(preMin * nums[i], nums[i]);
+                ret = Math.max(ret, preMax);
             }
             return ret;
         }
