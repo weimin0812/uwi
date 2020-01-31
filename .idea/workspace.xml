@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b943ffc4-64d5-45d1-b0a2-ddfe91d4d056" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/LinkedListCycle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/LinkedListCycleIi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/LruCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/LruCache298885409.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/SortList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/WordBreak.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/WordBreak.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -302,7 +302,7 @@
       <workItem from="1580353368552" duration="421000" />
       <workItem from="1580353794226" duration="33000" />
       <workItem from="1580354007965" duration="104000" />
-      <workItem from="1580354126448" duration="9841000" />
+      <workItem from="1580354126448" duration="13789000" />
     </task>
     <servers />
   </component>
@@ -321,14 +321,18 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="403" y="111" key="#Solution_(2)/0.0.1440.900@0.0.1440.900" timestamp="1575946952953" />
-    <state x="533" y="174" key="#com.intellij.ide.util.MemberChooser" timestamp="1578657962775">
+    <state x="533" y="174" key="#com.intellij.ide.util.MemberChooser" timestamp="1580438493648">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="533" y="174" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1578657962775" />
+    <state x="533" y="174" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1580438493648" />
     <state x="550" y="329" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1576728187335">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="550" y="329" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1440.900@0.0.1440.900" timestamp="1576728187335" />
+    <state x="402" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1580438568509">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="402" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1440.900@0.0.1440.900" timestamp="1580438568509" />
     <state width="538" height="436" key="DebuggerActiveHint" timestamp="1580270197138">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
