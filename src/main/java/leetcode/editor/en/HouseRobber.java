@@ -31,15 +31,10 @@ public class HouseRobber {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int rob(int[] nums) {
-            if (nums == null || nums.length == 0) {
-                return 0;
-            }
+            //dp[i] = Math.max(dp[i-1], dp[i-2] + nums[i])
             int[] dp = new int[nums.length + 2];
-            int ret = nums[0];
             for (int i = 2; i < dp.length; i++) {
-                // rob or not rob
-                dp[i] = Math.max(nums[i - 2] + dp[i - 2], dp[i - 1]);
-//                ret = Math.max(ret, dp[i]);
+                dp[i] = Math.max(dp[i - 1], dp[i - 2] + nums[i - 2]);
             }
             return dp[dp.length - 1];
         }
