@@ -43,6 +43,14 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/en/CourseSchedule.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/en/CourseSchedule.java" />
+              <option name="questionId" value="207" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/en/EditDistance.java">
           <value>
             <LeetcodeEditor>
@@ -64,6 +72,14 @@
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/en/HouseRobber.java" />
               <option name="questionId" value="198" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/en/ImplementTriePrefixTree.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/en/ImplementTriePrefixTree.java" />
+              <option name="questionId" value="208" />
             </LeetcodeEditor>
           </value>
         </entry>
