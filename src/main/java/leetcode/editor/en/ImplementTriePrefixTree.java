@@ -23,35 +23,74 @@
 
 package leetcode.editor.en;
 
+import leetcode.common.TreeNode;
+
 public class ImplementTriePrefixTree {
 
- public static void main(String[] args) {
+    public static void main(String[] args) {
+    }
 
- }
+    //leetcode submit region begin(Prohibit modification and deletion)
+    class Trie {
+        TrieNode root = new TrieNode();
 
-//leetcode submit region begin(Prohibit modification and deletion)
-class Trie {
+        /**
+         * Initialize your data structure here.
+         */
+        public Trie() {
 
-    /** Initialize your data structure here. */
-    public Trie() {
-        
+        }
+
+        /**
+         * Inserts a word into the trie.
+         */
+        public void insert(String word) {
+            TrieNode node = root;
+            for (char c : word.toCharArray()) {
+                if (node.children[c - 'a'] == null) {
+                    node.children[c - 'a'] = new TrieNode();
+                }
+                node = node.children[c - 'a'];
+            }
+            node.isWord = true;
+        }
+
+        /**
+         * Returns if the word is in the trie.
+         */
+        public boolean search(String word) {
+            TrieNode node = root;
+            for (char c : word.toCharArray()) {
+                if (node.children[c - 'a'] == null) {
+                    return false;
+                }
+                node = node.children[c - 'a'];
+            }
+            return node.isWord;
+        }
+
+        /**
+         * Returns if there is any word in the trie that starts with the given prefix.
+         */
+        public boolean startsWith(String prefix) {
+            TrieNode node = root;
+            for (char c : prefix.toCharArray()) {
+                if (node.children[c - 'a'] == null) {
+                    return false;
+                }
+                node = node.children[c - 'a'];
+            }
+            return true;
+        }
     }
-    
-    /** Inserts a word into the trie. */
-    public void insert(String word) {
-        
+
+    class TrieNode {
+        boolean isWord;
+        TrieNode[] children = new TrieNode[26];
+        public TrieNode() {
+        }
     }
-    
-    /** Returns if the word is in the trie. */
-    public boolean search(String word) {
-        
-    }
-    
-    /** Returns if there is any word in the trie that starts with the given prefix. */
-    public boolean startsWith(String prefix) {
-        
-    }
-}
+
 
 /**
  * Your Trie object will be instantiated and called as such:
