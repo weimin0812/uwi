@@ -26,16 +26,26 @@ package leetcode.editor.en;
 
 public class BestTimeToBuyAndSellStockWithTransactionFee {
 
- public static void main(String[] args) {
+    public static void main(String[] args) {
         Solution solution = new BestTimeToBuyAndSellStockWithTransactionFee().new Solution();
- }
-
-//leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
-    public int maxProfit(int[] prices, int fee) {
-        
     }
-}
+
+    //leetcode submit region begin(Prohibit modification and deletion)
+    class Solution {
+        public int maxProfit(int[] prices, int fee) {
+            if (prices == null || prices.length == 0) {
+                return 0;
+            }
+            int n = prices.length;
+            int[][] dp = new int[n][2];
+            for (int i = 0; i < n; i++) {
+                dp[i][0] = Math.max(i - 1 >= 0 ? dp[i - 1][0] : 0, (i - 1 >= 0 ? dp[i - 1][1] : Integer.MIN_VALUE) + prices[i]);
+                // fee在上面会溢出
+                dp[i][1] = Math.max(i - 1 >= 0 ? dp[i - 1][1] : Integer.MIN_VALUE, (i - 1 >= 0 ? dp[i - 1][0] : 0) - prices[i] - fee);
+            }
+            return dp[n - 1][0];
+        }
+    }
 //leetcode submit region end(Prohibit modification and deletion)
 
 }
