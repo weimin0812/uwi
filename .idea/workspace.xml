@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b943ffc4-64d5-45d1-b0a2-ddfe91d4d056" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/BestTimeToBuyAndSellStockIi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/BestTimeToBuyAndSellStockIii.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/BestTimeToBuyAndSellStockIv.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/BestTimeToBuyAndSellStockWithTransactionFee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -303,7 +305,7 @@
       <workItem from="1580354126448" duration="20879000" />
       <workItem from="1580553210655" duration="18022000" />
       <workItem from="1580810395720" duration="18000" />
-      <workItem from="1580907415091" duration="6902000" />
+      <workItem from="1580907415091" duration="8380000" />
     </task>
     <servers />
   </component>
@@ -407,10 +409,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="308" y="201" key="IDE.errors.dialog/0.0.1440.900@0.0.1440.900" timestamp="1580441521647" />
-    <state x="130" y="91" width="1097" height="722" key="SettingsEditor" timestamp="1580810413083">
+    <state x="130" y="91" width="1097" height="722" key="SettingsEditor" timestamp="1580966182015">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="130" y="91" width="1097" height="722" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1580810413083" />
+    <state x="130" y="91" width="1097" height="722" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1580966182015" />
     <state x="450" y="200" width="543" height="524" key="StructurePopup" timestamp="1579749163752">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -526,92 +528,5 @@
     <SUITE FILE_PATH="coverage/uwi$PascalsTriangleIi.ic" NAME="PascalsTriangleIi Coverage Results" MODIFIED="1579057295246" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>leetcode.editor.en.*</FILTER>
     </SUITE>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>com.free.uwi</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.20083682" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Gradle: junit:junit:4.12</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>
