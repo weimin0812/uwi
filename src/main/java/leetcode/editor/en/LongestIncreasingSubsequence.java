@@ -22,6 +22,7 @@
 
 package leetcode.editor.en;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class LongestIncreasingSubsequence {
