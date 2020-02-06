@@ -33,16 +33,39 @@ package leetcode.editor.en;
 
 public class BestTimeToBuyAndSellStockIv {
 
- public static void main(String[] args) {
+    public static void main(String[] args) {
         Solution solution = new BestTimeToBuyAndSellStockIv().new Solution();
- }
-
-//leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
-    public int maxProfit(int k, int[] prices) {
-        
     }
-}
+
+    //leetcode submit region begin(Prohibit modification and deletion)
+    class Solution {
+        public int maxProfit(int k, int[] prices) {
+            if (prices == null || prices.length == 0 || k <= 0) {
+                return 0;
+            }
+            if (k > prices.length / 2) {
+                return maxProfit(prices);
+            }
+            int[][][] dp = new int[prices.length][k + 1][2];
+            for (int i = 0; i < dp.length; i++) {
+                for (int j = 1; j <= k; j++) {
+                    dp[i][j][0] = Math.max(i - 1 >= 0 ? dp[i - 1][j][0] : 0, (i - 1 >= 0 ? dp[i - 1][j][1] : Integer.MIN_VALUE) + prices[i]);
+                    dp[i][j][1] = Math.max(i - 1 >= 0 ? dp[i - 1][j][1] : Integer.MIN_VALUE, ((i - 1 >= 0 && j > 1) ? dp[i - 1][j - 1][0] : 0) - prices[i]);
+                }
+            }
+            return dp[dp.length - 1][k][0];
+        }
+
+        private int maxProfit(int[] prices) {
+            int n = prices.length;
+            int[][] dp = new int[n][2];
+            for (int i = 0; i < n; i++) {
+                dp[i][0] = Math.max(i - 1 >= 0 ? dp[i - 1][0] : 0, (i - 1 >= 0 ? dp[i - 1][1] : Integer.MIN_VALUE) + prices[i]);
+                dp[i][1] = Math.max(i - 1 >= 0 ? dp[i - 1][1] : Integer.MIN_VALUE, (i - 1 >= 0 ? dp[i - 1][0] : 0) - prices[i]);
+            }
+            return dp[n - 1][0];
+        }
+    }
 //leetcode submit region end(Prohibit modification and deletion)
 
 }
