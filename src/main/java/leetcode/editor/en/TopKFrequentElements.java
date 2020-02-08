@@ -26,6 +26,8 @@
 
 package leetcode.editor.en;
 
+import javafx.scene.layout.Priority;
+
 import java.util.*;
 
 public class TopKFrequentElements {
@@ -42,8 +44,8 @@ public class TopKFrequentElements {
                 map.put(num, map.getOrDefault(num, 0) + 1);
             }
             PriorityQueue<Integer> minHeap = new PriorityQueue<>(Comparator.comparing(map::get));
-            for (int num : map.keySet()) {
-                minHeap.offer(num);
+            for (Integer n : map.keySet()) {
+                minHeap.offer(n);
                 if (minHeap.size() > k) {
                     minHeap.poll();
                 }
