@@ -39,7 +39,7 @@ public class QueueReconstructionByHeight {
             Arrays.sort(people, (a, b) -> (a[0] == b[0] ? a[1] - b[1] : b[0] - a[0]));
             List<int[]> res = new ArrayList<>();
             for (int[] person : people) {
-                res.add(person[0], person);
+                res.add(person[1], person);
             }
             return res.toArray(new int[0][0]);
         }
