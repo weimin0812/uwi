@@ -22,18 +22,28 @@
 
 package leetcode.editor.en;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
+
 public class QueueReconstructionByHeight {
 
- public static void main(String[] args) {
+    public static void main(String[] args) {
         Solution solution = new QueueReconstructionByHeight().new Solution();
- }
-
-//leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
-    public int[][] reconstructQueue(int[][] people) {
-        
     }
-}
+
+    //leetcode submit region begin(Prohibit modification and deletion)
+    class Solution {
+        public int[][] reconstructQueue(int[][] people) {
+            Arrays.sort(people, (a, b) -> (a[0] == b[0] ? a[1] - b[1] : b[0] - a[0]));
+            List<int[]> res = new ArrayList<>();
+            for (int[] person : people) {
+                res.add(person[0], person);
+            }
+            return res.toArray(new int[0][0]);
+        }
+    }
 //leetcode submit region end(Prohibit modification and deletion)
 
 }
