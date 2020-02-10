@@ -18,18 +18,36 @@
 
 package leetcode.editor.en;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class FindAllNumbersDisappearedInAnArray {
 
- public static void main(String[] args) {
+    public static void main(String[] args) {
         Solution solution = new FindAllNumbersDisappearedInAnArray().new Solution();
- }
-
-//leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
-    public List<Integer> findDisappearedNumbers(int[] nums) {
-        
     }
-}
+
+    //leetcode submit region begin(Prohibit modification and deletion)
+    class Solution {
+        public List<Integer> findDisappearedNumbers(int[] nums) {
+            for (int i = 0; i < nums.length; i++) {
+                int index = nums[i];
+                if (index <= 0) {
+                    index += nums.length;
+                }
+                if (nums[index - 1] > 0) {
+                    nums[index - 1] = nums[index - 1] - nums.length;
+                }
+            }
+            List<Integer> ret = new ArrayList<>();
+            for (int i = 0; i < nums.length; i++) {
+                if (nums[i] > 0) {
+                    ret.add(i + 1);
+                }
+            }
+            return ret;
+        }
+    }
 //leetcode submit region end(Prohibit modification and deletion)
 
 }
