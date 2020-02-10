@@ -44,14 +44,14 @@ public class PalindromicSubstrings {
             if (s == null || s.length() == 0) {
                 return 0;
             }
-            int n = s.length();
-            boolean[][] dp = new boolean[n][n];
-            // dp[i][j] = s[i] == s[j] && dp[i+1][j-1]
+            boolean[][] dp = new boolean[s.length()][s.length()];
             int count = 0;
-            for (int d = 0; d < n; d++) {
-                for (int i = 0; i < n - d; i++) {
+            // todo 大意了吧 dp一定要注意扫表的顺序
+            // todo
+            for (int d = 0; d < s.length(); d++) {
+                for (int i = 0; i < s.length() - d; i++) {
                     int j = i + d;
-                    dp[i][j] = ((s.charAt(i) == s.charAt(j)) && (i + 1 > j - 1 || dp[i + 1][j - 1]));
+                    dp[i][j] = (s.charAt(i) == s.charAt(j)) && (i + 1 > j - 1 || dp[i + 1][j - 1]);
                     if (dp[i][j]) {
                         count++;
                     }

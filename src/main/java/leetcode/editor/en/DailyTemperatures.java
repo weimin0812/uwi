@@ -23,14 +23,14 @@ public class DailyTemperatures {
     class Solution {
         public int[] dailyTemperatures(int[] T) {
             if (T == null || T.length == 0) {
-                return null;
+                return T;
             }
             int[] ret = new int[T.length];
             Stack<Integer> stack = new Stack<>();
             for (int i = 0; i < T.length; i++) {
                 while (!stack.isEmpty() && T[i] > T[stack.peek()]) {
-                    int index = stack.pop();
-                    ret[index] = i - index;
+                    ret[stack.peek()] = i - stack.peek();
+                    stack.pop();
                 }
                 stack.push(i);
             }
