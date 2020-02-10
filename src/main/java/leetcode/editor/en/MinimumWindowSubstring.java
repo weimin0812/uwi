@@ -16,6 +16,9 @@
 // Related Topics Hash Table Two Pointers String Sliding Window
 package leetcode.editor.en;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class MinimumWindowSubstring {
 
     public static void main(String[] args) {
@@ -26,7 +29,39 @@ public class MinimumWindowSubstring {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public String minWindow(String s, String t) {
-            return null;
+            Map<Character, Integer> needs = new HashMap<>();
+            for (char c : t.toCharArray()) {
+                needs.put(c, needs.getOrDefault(c, 0) + 1);
+            }
+            Map<Character, Integer> windows = new HashMap<>();
+            int l = 0, r = 0, total = 0;
+            int start = 0, minLen = Integer.MAX_VALUE;
+            while (r < s.length()) {
+                char c = s.charAt(r);
+                if (needs.containsKey(c)) {
+                    windows.put(c, windows.getOrDefault(c, 0) + 1);
+                    if (windows.get(c) <= needs.get(c)) {
+                        total++;
+                    }
+                }
+
+                while (total == t.length()) {
+                    if (r - l + 1 < minLen) {
+                        start = l;
+                        minLen = r - l + 1;
+                    }
+                    char lc = s.charAt(l);
+                    if (needs.containsKey(lc)) {
+                        windows.put(lc, windows.get(lc) - 1);
+                        if (windows.get(lc) < needs.get(lc)) {
+                            total--;
+                        }
+                    }
+                    l++;
+                }
+                r++;
+            }
+            return minLen == Integer.MAX_VALUE ? "" : s.substring(start, start + minLen);
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
