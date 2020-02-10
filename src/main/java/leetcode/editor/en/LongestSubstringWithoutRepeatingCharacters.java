@@ -1,4 +1,5 @@
-//Given a string, find the length of the longest substring without repeating characters. 
+//Given a string, find the length of the longest substring without repeating cha
+//racters. 
 //
 // 
 // Example 1: 
@@ -25,14 +26,17 @@
 //Input: "pwwkew"
 //Output: 3
 //Explanation: The answer is "wke", with the length of 3. 
-//             Note that the answer must be a substring, "pwke" is a subsequence and not a substring.
+//             Note that the answer must be a substring, "pwke" is a subsequence
+// and not a substring.
 // 
 // 
 // 
 // 
 // Related Topics Hash Table Two Pointers String Sliding Window
+
 package leetcode.editor.en;
 
+hashMa
 import java.util.HashMap;
 import java.util.Map;
 
@@ -40,28 +44,23 @@ public class LongestSubstringWithoutRepeatingCharacters {
 
     public static void main(String[] args) {
         Solution solution = new LongestSubstringWithoutRepeatingCharacters().new Solution();
-        String s = "abcabcbb";
-        int i = solution.lengthOfLongestSubstring(s);
-        System.out.println(i);
     }
-
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int lengthOfLongestSubstring(String s) {
-            if (s == null || s.isEmpty()) {
-                return 0;
-            }
-            int index = -1;
-            int ret = 0;
-            Map<Character, Integer> map = new HashMap<>();
-            for (int i = 0; i < s.length(); i++) {
-                char c = s.charAt(i);
-                if (map.containsKey(c)) {
-                    index = Math.max(index, map.get(c));
+            Map<Character, Integer> windows = new HashMap<>();
+            int l = 0, r = 0, ret = 0;
+            while (r < s.length()) {
+                char c = s.charAt(r);
+                windows.put(c, windows.getOrDefault(c, 0) + 1);
+                while (windows.get(c) > 1) {
+                    char lc = s.charAt(l);
+                    windows.put(lc, windows.get(lc) - 1);
+                    l++;
                 }
-                map.put(c, i);
-                ret = Math.max(ret, i - index);
+                ret = Math.max(ret, r - l + 1);
+                r++;
             }
             return ret;
         }
