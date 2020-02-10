@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b943ffc4-64d5-45d1-b0a2-ddfe91d4d056" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/TargetSum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -304,7 +303,7 @@
       <workItem from="1580553210655" duration="18022000" />
       <workItem from="1580810395720" duration="18000" />
       <workItem from="1580907415091" duration="12007000" />
-      <workItem from="1581064020062" duration="24038000" />
+      <workItem from="1581064020062" duration="24911000" />
     </task>
     <servers />
   </component>
