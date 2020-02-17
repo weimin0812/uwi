@@ -1,4 +1,5 @@
-//Given an input string (s) and a pattern (p), implement regular expression matching with support for '.' and '*'. 
+//Given an input string (s) and a pattern (p), implement regular expression matc
+//hing with support for '.' and '*'. 
 //
 // 
 //'.' Matches any single character.
@@ -11,7 +12,8 @@
 //
 // 
 // s could be empty and contains only lowercase letters a-z. 
-// p could be empty and contains only lowercase letters a-z, and characters like . or *. 
+// p could be empty and contains only lowercase letters a-z, and characters like
+// . or *. 
 // 
 //
 // Example 1: 
@@ -31,7 +33,8 @@
 //s = "aa"
 //p = "a*"
 //Output: true
-//Explanation: '*' means zero or more of the preceding element, 'a'. Therefore, by repeating 'a' once, it becomes "aa".
+//Explanation: '*' means zero or more of the preceding element, 'a'. Therefore, 
+//by repeating 'a' once, it becomes "aa".
 // 
 //
 // Example 3: 
@@ -51,7 +54,8 @@
 //s = "aab"
 //p = "c*a*b"
 //Output: true
-//Explanation: c can be repeated 0 times, a can be repeated 1 time. Therefore, it matches "aab".
+//Explanation: c can be repeated 0 times, a can be repeated 1 time. Therefore, i
+//t matches "aab".
 // 
 //
 // Example 5: 
@@ -63,6 +67,7 @@
 //Output: false
 // 
 // Related Topics String Dynamic Programming Backtracking
+
 package leetcode.editor.en;
 
 public class RegularExpressionMatching {
@@ -70,20 +75,20 @@ public class RegularExpressionMatching {
     public static void main(String[] args) {
         Solution solution = new RegularExpressionMatching().new Solution();
     }
+
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public boolean isMatch(String s, String p) {
-            if (s == null || p == null) {
-                return false;
+            if (p == null || s == null) {
+                return p == s;
             }
             if (p.isEmpty()) {
                 return s.isEmpty();
             }
-            boolean firstMatch = !s.isEmpty() && (s.charAt(0) == p.charAt(0) || p.charAt(0) == '.');
-            if (p.length() > 1 && p.charAt(1) == '*') {
+            boolean firstMatch = !s.isEmpty() && (s.charAt(0) == p.charAt(0) || '.' == p.charAt(0));
+            if (p.length() >= 2 && p.charAt(1) == '*') {
                 if (firstMatch) {
-                    return isMatch(s, p.substring(2)) ||
-                            isMatch(s.substring(1), p);
+                    return isMatch(s, p.substring(2)) || isMatch(s.substring(1), p);
                 } else {
                     return isMatch(s, p.substring(2));
                 }
