@@ -1,4 +1,5 @@
-//Given a string s, find the longest palindromic substring in s. You may assume that the maximum length of s is 1000. 
+//Given a string s, find the longest palindromic substring in s. You may assume 
+//that the maximum length of s is 1000. 
 //
 // Example 1: 
 //
@@ -15,26 +16,28 @@
 //Output: "bb"
 // 
 // Related Topics String Dynamic Programming
+
 package leetcode.editor.en;
 
 public class LongestPalindromicSubstring {
 
     public static void main(String[] args) {
         Solution solution = new LongestPalindromicSubstring().new Solution();
-        String s = "";
-        System.out.println(solution.longestPalindrome(s));
     }
-
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public String longestPalindrome(String s) {
-            boolean[][] dp = new boolean[s.length()][s.length()];
-            int start = 0, end = -1;
-            for (int d = 0; d < s.length(); d++) {
-                for (int i = 0; i < s.length() - d; i++) {
-                    int j = i + d;
-                    dp[i][j] = (s.charAt(i) == s.charAt(j)) && (i + 1 > j - 1 || dp[i + 1][j - 1]);
+            if (s == null || s.length() == 0) {
+                return s;
+            }
+            int n = s.length();
+            int start = -1, end = -2;
+            boolean[][] dp = new boolean[n][n];
+            //dp[i][j] = s[i] == s[j] && dp[i+1][j-1]
+            for (int i = n - 1; i >= 0; i--) {
+                for (int j = i; j < n; j++) {
+                    dp[i][j] = s.charAt(i) == s.charAt(j) && (i + 1 > j - 1 || dp[i + 1][j - 1]);
                     if (dp[i][j]) {
                         if (j - i > end - start) {
                             start = i;
@@ -45,10 +48,7 @@ public class LongestPalindromicSubstring {
             }
             return s.substring(start, end + 1);
         }
-
     }
-
-
 //leetcode submit region end(Prohibit modification and deletion)
 
 }
