@@ -39,14 +39,13 @@ public class ThreeSum {
             }
             Arrays.sort(nums);
             for (int i = 0; i < nums.length; i++) {
-                if (i != 0 && nums[i] == nums[i - 1]) {
+                if (i != 0 && nums[i - 1] == nums[i]) {
                     continue;
                 }
                 int l = i + 1, h = nums.length - 1;
-                int target = -nums[i];
                 while (l < h) {
-                    int sum = nums[l] + nums[h];
-                    if (sum == target) {
+                    int sum = nums[i] + nums[l] + nums[h];
+                    if (sum == 0) {
                         ret.add(Arrays.asList(nums[i], nums[l], nums[h]));
                         l++;
                         h--;
@@ -56,7 +55,7 @@ public class ThreeSum {
                         while (l < h && nums[h] == nums[h + 1]) {
                             h--;
                         }
-                    } else if (sum < target) {
+                    } else if (sum < 0) {
                         l++;
                     } else {
                         h--;
