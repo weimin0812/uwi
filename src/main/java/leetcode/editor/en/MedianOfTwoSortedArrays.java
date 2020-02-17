@@ -1,6 +1,7 @@
 //There are two sorted arrays nums1 and nums2 of size m and n respectively. 
 //
-// Find the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)). 
+// Find the median of the two sorted arrays. The overall run time complexity sho
+//uld be O(log (m+n)). 
 //
 // You may assume nums1 and nums2 cannot be both empty. 
 //
@@ -22,6 +23,7 @@
 //The median is (2 + 3)/2 = 2.5
 // 
 // Related Topics Array Binary Search Divide and Conquer
+
 package leetcode.editor.en;
 
 public class MedianOfTwoSortedArrays {
@@ -29,7 +31,6 @@ public class MedianOfTwoSortedArrays {
     public static void main(String[] args) {
         Solution solution = new MedianOfTwoSortedArrays().new Solution();
     }
-
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
@@ -39,20 +40,22 @@ public class MedianOfTwoSortedArrays {
                 nums1 = nums2;
                 nums2 = t;
             }
-            int l = 0, h = nums1.length, half = (nums1.length + nums2.length + 1) / 2;
+            int l1 = nums1.length, l2 = nums2.length;
+            int l = 0, h = l1, half = (l1 + l2 + 1) / 2;
             while (l <= h) {
-                int i = l + (h - l) / 2, j = half - i;
-                if (i > 0 && nums1[i - 1] > nums2[j]) {
+                int i = l + (h - l) / 2;
+                int j = half - i;
+                if (i != 0 && nums1[i - 1] > nums2[j]) {
                     h = i - 1;
-                } else if (i < nums1.length && nums2[j - 1] > nums1[i]) {
+                } else if (i != l1 && nums2[j - 1] > nums1[i]) {
                     l = i + 1;
                 } else {
-                    double maxLeft = i == 0 ? nums2[j - 1] : j == 0 ? nums1[i - 1] : Math.max(nums1[i - 1], nums2[j - 1]);
-                    if ((nums1.length + nums2.length) % 2 == 1) {
+                    int maxLeft = i == 0 ? nums2[j - 1] : j == 0 ? nums1[i - 1] : Math.max(nums1[i - 1], nums2[j - 1]);
+                    if ((l1 + l2) % 2 == 1) {
                         return maxLeft;
                     }
-                    double minRight = i == nums1.length ? nums2[j] : j == nums2.length ? nums1[i] : Math.min(nums1[i], nums2[j]);
-                    return (maxLeft + minRight) / 2;
+                    int minRight = i == l1 ? nums2[j] : j == l2 ? nums1[i] : Math.min(nums1[i], nums2[j]);
+                    return (maxLeft + minRight) / 2.0;
                 }
             }
             return 0;
