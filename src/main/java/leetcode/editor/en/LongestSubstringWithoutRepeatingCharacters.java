@@ -48,18 +48,18 @@ public class LongestSubstringWithoutRepeatingCharacters {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int lengthOfLongestSubstring(String s) {
-            Map<Character, Integer> windows = new HashMap<>();
-            int l = 0, r = 0, ret = 0;
-            while (r < s.length()) {
-                char c = s.charAt(r);
-                windows.put(c, windows.getOrDefault(c, 0) + 1);
-                while (windows.get(c) > 1) {
-                    char lc = s.charAt(l);
-                    windows.put(lc, windows.get(lc) - 1);
-                    l++;
+            if (s == null || s.length() == 0) {
+                return 0;
+            }
+            int ret = 1;
+            int l = 0;
+            Map<Character, Integer> map = new HashMap<>();
+            for (int i = 0; i < s.length(); i++) {
+                if (map.containsKey(s.charAt(i))) {
+                    l = Math.max(l, map.get(s.charAt(i)) + 1);
                 }
-                ret = Math.max(ret, r - l + 1);
-                r++;
+                map.put(s.charAt(i), i);
+                ret = Math.max(ret, i - l + 1);
             }
             return ret;
         }
