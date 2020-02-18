@@ -1,6 +1,9 @@
-//Given a set of candidate numbers (candidates) (without duplicates) and a target number (target), find all unique combinations in candidates where the candidate numbers sums to target. 
+//Given a set of candidate numbers (candidates) (without duplicates) and a targe
+//t number (target), find all unique combinations in candidates where the candidat
+//e numbers sums to target. 
 //
-// The same repeated number may be chosen from candidates unlimited number of times. 
+// The same repeated number may be chosen from candidates unlimited number of ti
+//mes. 
 //
 // Note: 
 //
@@ -32,10 +35,10 @@
 //]
 // 
 // Related Topics Array Backtracking
+
 package leetcode.editor.en;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class CombinationSum {
@@ -44,16 +47,18 @@ public class CombinationSum {
         Solution solution = new CombinationSum().new Solution();
     }
 
-
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public List<List<Integer>> combinationSum(int[] candidates, int target) {
             List<List<Integer>> ret = new ArrayList<>();
-            dfs(candidates, target, ret, new ArrayList<Integer>(), 0, 0);
+            if (candidates == null || candidates.length < 1) {
+                return ret;
+            }
+            combinationSum(candidates, target, ret, new ArrayList<Integer>(), 0, 0);
             return ret;
         }
 
-        private void dfs(int[] candidates, int target, List<List<Integer>> ret, ArrayList<Integer> list, int start, int sum) {
+        private void combinationSum(int[] candidates, int target, List<List<Integer>> ret, ArrayList<Integer> list, int start, int sum) {
             if (sum > target) {
                 return;
             }
@@ -63,12 +68,10 @@ public class CombinationSum {
             }
             for (int i = start; i < candidates.length; i++) {
                 list.add(candidates[i]);
-                dfs(candidates, target, ret, list, i, sum + candidates[i]);
+                combinationSum(candidates, target, ret, list, i, sum + candidates[i]);
                 list.remove(list.size() - 1);
             }
         }
-
-
     }
 //leetcode submit region end(Prohibit modification and deletion)
 
