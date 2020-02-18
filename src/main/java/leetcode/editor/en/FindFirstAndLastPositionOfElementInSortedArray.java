@@ -1,4 +1,5 @@
-//Given an array of integers nums sorted in ascending order, find the starting and ending position of a given target value. 
+//Given an array of integers nums sorted in ascending order, find the starting a
+//nd ending position of a given target value. 
 //
 // Your algorithm's runtime complexity must be in the order of O(log n). 
 //
@@ -16,7 +17,10 @@
 //Input: nums = [5,7,7,8,8,10], target = 6
 //Output: [-1,-1] 
 // Related Topics Array Binary Search
+
 package leetcode.editor.en;
+
+import netscape.security.UserTarget;
 
 public class FindFirstAndLastPositionOfElementInSortedArray {
 
@@ -24,14 +28,13 @@ public class FindFirstAndLastPositionOfElementInSortedArray {
         Solution solution = new FindFirstAndLastPositionOfElementInSortedArray().new Solution();
     }
 
-
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int[] searchRange(int[] nums, int target) {
-            return new int[]{binarySearch(nums, target, true), binarySearch(nums, target, false)};
+            return new int[]{search(nums, target, true), search(nums, target, false)};
         }
 
-        private int binarySearch(int[] nums, int target, boolean first) {
+        private int search(int[] nums, int target, boolean first) {
             if (nums == null || nums.length == 0) {
                 return -1;
             }
@@ -40,16 +43,16 @@ public class FindFirstAndLastPositionOfElementInSortedArray {
                 int m = l + (h - l) / 2;
                 if (nums[m] == target) {
                     if (first) {
-                        if (m == 0 || nums[m - 1] != target) {
+                        if (m == 0 || nums[m] != nums[m - 1]) {
                             return m;
                         } else {
-                            h = m - 1;
+                            h--;
                         }
                     } else {
-                        if (m == nums.length - 1 || nums[m + 1] != target) {
+                        if (m == nums.length - 1 || nums[m] != nums[m + 1]) {
                             return m;
                         } else {
-                            l = m + 1;
+                            l++;
                         }
                     }
                 } else if (nums[m] < target) {
