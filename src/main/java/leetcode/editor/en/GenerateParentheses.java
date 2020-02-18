@@ -1,5 +1,6 @@
 //
-//Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
+//Given n pairs of parentheses, write a function to generate all combinations of
+// well-formed parentheses.
 // 
 //
 // 
@@ -14,38 +15,42 @@
 //  "()()()"
 //]
 // Related Topics String Backtracking
+
 package leetcode.editor.en;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class GenerateParentheses {
 
     public static void main(String[] args) {
         Solution solution = new GenerateParentheses().new Solution();
-        for (String s : solution.generateParenthesis(3)) {
-            System.out.println(s);
-        }
     }
+
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public List<String> generateParenthesis(int n) {
             List<String> ret = new ArrayList<>();
-            dfs(0, 0, n, new StringBuffer(), ret);
+            if (n <= 0) {
+                return ret;
+            }
+            generateParenthesis(n, 0, 0, new StringBuffer(), ret);
             return ret;
         }
 
-        private void dfs(int open, int close, int n, StringBuffer sb, List<String> ret) {
+        private void generateParenthesis(int n, int open, int close, StringBuffer sb, List<String> ret) {
             if (open == n && close == n) {
                 ret.add(sb.toString());
+                return;
             }
             if (open < n) {
                 sb.append('(');
-                dfs(open + 1, close, n, sb, ret);
+                generateParenthesis(n, open + 1, close, sb, ret);
                 sb.deleteCharAt(sb.length() - 1);
             }
             if (close < open) {
                 sb.append(')');
-                dfs(open, close + 1, n, sb, ret);
+                generateParenthesis(n, open, close + 1, sb, ret);
                 sb.deleteCharAt(sb.length() - 1);
             }
         }
