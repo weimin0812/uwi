@@ -1,4 +1,5 @@
-//Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid. 
+//Given a string containing just the characters '(', ')', '{', '}', '[' and ']',
+// determine if the input string is valid. 
 //
 // An input string is valid if: 
 //
@@ -44,6 +45,7 @@
 //Output: true
 // 
 // Related Topics String Stack
+
 package leetcode.editor.en;
 
 import java.util.HashMap;
@@ -56,15 +58,16 @@ public class ValidParentheses {
         Solution solution = new ValidParentheses().new Solution();
     }
 
-
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public boolean isValid(String s) {
-            Map<Character, Character> map = new HashMap<Character, Character>() {{
-                put('(', ')');
-                put('{', '}');
-                put('[', ']');
-            }};
+            if (s == null || s.isEmpty()) {
+                return true;
+            }
+            Map<Character, Character> map = new HashMap<>();
+            map.put('(', ')');
+            map.put('[', ']');
+            map.put('{', '}');
             Stack<Character> stack = new Stack<>();
             for (char c : s.toCharArray()) {
                 if (map.containsKey(c)) {
