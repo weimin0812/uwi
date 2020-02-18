@@ -1,4 +1,5 @@
-//Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity. 
+//Merge k sorted linked lists and return it as one sorted list. Analyze and desc
+//ribe its complexity. 
 //
 // Example: 
 //
@@ -12,25 +13,16 @@
 //Output: 1->1->2->3->4->4->5->6
 // 
 // Related Topics Linked List Divide and Conquer Heap
+
 package leetcode.editor.en;
 
 import leetcode.common.ListNode;
-import leetcode.common.ListNodeUtil;
-
-import java.util.Arrays;
 
 public class MergeKSortedLists {
 
     public static void main(String[] args) {
         Solution solution = new MergeKSortedLists().new Solution();
-        ListNode[] nodes = new ListNode[]{
-                ListNodeUtil.convertToListNode(new int[]{1, 4, 5}),
-                ListNodeUtil.convertToListNode(new int[]{1, 3, 4}),
-                ListNodeUtil.convertToListNode(new int[]{2, 6})
-        };
-        ListNodeUtil.printListNode(solution.mergeKLists(nodes));
     }
-
 
 //leetcode submit region begin(Prohibit modification and deletion)
 
@@ -49,23 +41,25 @@ public class MergeKSortedLists {
             }
             int d = 1;
             while (d < lists.length) {
-                for (int i = 0; i < lists.length - d; i += 2 * d) {
-                    lists[i] = mergeTwoList(lists[i], lists[i + d]);
+                for (int i = 0; i < lists.length - d; i = i + 2 * d) {
+                    lists[i] = mergeTwo(lists[i], lists[i + d]);
                 }
                 d = d * 2;
             }
             return lists[0];
         }
 
-        private ListNode mergeTwoList(ListNode l1, ListNode l2) {
-            if (l1 == null || l2 == null) {
-                return l1 == null ? l2 : l1;
+        private ListNode mergeTwo(ListNode l1, ListNode l2) {
+            if (l1 == null) {
+                return l2;
+            }
+            if (l2 == null) {
+                return l1;
             }
             ListNode ret = l1.val <= l2.val ? l1 : l2;
-            ret.next = mergeTwoList(l1.val <= l2.val ? l1.next : l1, l1.val <= l2.val ? l2 : l2.next);
+            ret.next = mergeTwo(l1.val <= l2.val ? l1.next : l1, l1.val <= l2.val ? l2 : l2.next);
             return ret;
         }
-
     }
 //leetcode submit region end(Prohibit modification and deletion)
 
