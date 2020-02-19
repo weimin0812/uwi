@@ -1,4 +1,5 @@
-//Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum. 
+//Given an integer array nums, find the contiguous subarray (containing at least
+// one number) which has the largest sum and return its sum. 
 //
 // Example: 
 //
@@ -10,8 +11,10 @@
 //
 // Follow up: 
 //
-// If you have figured out the O(n) solution, try coding another solution using the divide and conquer approach, which is more subtle. 
+// If you have figured out the O(n) solution, try coding another solution using 
+//the divide and conquer approach, which is more subtle. 
 // Related Topics Array Divide and Conquer Dynamic Programming
+
 package leetcode.editor.en;
 
 public class MaximumSubarray {
@@ -20,21 +23,19 @@ public class MaximumSubarray {
         Solution solution = new MaximumSubarray().new Solution();
     }
 
-
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int maxSubArray(int[] nums) {
             if (nums == null || nums.length == 0) {
                 return 0;
             }
-            int ret = nums[0];
-            int pre = 0;
-            for (int num : nums) {
-                if (pre < 0) {
-                    pre = 0;
+            int sum = nums[0], ret = nums[0];
+            for (int i = 1; i < nums.length; i++) {
+                if (sum < 0) {
+                    sum = 0;
                 }
-                pre += num;
-                ret = Math.max(ret, pre);
+                sum += nums[i];
+                ret = Math.max(ret, sum);
             }
             return ret;
         }
