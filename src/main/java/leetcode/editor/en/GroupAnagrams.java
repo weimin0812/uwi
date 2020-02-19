@@ -18,6 +18,7 @@
 // The order of your output does not matter. 
 // 
 // Related Topics Hash Table String
+
 package leetcode.editor.en;
 
 import java.util.*;
@@ -27,7 +28,6 @@ public class GroupAnagrams {
     public static void main(String[] args) {
         Solution solution = new GroupAnagrams().new Solution();
     }
-
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {

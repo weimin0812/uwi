@@ -1,0 +1,30 @@
+    class Solution {
+        public List<List<Integer>> permute(int[] nums) {
+            List<List<Integer>> ret = new ArrayList<>();
+            if (nums == null || nums.length == 0) {
+                return ret;
+            }
+            boolean[] visited = new boolean[nums.length];
+            permute(nums, 0, ret, new ArrayList<Integer>(), visited);
+            return ret;
+        }
+
+        private void permute(int[] nums, int index, List<List<Integer>> ret, ArrayList<Integer> list, boolean[] visited) {
+            if (index == nums.length) {
+                ret.add(new ArrayList<>(list));
+                return;
+            }
+            for (int i = 0; i < nums.length; i++) {
+                if (!visited[i]) {
+                    visited[i] = true;
+                    list.add(nums[i]);
+                    permute(nums, index + 1, ret, list, visited);
+                    visited[i] = false;
+                    ret.remove(ret.size() - 1);
+                }
+            }
+        }
+    }
+
+//runtime_error:Line 23: java.lang.IndexOutOfBoundsException: Index -1 out of bounds for length 0
+//last_testcase:[1,2,3]
