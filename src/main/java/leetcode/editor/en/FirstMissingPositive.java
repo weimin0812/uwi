@@ -25,48 +25,42 @@
 //
 // Your algorithm should run in O(n) time and uses constant extra space. 
 // Related Topics Array
-package leetcode.editor.en;
 
-import java.util.Arrays;
+package leetcode.editor.en;
 
 public class FirstMissingPositive {
 
     public static void main(String[] args) {
         Solution solution = new FirstMissingPositive().new Solution();
-        int[] nums = {3, 4, -1, 1};
-        int i = solution.firstMissingPositive(nums);
-        System.out.println(i);
     }
-
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int firstMissingPositive(int[] nums) {
-            int i = 0;
-            while (i < nums.length) {
-                int num = nums[i];
-                if (num <= 0 || num > nums.length) {
-                    i++;
-                } else if (nums[num - 1] != num) {
-                    swap(nums, i, num - 1);
+            if (nums == null || nums.length == 0) {
+                return 1;
+            }
+            for (int i = 0; i < nums.length; ) {
+                int n = nums[i];
+                if (n >= 1 && n <= nums.length) {
+                    if (nums[n - 1] == n) {
+                        i++;
+                    } else {
+                        int t = nums[n - 1];
+                        nums[n - 1] = n;
+                        nums[i] = t;
+                    }
                 } else {
                     i++;
                 }
             }
-            i = 0;
-            while (i < nums.length && nums[i] == i + 1) {
-                i++;
+            for (int i = 0; i < nums.length; i++) {
+                if (nums[i] != i + 1) {
+                    return i + 1;
+                }
             }
-            return i + 1;
+            return nums.length + 1;
         }
-
-        private void swap(int[] nums, int i, int j) {
-            int t = nums[i];
-            nums[i] = nums[j];
-            nums[j] = t;
-        }
-
-
     }
 //leetcode submit region end(Prohibit modification and deletion)
 
