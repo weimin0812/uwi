@@ -36,16 +36,30 @@ package leetcode.editor.en;
 
 public class UniquePaths {
 
- public static void main(String[] args) {
+    public static void main(String[] args) {
         Solution solution = new UniquePaths().new Solution();
- }
-
-//leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
-    public int uniquePaths(int m, int n) {
-        
     }
-}
+
+    //leetcode submit region begin(Prohibit modification and deletion)
+    class Solution {
+        public int uniquePaths(int m, int n) {
+            // dp[i][j] = dp[i][j-1] + dp[i-1][j]
+            if (m <= 0 || n <= 0) {
+                return 0;
+            }
+            int[][] dp = new int[m][n];
+            for (int i = 0; i < m; i++) {
+                for (int j = 0; j < n; j++) {
+                    if (i == 0 && j == 0) {
+                        dp[i][j] = 1;
+                    } else {
+                        dp[i][j] = (j >= 1 ? dp[i][j - 1] : 0) + (i >= 1 ? dp[i - 1][j] : 0);
+                    }
+                }
+            }
+            return dp[m - 1][n - 1];
+        }
+    }
 //leetcode submit region end(Prohibit modification and deletion)
 
 }
