@@ -1,6 +1,7 @@
 //You are climbing a stair case. It takes n steps to reach to the top. 
 //
-// Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top? 
+// Each time you can either climb 1 or 2 steps. In how many distinct ways can yo
+//u climb to the top? 
 //
 // Note: Given n will be a positive integer. 
 //
@@ -25,30 +26,30 @@
 //3. 2 steps + 1 step
 // 
 // Related Topics Dynamic Programming
+
 package leetcode.editor.en;
 
 public class ClimbingStairs {
 
-    public static void main(String[] args) {
+ public static void main(String[] args) {
         Solution solution = new ClimbingStairs().new Solution();
-    }
+ }
 
-
-    //leetcode submit region begin(Prohibit modification and deletion)
-    class Solution {
-        public int climbStairs(int n) {
-            if (n <= 2) {
-                return n;
-            }
-            int f = 1, g = 2;
-            for (int i = 2; i < n; i++) {
-                int t = g;
-                g = f + g;
-                f = t;
-            }
-            return g;
+//leetcode submit region begin(Prohibit modification and deletion)
+class Solution {
+    public int climbStairs(int n) {
+        if (n <= 2) {
+            return n;
         }
+        int f1 = 1, f2 = 2;
+        for (int i = 2; i < n; i++) {
+            int t = f2;
+            f2 = f2 + f1;
+            f1 = t;
+        }
+        return f2;
     }
+}
 //leetcode submit region end(Prohibit modification and deletion)
 
 }
