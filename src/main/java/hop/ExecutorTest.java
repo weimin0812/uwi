@@ -27,7 +27,7 @@ public class ExecutorTest {
         });
         thread.join();
 
-        BlockingQueue<Integer> blockingQueue = new LinkedBlockingQueue<>();
+        BlockingQueue<Integer> blockingQueue = new LinkedBlockingQueue<>(10);
         ArrayBlockingQueue<Integer> integers = new ArrayBlockingQueue<>(10);
         blockingQueue.offer(1);
         blockingQueue.offer(1, 10, TimeUnit.MILLISECONDS);
@@ -36,6 +36,7 @@ public class ExecutorTest {
 
         BlockingQueue<Integer> arrayBlocking = new ArrayBlockingQueue<>(10);
         arrayBlocking.take();
+        arrayBlocking.offer(1);
         arrayBlocking.put(1);
         SynchronousQueue<Integer> syn = new SynchronousQueue<>();
         syn.take();
@@ -59,6 +60,4 @@ public class ExecutorTest {
     //  wait notify notifyall
     //  Thread.join
     //  Thread.yield();
-
-
 }

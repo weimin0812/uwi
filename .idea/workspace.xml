@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b943ffc4-64d5-45d1-b0a2-ddfe91d4d056" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/JumpGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/JumpGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hop/ExecutorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hop/ExecutorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/MergeIntervals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/MergeIntervals.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -314,7 +316,8 @@
       <workItem from="1581943567915" duration="4430000" />
       <workItem from="1582025158290" duration="6485000" />
       <workItem from="1582033191952" duration="1250000" />
-      <workItem from="1582101318062" duration="3350000" />
+      <workItem from="1582101318062" duration="3837000" />
+      <workItem from="1582114386426" duration="7800000" />
     </task>
     <servers />
   </component>
@@ -422,10 +425,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="130" y="91" width="1097" height="722" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1580966182015" />
-    <state x="450" y="200" width="543" height="524" key="StructurePopup" timestamp="1579749163752">
+    <state x="450" y="200" width="543" height="524" key="StructurePopup" timestamp="1582118796536">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="450" y="200" width="543" height="524" key="StructurePopup/0.0.1440.900@0.0.1440.900" timestamp="1579749163752" />
+    <state x="450" y="200" width="543" height="524" key="StructurePopup/0.0.1440.900@0.0.1440.900" timestamp="1582118796536" />
     <state width="600" height="335" key="javadoc.popup" timestamp="1579074861322">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -438,10 +441,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="427" y="76" key="refactoring.ChangeSignatureDialog/0.0.1440.900@0.0.1440.900" timestamp="1579513822881" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1582028266684">
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1582122688558">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1582028266684" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1582122688558" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -501,6 +504,11 @@
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/leetcode/editor/en/PalindromicSubstrings.java</url>
           <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/leetcode/editor/en/MergeIntervals.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="58" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

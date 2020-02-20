@@ -15,8 +15,10 @@
 //Output: [[1,5]]
 //Explanation: Intervals [1,4] and [4,5] are considered overlapping. 
 //
-// NOTE: input types have been changed on April 15, 2019. Please reset to default code definition to get new method signature. 
+// NOTE: input types have been changed on April 15, 2019. Please reset to defaul
+//t code definition to get new method signature. 
 // Related Topics Array Sort
+
 package leetcode.editor.en;
 
 import java.util.ArrayList;
@@ -30,7 +32,6 @@ public class MergeIntervals {
         Solution solution = new MergeIntervals().new Solution();
     }
 
-
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int[][] merge(int[][] intervals) {
@@ -43,8 +44,8 @@ public class MergeIntervals {
             ret.add(pre);
             for (int i = 1; i < intervals.length; i++) {
                 int[] current = intervals[i];
-                if (current[0] <= pre[1]) {
-                    pre[1] = Math.max(current[1], pre[1]);
+                if (pre[1] >= current[0]) {
+                    pre[1] = Math.max(pre[1], current[1]);
                 } else {
                     ret.add(current);
                     pre = current;
