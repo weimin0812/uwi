@@ -1,6 +1,7 @@
 package hop;
 
 import java.util.concurrent.*;
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -51,6 +52,9 @@ public class ExecutorTest {
         submit.get();
         new Thread(() -> {
         }).join();
+        AtomicInteger atomicInteger = new AtomicInteger();
+        atomicInteger.getAndAdd(1);
+        atomicInteger.incrementAndGet();
     }
 
     //  ReentrantLock
