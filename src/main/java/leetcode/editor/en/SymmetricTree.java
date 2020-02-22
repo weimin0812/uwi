@@ -55,28 +55,37 @@ public class SymmetricTree {
      */
     class Solution {
         public boolean isSymmetric(TreeNode root) {
-            Queue<TreeNode> queue = new LinkedList<>();
-            queue.offer(root);
-            queue.offer(root);
-            while (!queue.isEmpty()) {
-                TreeNode t1 = queue.poll();
-                TreeNode t2 = queue.poll();
-                if (t1 == null || t2 == null) {
-                    if (t1 == t2) {
+            Queue<TreeNode> q = new LinkedList<>();
+            q.offer(root);
+            q.offer(root);
+            while (!q.isEmpty()) {
+                TreeNode n1 = q.poll();
+                TreeNode n2 = q.poll();
+                if (n1 == null || n2 == null) {
+                    if (n1 == n2) {
                         continue;
                     } else {
                         return false;
                     }
                 }
-                if (t1.val != t2.val) {
+                if (n1.val != n2.val) {
                     return false;
                 }
-                queue.offer(t1.left);
-                queue.offer(t2.right);
-                queue.offer(t1.right);
-                queue.offer(t2.left);
+                q.offer(n1.left);
+                q.offer(n2.right);
+                q.offer(n1.right);
+                q.offer(n2.left);
             }
             return true;
+        }
+
+        private boolean isSymmetric(TreeNode l, TreeNode r) {
+            if (l == null || r == null) {
+                return l == r;
+            }
+            return l.val == r.val &&
+                    isSymmetric(l.left, r.right) &&
+                    isSymmetric(l.right, r.left);
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)

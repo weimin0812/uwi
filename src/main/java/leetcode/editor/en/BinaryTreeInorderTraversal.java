@@ -43,21 +43,18 @@ public class BinaryTreeInorderTraversal {
     class Solution {
         public List<Integer> inorderTraversal(TreeNode root) {
             List<Integer> ret = new ArrayList<>();
-            inorder(root, ret);
+            TreeNode current = root;
+            Stack<TreeNode> stack = new Stack<>();
+            while (current != null || !stack.isEmpty()) {
+                while (current != null) {
+                    stack.push(current);
+                    current = current.left;
+                }
+                current = stack.pop();
+                ret.add(current.val);
+                current = current.right;
+            }
             return ret;
-//            TreeNode current = root;
-//            Stack<TreeNode> stack = new Stack<>();
-//            List<Integer> list = new ArrayList<>();
-//            while (current != null || !stack.isEmpty()) {
-//                while (current != null) {
-//                    stack.push(current);
-//                    current = current.left;
-//                }
-//                current = stack.pop();
-//                list.add(current.val);
-//                current = current.right;
-//            }
-//            return list;
         }
 
         private void inorder(TreeNode root, List<Integer> ret) {

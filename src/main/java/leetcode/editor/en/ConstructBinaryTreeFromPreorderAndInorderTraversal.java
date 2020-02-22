@@ -45,23 +45,22 @@ public class ConstructBinaryTreeFromPreorderAndInorderTraversal {
             return buildTree(preorder, 0, preorder.length - 1, inorder, 0, inorder.length - 1);
         }
 
-        private TreeNode buildTree(int[] preorder, int preStart, int preEnd, int[] inorder, int inStart, int inEnd) {
-            if (preStart > preEnd || inStart > inEnd) {
+        private TreeNode buildTree(int[] pre, int preStart, int preEnd, int[] in, int inStart, int inEnd) {
+            if (pre == null || preStart > preEnd || in == null || inStart > inEnd) {
                 return null;
             }
-            TreeNode root = new TreeNode(preorder[preStart]);
+            TreeNode node = new TreeNode(pre[preStart]);
             int i = inStart;
             for (; i <= inEnd; i++) {
-                if (inorder[i] == preorder[preStart]) {
+                if (in[i] == pre[preStart]) {
                     break;
                 }
             }
-            int leftLength = i - inStart;
-            root.left = buildTree(preorder, preStart + 1, preStart + leftLength, inorder, inStart, i - 1);
-            root.right = buildTree(preorder, preStart + leftLength + 1, preEnd, inorder, i + 1, inEnd);
-            return root;
+            int leftLen = i - inStart;
+            node.left = buildTree(pre, preStart + 1, preStart + leftLen, in, inStart, i - 1);
+            node.right = buildTree(pre, preStart + leftLen + 1, preEnd, in, i + 1, inEnd);
+            return node;
         }
-
     }
 //leetcode submit region end(Prohibit modification and deletion)
 

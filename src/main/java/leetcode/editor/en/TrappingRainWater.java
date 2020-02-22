@@ -24,21 +24,21 @@ public class TrappingRainWater {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int trap(int[] height) {
-            if (height == null || height.length <= 1) {
+            if (height == null || height.length < 2) {
                 return 0;
             }
-            int l = 0, h = height.length - 1;
-            int lMax = height[l], rMax = height[h];
+            int l = 0, r = height.length - 1;
+            int lMax = height[0], rMax = height[r];
             int ret = 0;
-            while (l <= h) {
+            while (l <= r) {
                 lMax = Math.max(lMax, height[l]);
-                rMax = Math.max(rMax, height[h]);
+                rMax = Math.max(rMax, height[r]);
                 if (lMax < rMax) {
                     ret += (lMax - height[l]);
                     l++;
                 } else {
-                    ret += (rMax - height[h]);
-                    h--;
+                    ret += (rMax - height[r]);
+                    r--;
                 }
             }
             return ret;
