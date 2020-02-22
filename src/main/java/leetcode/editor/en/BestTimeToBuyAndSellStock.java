@@ -33,16 +33,20 @@ public class BestTimeToBuyAndSellStock {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int maxProfit(int[] prices) {
+            //dp[i][k][0] = dp[i-1][k][0], dp[i-1][k][1]+prices[i]
+            //dp[i][k][1] = dp[i-1][k][1], dp[i-1][k-1][0]-prices[i]
+            //k = 1
+            // dp[i][0] = Math.max(dp[i-1][0], dp[i-1][1] + prices[i])
+            // dp[i][1] = Math.max(dp[i-1][1], dp[i-1][0] - prices[i])
             if (prices == null || prices.length == 0) {
                 return 0;
             }
-            int n = prices.length;
-            int[][] dp = new int[n][2];
-            for (int i = 0; i < n; i++) {
-                dp[i][0] = Math.max(i - 1 >= 0 ? dp[i - 1][0] : 0, (i - 1 >= 0 ? dp[i - 1][1] : Integer.MIN_VALUE) + prices[i]);
-                dp[i][1] = Math.max(i - 1 >= 0 ? dp[i - 1][1] : Integer.MIN_VALUE, -prices[i]);
+            int[][] dp = new int[prices.length][2];
+            for (int i = 0; i < dp.length; i++) {
+                dp[i][0] = Math.max(i >= 1 ? dp[i - 1][0] : 0, (i >= 1 ? dp[i - 1][1] : Integer.MIN_VALUE) + prices[i]);
+                dp[i][1] = Math.max(i >= 1 ? dp[i - 1][1] : Integer.MIN_VALUE, -prices[i]);
             }
-            return dp[n - 1][0];
+            return dp[dp.length - 1][0];
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)

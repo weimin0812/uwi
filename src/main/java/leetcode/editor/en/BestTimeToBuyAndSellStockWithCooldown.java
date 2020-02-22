@@ -42,6 +42,7 @@ public class BestTimeToBuyAndSellStockWithCooldown {
             }
             return dp[n - 1][0];
         }
+
     }
 //leetcode submit region end(Prohibit modification and deletion)
 

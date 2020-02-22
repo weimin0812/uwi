@@ -50,7 +50,7 @@ public class BestTimeToBuyAndSellStockIv {
             for (int i = 0; i < dp.length; i++) {
                 for (int j = 1; j <= k; j++) {
                     dp[i][j][0] = Math.max(i - 1 >= 0 ? dp[i - 1][j][0] : 0, (i - 1 >= 0 ? dp[i - 1][j][1] : Integer.MIN_VALUE) + prices[i]);
-                    dp[i][j][1] = Math.max(i - 1 >= 0 ? dp[i - 1][j][1] : Integer.MIN_VALUE, ((i - 1 >= 0 && j > 1) ? dp[i - 1][j - 1][0] : 0) - prices[i]);
+                    dp[i][j][1] = Math.max(i - 1 >= 0 ? dp[i - 1][j][1] : Integer.MIN_VALUE, (i - 1 >= 0 ? dp[i - 1][j - 1][0] : 0) - prices[i]);
                 }
             }
             return dp[dp.length - 1][k][0];

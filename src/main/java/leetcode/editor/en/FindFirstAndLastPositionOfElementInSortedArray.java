@@ -20,8 +20,6 @@
 
 package leetcode.editor.en;
 
-import netscape.security.UserTarget;
-
 public class FindFirstAndLastPositionOfElementInSortedArray {
 
     public static void main(String[] args) {

@@ -55,9 +55,9 @@ public class BestTimeToBuyAndSellStockIii {
             int n = prices.length;
             int[][][] dp = new int[n][3][2];
             for (int i = 0; i < n; i++) {
-                for (int k = 1; k <= 2; k++) {
+                for (int k = 1; k < 3; k++) {
                     dp[i][k][0] = Math.max(i - 1 >= 0 ? dp[i - 1][k][0] : 0, (i - 1 >= 0 ? dp[i - 1][k][1] : Integer.MIN_VALUE) + prices[i]);
-                    dp[i][k][1] = Math.max(i - 1 >= 0 ? dp[i - 1][k][1] : Integer.MIN_VALUE, ((i - 1 >= 0 && k - 1 > 0) ? dp[i - 1][k - 1][0] : 0) - prices[i]);
+                    dp[i][k][1] = Math.max(i - 1 >= 0 ? dp[i - 1][k][1] : Integer.MIN_VALUE, (i - 1 >= 0 ? dp[i - 1][k - 1][0] : 0) - prices[i]);
                 }
             }
             return dp[n - 1][2][0];
