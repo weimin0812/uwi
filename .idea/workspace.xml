@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b943ffc4-64d5-45d1-b0a2-ddfe91d4d056" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/ValidateBinarySearchTree298613121.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/BinaryTreeInorderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/BinaryTreeInorderTraversal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/ConstructBinaryTreeFromPreorderAndInorderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/ConstructBinaryTreeFromPreorderAndInorderTraversal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/LargestRectangleInHistogram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/LargestRectangleInHistogram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/Subsets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/Subsets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/SymmetricTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/SymmetricTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/TrappingRainWater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/TrappingRainWater.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/UniqueBinarySearchTrees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/UniqueBinarySearchTrees.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/ValidateBinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/ValidateBinarySearchTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/WordSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/WordSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/FlattenBinaryTreeToLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/FlattenBinaryTreeToLinkedList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -326,7 +316,7 @@
       <workItem from="1582033191952" duration="1250000" />
       <workItem from="1582101318062" duration="3837000" />
       <workItem from="1582114386426" duration="12210000" />
-      <workItem from="1582187253701" duration="9422000" />
+      <workItem from="1582187253701" duration="10127000" />
     </task>
     <servers />
   </component>

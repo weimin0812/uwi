@@ -52,23 +52,28 @@ public class FlattenBinaryTreeToLinkedList {
      */
     class Solution {
         public void flatten(TreeNode root) {
+            // 先序遍历根左右的迭代实现，注意入栈的顺序
             if (root == null) {
                 return;
             }
+            TreeNode current = root, pre = null;
             Stack<TreeNode> stack = new Stack<>();
-            stack.push(root);
+            stack.push(current);
             while (!stack.isEmpty()) {
-                TreeNode current = stack.pop();
+                current = stack.pop();
+                if (pre == null) {
+                    pre = current;
+                } else {
+                    pre.right = current;
+                    pre.left = null;
+                    pre = current;
+                }
                 if (current.right != null) {
                     stack.push(current.right);
                 }
                 if (current.left != null) {
                     stack.push(current.left);
                 }
-                if (!stack.isEmpty()) {
-                    current.right = stack.peek();
-                }
-                current.left = null;
             }
         }
 
