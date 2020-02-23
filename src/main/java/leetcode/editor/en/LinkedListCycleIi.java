@@ -76,7 +76,7 @@ public class LinkedListCycleIi {
             while (fast != null && fast.next != null) {
                 fast = fast.next.next;
                 slow = slow.next;
-                if (slow == fast) {
+                if (fast == slow) {
                     break;
                 }
             }
@@ -88,7 +88,7 @@ public class LinkedListCycleIi {
                 fast = fast.next;
                 slow = slow.next;
             }
-            return fast;
+            return slow;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)

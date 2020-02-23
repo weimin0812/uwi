@@ -44,40 +44,52 @@ public class LruCache {
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class LRUCache {
-        Map<Integer, Node> map = new HashMap<>();
-        int capacity;
-        Node head = new Node(0, 0);
-        Node tail = new Node(0, 0);
+        class Node {
+            private int k;
+            private int v;
+            private Node p;
+            private Node n;
+
+            public Node(int k, int v) {
+                this.k = k;
+                this.v = v;
+            }
+        }
+
+        private Map<Integer, Node> map = new HashMap<>();
+        private int capacity;
+        private Node h = new Node(0, 0);
+        private Node t = new Node(0, 0);
 
         public LRUCache(int capacity) {
             this.capacity = capacity;
-            head.next = tail;
-            tail.prev = head;
+            h.n = t;
+            t.p = h;
         }
 
         public int get(int key) {
-            if (map.containsKey(key)) {
-                Node node = map.get(key);
-                remove(node);
-                insert(node);
-                return node.value;
+            if (!map.containsKey(key)) {
+                return -1;
             }
-            return -1;
+            Node node = map.get(key);
+            remove(node);
+            insert(node);
+            return node.v;
         }
 
         private void insert(Node node) {
-            map.put(node.key, node);
-            Node next = head.next;
-            head.next = node;
-            node.prev = head;
-            node.next = next;
-            next.prev = node;
+            map.put(node.k, node);
+            Node next = h.n;
+            h.n = node;
+            node.p = h;
+            node.n = next;
+            next.p = node;
         }
 
         private void remove(Node node) {
-            map.remove(node.key);
-            node.prev.next = node.next;
-            node.next.prev = node.prev;
+            map.remove(node.k);
+            node.p.n = node.n;
+            node.n.p = node.p;
         }
 
         public void put(int key, int value) {
@@ -85,21 +97,10 @@ public class LruCache {
                 remove(map.get(key));
             }
             if (map.size() == capacity) {
-                remove(tail.prev);
+                remove(t.p);
             }
             insert(new Node(key, value));
         }
-
-        class Node {
-            int key, value;
-            Node prev, next;
-
-            public Node(int k, int v) {
-                this.key = k;
-                this.value = v;
-            }
-        }
-
     }
 
 /**
