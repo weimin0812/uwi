@@ -15,7 +15,6 @@
 
 package leetcode.editor.en;
 
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -28,26 +27,26 @@ public class LongestConsecutiveSequence {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int longestConsecutive(int[] nums) {
-            if (nums == null || nums.length < 1) {
+            if (nums == null || nums.length == 0) {
                 return 0;
             }
             Set<Integer> set = new HashSet<>();
             for (int num : nums) {
                 set.add(num);
             }
-            int max = 0;
-            for (Integer n : set) {
-                if (!set.contains(n - 1)) {
-                    int currentNum = n;
-                    int currentCount = 1;
-                    while (set.contains(currentNum + 1)) {
-                        currentCount++;
-                        currentNum++;
-                    }
-                    max = Math.max(max, currentCount);
+            int ret = 0;
+            for (int num : nums) {
+                if (set.contains(num - 1)) {
+                    continue;
                 }
+                int count = 0;
+                while (set.contains(num)) {
+                    count++;
+                    num++;
+                }
+                ret = Math.max(ret, count);
             }
-            return max;
+            return ret;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
