@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b943ffc4-64d5-45d1-b0a2-ddfe91d4d056" name="Default Changelist" comment="" />
+    <list default="true" id="b943ffc4-64d5-45d1-b0a2-ddfe91d4d056" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/CopyListWithRandomPointer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/CopyListWithRandomPointer.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -315,7 +317,7 @@
       <workItem from="1582114386426" duration="12210000" />
       <workItem from="1582187253701" duration="16314000" />
       <workItem from="1582368089284" duration="1199000" />
-      <workItem from="1582424409552" duration="1565000" />
+      <workItem from="1582424409552" duration="2006000" />
     </task>
     <servers />
   </component>

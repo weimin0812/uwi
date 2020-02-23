@@ -86,9 +86,6 @@ class Node {
     class Solution {
         public Node copyRandomList(Node head) {
             Node current = head;
-            if (current == null) {
-                return null;
-            }
             Map<Node, Node> map = new HashMap<>();
             while (current != null) {
                 map.put(current, new Node(current.val));
