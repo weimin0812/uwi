@@ -40,13 +40,14 @@ public class SortList {
             if (head == null || head.next == null) {
                 return head;
             }
-            ListNode fast = head, slow = head, prev = null;
+            ListNode fast = head, slow = head, pre = null;
             while (fast != null && fast.next != null) {
-                prev = slow;
+                pre = slow;
                 fast = fast.next.next;
                 slow = slow.next;
             }
-            prev.next = null;
+            pre.next = null;
+            // merge sort 先sort后merge
             ListNode l1 = sortList(head);
             ListNode l2 = sortList(slow);
             return merge(l1, l2);
@@ -58,12 +59,12 @@ public class SortList {
             while (l1 != null && l2 != null) {
                 if (l1.val <= l2.val) {
                     current.next = l1;
-                    current = current.next;
                     l1 = l1.next;
+                    current = current.next;
                 } else {
                     current.next = l2;
-                    current = current.next;
                     l2 = l2.next;
+                    current = current.next;
                 }
             }
             if (l1 != null) {
