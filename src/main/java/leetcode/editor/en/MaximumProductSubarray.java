@@ -29,15 +29,21 @@ public class MaximumProductSubarray {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int maxProduct(int[] nums) {
+            // todo use your fucking brain
+            // 需要记录两个值，一个最大值，一个最小值，当nums[i] < 0时候最大最小值互换
+            // max product
+            if (nums == null || nums.length == 0) {
+                return 0;
+            }
             int preMax = 1, preMin = 1, ret = nums[0];
-            for (int i = 0; i < nums.length; i++) {
-                if (nums[i] < 0) {
+            for (int num : nums) {
+                if (num < 0) {
                     int t = preMax;
                     preMax = preMin;
                     preMin = t;
                 }
-                preMax = Math.max(preMax * nums[i], nums[i]);
-                preMin = Math.min(preMin * nums[i], nums[i]);
+                preMax = Math.max(num, num * preMax);
+                preMin = Math.min(num, num * preMin);
                 ret = Math.max(ret, preMax);
             }
             return ret;
