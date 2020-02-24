@@ -87,12 +87,12 @@ public class IntersectionOfTwoLinkedLists {
      */
     public class Solution {
         public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
-            ListNode currentA = headA, currentB = headB;
-            while (currentA != currentB) {
-                currentA = currentA == null ? headB : currentA.next;
-                currentB = currentB == null ? headA : currentB.next;
+            ListNode a = headA, b = headB;
+            while (a != b) {
+                a = a == null ? headB : a.next;
+                b = b == null ? headA : b.next;
             }
-            return currentA;
+            return a;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
