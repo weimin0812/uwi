@@ -16,6 +16,7 @@ public class WaitAndNotify {
                 System.out.println("A wait");
                 try {
                     lock.wait(1);
+                    lock.wait();
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -29,6 +30,7 @@ public class WaitAndNotify {
                 System.out.println("B got the lock");
                 System.out.println("B notify");
                 boolean flag = true;
+                lock.notify();
                 while (flag) {
 
                 }

@@ -42,6 +42,7 @@ public class ExecutorTest {
         SynchronousQueue<Integer> syn = new SynchronousQueue<>();
         syn.take();
         syn.put(1);
+        syn.offer(1);
         PriorityBlockingQueue<Integer> priorityBlockingQueue = new PriorityBlockingQueue<>();
         priorityBlockingQueue.take();
         priorityBlockingQueue.put(1);
@@ -55,6 +56,7 @@ public class ExecutorTest {
         AtomicInteger atomicInteger = new AtomicInteger();
         atomicInteger.getAndAdd(1);
         atomicInteger.incrementAndGet();
+        Thread.yield();
     }
 
     //  ReentrantLock
