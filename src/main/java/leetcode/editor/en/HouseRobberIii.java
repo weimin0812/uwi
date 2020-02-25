@@ -62,8 +62,18 @@ public class HouseRobberIii {
      */
     class Solution {
         public int rob(TreeNode root) {
-            int[] res = robSub(root);
-            return Math.max(res[0], res[1]);
+            if (root == null) {
+                return 0;
+            }
+            int money = root.val;
+            if (root.left != null) {
+                money += rob(root.left.left) + rob(root.left.right);
+            }
+            if (root.right != null) {
+                money += rob(root.right.right) + rob(root.right.left);
+            }
+            int ret = Math.max(money, rob(root.left) + rob(root.right));
+            return ret;
         }
 
         private int[] robSub(TreeNode root) {

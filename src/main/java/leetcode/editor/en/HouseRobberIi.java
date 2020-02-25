@@ -39,19 +39,21 @@ public class HouseRobberIi {
             if (nums.length == 1) {
                 return nums[0];
             }
-            return Math.max(notLoop(Arrays.copyOfRange(nums, 0, nums.length - 1)),
-                    notLoop(Arrays.copyOfRange(nums, 1, nums.length))
-            );
-
+            return Math.max(notLoop(Arrays.copyOfRange(nums, 0, nums.length - 1)), notLoop(Arrays.copyOfRange(nums, 1, nums.length)));
         }
 
-        private int notLoop(int[] nums) {
-            int[] dp = new int[nums.length + 2];
+        private int notLoop(int[] a) {
+            if (a == null || a.length == 0) {
+                return 0;
+            }
+            int[] dp = new int[a.length + 2];
             for (int i = 2; i < dp.length; i++) {
-                dp[i] = Math.max(nums[i - 2] + dp[i - 2], dp[i - 1]);
+                dp[i] = Math.max(dp[i - 1], dp[i - 2] + a[i - 2]);
             }
             return dp[dp.length - 1];
         }
+
+
     }
 //leetcode submit region end(Prohibit modification and deletion)
 
