@@ -55,24 +55,24 @@ public class CourseSchedule {
                 return false;
             }
             int[] inDegree = new int[numCourses];
-            for (int i = 0; i < prerequisites.length; i++) {
-                inDegree[prerequisites[i][0]]++;
+            for (int[] pre : prerequisites) {
+                inDegree[pre[0]]++;
             }
-            Queue<Integer> queue = new LinkedList<>();
+            Queue<Integer> q = new LinkedList<>();
             for (int i = 0; i < inDegree.length; i++) {
                 if (inDegree[i] == 0) {
-                    queue.offer(i);
+                    q.offer(i);
                 }
             }
             int count = 0;
-            while (!queue.isEmpty()) {
-                int startCourse = queue.poll();
+            while (!q.isEmpty()) {
+                int start = q.poll();
                 count++;
-                for (int i = 0; i < prerequisites.length; i++) {
-                    if (prerequisites[i][1] == startCourse) {
-                        inDegree[prerequisites[i][0]] -= 1;
-                        if (inDegree[prerequisites[i][0]] == 0) {
-                            queue.offer(prerequisites[i][0]);
+                for (int[] pre : prerequisites) {
+                    if (pre[1] == start) {
+                        inDegree[pre[0]]--;
+                        if (inDegree[pre[0]] == 0) {
+                            q.offer(pre[0]);
                         }
                     }
                 }
