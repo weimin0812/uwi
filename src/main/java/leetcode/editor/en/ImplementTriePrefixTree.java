@@ -23,16 +23,15 @@
 
 package leetcode.editor.en;
 
-import leetcode.common.TreeNode;
-
 public class ImplementTriePrefixTree {
 
     public static void main(String[] args) {
+
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Trie {
-        TrieNode root = new TrieNode();
+        private Node root = new Node();
 
         /**
          * Initialize your data structure here.
@@ -45,10 +44,10 @@ public class ImplementTriePrefixTree {
          * Inserts a word into the trie.
          */
         public void insert(String word) {
-            TrieNode node = root;
+            Node node = root;
             for (char c : word.toCharArray()) {
                 if (node.children[c - 'a'] == null) {
-                    node.children[c - 'a'] = new TrieNode();
+                    node.children[c - 'a'] = new Node();
                 }
                 node = node.children[c - 'a'];
             }
@@ -59,7 +58,7 @@ public class ImplementTriePrefixTree {
          * Returns if the word is in the trie.
          */
         public boolean search(String word) {
-            TrieNode node = root;
+            Node node = root;
             for (char c : word.toCharArray()) {
                 if (node.children[c - 'a'] == null) {
                     return false;
@@ -73,7 +72,7 @@ public class ImplementTriePrefixTree {
          * Returns if there is any word in the trie that starts with the given prefix.
          */
         public boolean startsWith(String prefix) {
-            TrieNode node = root;
+            Node node = root;
             for (char c : prefix.toCharArray()) {
                 if (node.children[c - 'a'] == null) {
                     return false;
@@ -82,15 +81,12 @@ public class ImplementTriePrefixTree {
             }
             return true;
         }
-    }
 
-    class TrieNode {
-        boolean isWord;
-        TrieNode[] children = new TrieNode[26];
-        public TrieNode() {
+        class Node {
+            private boolean isWord;
+            private Node[] children = new Node[26];
         }
     }
-
 
 /**
  * Your Trie object will be instantiated and called as such:
