@@ -28,13 +28,15 @@ public class ProductOfArrayExceptSelf {
     class Solution {
         public int[] productExceptSelf(int[] nums) {
             int[] ret = new int[nums.length];
-            for (int i = 0; i < nums.length; i++) {
+            //left
+            for (int i = 0; i < ret.length; i++) {
                 ret[i] = i == 0 ? 1 : ret[i - 1] * nums[i - 1];
             }
+            //right
             int r = 1;
-            for (int i = nums.length - 1; i >= 0; i--) {
+            for (int i = ret.length - 2; i >= 0; i--) {
+                r = r * nums[i + 1];
                 ret[i] = ret[i] * r;
-                r = r * nums[i];
             }
             return ret;
         }
