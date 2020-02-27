@@ -59,10 +59,12 @@ public class LowestCommonAncestorOfABinaryTree {
      */
     class Solution {
         public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
-            //todo 不会
-            return null;
-
-
+            if (root == null || root == p || root == q) {
+                return root;
+            }
+            TreeNode left = lowestCommonAncestor(root.left, p, q);
+            TreeNode right = lowestCommonAncestor(root.right, p, q);
+            return left != null && right != null ? root : left == null ? right : left;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
