@@ -29,9 +29,7 @@
 
 package leetcode.editor.en;
 
-import java.util.ArrayDeque;
-import java.util.Deque;
-import java.util.LinkedList;
+import java.util.*;
 
 public class SlidingWindowMaximum {
 
@@ -45,24 +43,25 @@ public class SlidingWindowMaximum {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int[] maxSlidingWindow(int[] nums, int k) {
-            // sliding window maximum
-            if (nums == null || nums.length == 0) {
-                return nums;
+            if (nums == null || nums.length == 0 || k <= 0 || k > nums.length) {
+                return new int[0];
             }
-            Deque<Integer> deque = new ArrayDeque<>();
+            LinkedList<Integer> queue = new LinkedList<>();
             int[] ret = new int[nums.length - k + 1];
-            int index = 0;
             for (int i = 0; i < nums.length; i++) {
-                int num = nums[i];
-                while (!deque.isEmpty() && num >= nums[deque.peekLast()]) {
-                    deque.pollLast();
+                //过期的踢掉
+                while (!queue.isEmpty() && queue.peekFirst() <= i - k) {
+                    queue.pollFirst();
                 }
-                deque.offer(i);
-                while (!deque.isEmpty() && deque.peek() <= i - k) {
-                    deque.pollFirst();
+                //比我小的踢掉
+                while (!queue.isEmpty() && nums[queue.peekLast()] <= nums[i]) {
+                    queue.pollLast();
                 }
-                if (i >= k - 1) {
-                    ret[index++] = nums[deque.peek()];
+                //我进来
+                queue.offer(i);
+                //够窗口了
+                if (i - k + 1 >= 0) {
+                    ret[i - k + 1] = nums[queue.peekFirst()];
                 }
             }
             return ret;
