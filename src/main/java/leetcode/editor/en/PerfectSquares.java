@@ -29,7 +29,7 @@ public class PerfectSquares {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int numSquares(int n) {
-            //dp[i][n] = Math.min(dp[i-1][n],dp[
+            //coin change 1
             int[] dp = new int[n + 1];
             Arrays.fill(dp, n);
             dp[0] = 0;

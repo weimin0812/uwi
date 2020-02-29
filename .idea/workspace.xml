@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b943ffc4-64d5-45d1-b0a2-ddfe91d4d056" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/CoinChange2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/CoinChange2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/PerfectSquares.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/PerfectSquares.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/SearchA2dMatrixIi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/SearchA2dMatrixIi.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -328,7 +326,7 @@
       <workItem from="1582808630073" duration="2663000" />
       <workItem from="1582811350937" duration="2000" />
       <workItem from="1582857856024" duration="1388000" />
-      <workItem from="1582957954512" duration="2066000" />
+      <workItem from="1582957954512" duration="2491000" />
     </task>
     <servers />
   </component>
