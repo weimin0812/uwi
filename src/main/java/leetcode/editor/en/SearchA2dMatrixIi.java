@@ -29,29 +29,29 @@ package leetcode.editor.en;
 
 public class SearchA2dMatrixIi {
 
- public static void main(String[] args) {
+    public static void main(String[] args) {
         Solution solution = new SearchA2dMatrixIi().new Solution();
- }
+    }
 
-//leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
-    public boolean searchMatrix(int[][] matrix, int target) {
-        if (matrix == null || matrix.length == 0) {
+    //leetcode submit region begin(Prohibit modification and deletion)
+    class Solution {
+        public boolean searchMatrix(int[][] matrix, int target) {
+            if (matrix == null || matrix.length == 0) {
+                return false;
+            }
+            int i = 0, j = matrix[0].length - 1;
+            while (i < matrix.length && j >= 0) {
+                if (matrix[i][j] == target) {
+                    return true;
+                } else if (matrix[i][j] < target) {
+                    i++;
+                } else {
+                    j--;
+                }
+            }
             return false;
         }
-        int i = 0, j = matrix[i].length - 1;
-        while (i < matrix.length && j >= 0) {
-            if (matrix[i][j] == target) {
-                return true;
-            } else if (matrix[i][j] < target) {
-                i++;
-            }else{
-                j--;
-            }
-        }
-        return false;
     }
-}
 //leetcode submit region end(Prohibit modification and deletion)
 
 }

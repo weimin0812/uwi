@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b943ffc4-64d5-45d1-b0a2-ddfe91d4d056" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/SlidingWindowMaximum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/SlidingWindowMaximum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/CoinChange2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/CoinChange2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/PerfectSquares.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/PerfectSquares.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/SearchA2dMatrixIi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/SearchA2dMatrixIi.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -323,7 +325,10 @@
       <workItem from="1582600068617" duration="3191000" />
       <workItem from="1582684832052" duration="2949000" />
       <workItem from="1582722193981" duration="4178000" />
-      <workItem from="1582808630073" duration="1463000" />
+      <workItem from="1582808630073" duration="2663000" />
+      <workItem from="1582811350937" duration="2000" />
+      <workItem from="1582857856024" duration="1388000" />
+      <workItem from="1582957954512" duration="2066000" />
     </task>
     <servers />
   </component>
@@ -447,10 +452,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="427" y="76" key="refactoring.ChangeSignatureDialog/0.0.1440.900@0.0.1440.900" timestamp="1579513822881" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1582810099592">
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1582966227933">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1582810099592" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1582966227933" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -478,11 +483,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/hop/HashMapTest.java</url>
           <line>27</line>
           <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/hop/HashMapTest.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/leetcode/editor/en/UniqueBinarySearchTrees.java</url>

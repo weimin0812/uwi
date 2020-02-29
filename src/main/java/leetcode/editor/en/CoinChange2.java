@@ -1,4 +1,6 @@
-//You are given coins of different denominations and a total amount of money. Write a function to compute the number of combinations that make up that amount. You may assume that you have infinite number of each kind of coin. 
+//You are given coins of different denominations and a total amount of money. Wr
+//ite a function to compute the number of combinations that make up that amount. Y
+//ou may assume that you have infinite number of each kind of coin. 
 //
 // 
 // 
@@ -45,16 +47,13 @@
 // the answer is guaranteed to fit into signed 32-bit integer 
 // 
 //
+
 package leetcode.editor.en;
 
 public class CoinChange2 {
 
     public static void main(String[] args) {
         Solution solution = new CoinChange2().new Solution();
-        int amount = 5;
-        int[] coins = {1, 2, 5};
-        System.out.println(solution.change(amount, coins));
-
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
@@ -65,8 +64,8 @@ public class CoinChange2 {
                 dp[i][0] = 1;
             }
             for (int i = 1; i <= coins.length; i++) {
-                int coin = coins[i-1];
                 for (int j = 1; j <= amount; j++) {
+                    int coin = coins[i - 1];
                     dp[i][j] = dp[i - 1][j] + (j >= coin ? dp[i][j - coin] : 0);
                 }
             }
