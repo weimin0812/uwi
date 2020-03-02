@@ -1,0 +1,23 @@
+    class Solution {
+        public int findDuplicate(int[] nums) {
+            if (nums == null || nums.length <= 1) {
+                return -1;
+            }
+            int fast = nums[nums[0]];
+            int slow = nums[0];
+            while (fast != slow) {
+                slow = nums[slow];
+                fast = nums[nums[fast]];
+            }
+            fast = 0;
+            while (fast != slow) {
+                slow = nums[slow];
+                fast = nums[fast];
+            }
+            return slow;
+
+        }
+    }
+
+//runtime:0 ms
+//memory:43.1 MB

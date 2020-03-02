@@ -30,19 +30,30 @@ package leetcode.editor.en;
 
 public class FindTheDuplicateNumber {
 
- public static void main(String[] args) {
+    public static void main(String[] args) {
         Solution solution = new FindTheDuplicateNumber().new Solution();
- }
-
-//leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
-    public int findDuplicate(int[] nums) {
-        //todo not modify\ O(1) extra space\ less than O(n*n)
-        //
-        return 0;
-        
     }
-}
+
+    //leetcode submit region begin(Prohibit modification and deletion)
+    class Solution {
+        public int findDuplicate(int[] nums) {
+            if (nums == null || nums.length <= 1) {
+                return 0;
+            }
+            int fast = nums[nums[0]];
+            int slow = nums[0];
+            while (fast != slow) {
+                fast = nums[nums[fast]];
+                slow = nums[slow];
+            }
+            fast = 0;
+            while (fast != slow) {
+                slow = nums[slow];
+                fast = nums[fast];
+            }
+            return slow;
+        }
+    }
 //leetcode submit region end(Prohibit modification and deletion)
 
 }
