@@ -32,6 +32,7 @@
 
 package leetcode.editor.en;
 
+
 import leetcode.common.TreeNode;
 
 import java.util.LinkedList;
@@ -58,9 +59,12 @@ public class SerializeAndDeserializeBinaryTree {
 
         // Encodes a tree to a single string.
         public String serialize(TreeNode root) {
-            StringBuffer sb = new StringBuffer();
-            Queue<TreeNode> queue = new LinkedList<>();
+            StringBuilder sb = new StringBuilder();
             TreeNode current = root;
+            if (current == null) {
+                return sb.toString();
+            }
+            Queue<TreeNode> queue = new LinkedList<>();
             queue.offer(current);
             while (!queue.isEmpty()) {
                 current = queue.poll();
@@ -69,9 +73,11 @@ public class SerializeAndDeserializeBinaryTree {
                 } else {
                     sb.append(current.val);
                 }
-                sb.append("#");
+                sb.append(",");
                 if (current != null) {
                     queue.offer(current.left);
+                }
+                if (current != null) {
                     queue.offer(current.right);
                 }
             }
@@ -80,17 +86,19 @@ public class SerializeAndDeserializeBinaryTree {
 
         // Decodes your encoded data to tree.
         public TreeNode deserialize(String data) {
-            String[] vals = data.split("#");
-            TreeNode[] nodes = new TreeNode[vals.length];
-            for (int i = 0; i < nodes.length; i++) {
-                if (!"null".equals(vals[i])) {
-                    nodes[i] = new TreeNode(Integer.parseInt(vals[i]));
-                }
+            if (data == null || data.isEmpty()) {
+                return null;
             }
-            for (int i = 0, j = 1; j < nodes.length; i++) {
+            String[] nodesStr = data.split(",");
+            TreeNode[] nodes = new TreeNode[nodesStr.length];
+            for (int i = 0; i < nodes.length; i++) {
+                nodes[i] = "null".equals(nodesStr[i]) ? null : new TreeNode(Integer.parseInt(nodesStr[i]));
+            }
+            int index = 1;
+            for (int i = 0; i < nodes.length; i++) {
                 if (nodes[i] != null) {
-                    nodes[i].left = nodes[j++];
-                    nodes[i].right = nodes[j++];
+                    nodes[i].left = nodes[index++];
+                    nodes[i].right = nodes[index++];
                 }
             }
             return nodes[0];

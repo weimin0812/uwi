@@ -22,13 +22,15 @@
 
 package leetcode.editor.en;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
 public class LongestIncreasingSubsequence {
 
     public static void main(String[] args) {
         Solution solution = new LongestIncreasingSubsequence().new Solution();
+        int[] nums = {1, 3, 6, 7, 9, 4, 10, 5, 6};
+        int length = solution.lengthOfLIS(nums);
+        System.out.println(length);
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
@@ -40,7 +42,7 @@ public class LongestIncreasingSubsequence {
             int[] dp = new int[nums.length];
             Arrays.fill(dp, 1);
             int ret = 1;
-            for (int i = 1; i < dp.length; i++) {
+            for (int i = 0; i < dp.length; i++) {
                 for (int j = 0; j < i; j++) {
                     if (nums[i] > nums[j]) {
                         dp[i] = Math.max(dp[i], dp[j] + 1);
