@@ -34,15 +34,13 @@ public class BestTimeToBuyAndSellStockWithCooldown {
             if (prices == null || prices.length == 0) {
                 return 0;
             }
-            int n = prices.length;
-            int[][] dp = new int[n][2];
-            for (int i = 0; i < dp.length; i++) {
+            int[][] dp = new int[prices.length][2];
+            for (int i = 0; i < prices.length; i++) {
                 dp[i][0] = Math.max(i - 1 >= 0 ? dp[i - 1][0] : 0, (i - 1 >= 0 ? dp[i - 1][1] : Integer.MIN_VALUE) + prices[i]);
                 dp[i][1] = Math.max(i - 1 >= 0 ? dp[i - 1][1] : Integer.MIN_VALUE, (i - 2 >= 0 ? dp[i - 2][0] : 0) - prices[i]);
             }
-            return dp[n - 1][0];
+            return dp[prices.length - 1][0];
         }
-
     }
 //leetcode submit region end(Prohibit modification and deletion)
 

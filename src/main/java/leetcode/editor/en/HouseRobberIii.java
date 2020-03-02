@@ -40,9 +40,6 @@ package leetcode.editor.en;
 
 import leetcode.common.TreeNode;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class HouseRobberIii {
 
     public static void main(String[] args) {
@@ -62,30 +59,18 @@ public class HouseRobberIii {
      */
     class Solution {
         public int rob(TreeNode root) {
-            if (root == null) {
+            TreeNode node = root;
+            if (node == null) {
                 return 0;
             }
-            int money = root.val;
-            if (root.left != null) {
-                money += rob(root.left.left) + rob(root.left.right);
+            int amount = node.val;
+            if (node.left != null) {
+                amount += rob(root.left.left) + rob(root.left.right);
             }
-            if (root.right != null) {
-                money += rob(root.right.right) + rob(root.right.left);
+            if (node.right != null) {
+                amount += rob(root.right.left) + rob(root.right.right);
             }
-            int ret = Math.max(money, rob(root.left) + rob(root.right));
-            return ret;
-        }
-
-        private int[] robSub(TreeNode root) {
-            if (root == null) {
-                return new int[]{0, 0};
-            }
-            int[] left = robSub(root.left);
-            int[] right = robSub(root.right);
-            return new int[]{
-                    Math.max(left[0], left[1]) + Math.max(right[0], right[1]),
-                    root.val + left[0] + right[0]
-            };
+            return Math.max(amount, rob(root.left) + rob(root.right));
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
