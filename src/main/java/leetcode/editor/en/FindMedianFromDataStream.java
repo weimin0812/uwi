@@ -43,6 +43,7 @@ package leetcode.editor.en;
 
 import java.util.Comparator;
 import java.util.PriorityQueue;
+import java.util.Queue;
 
 public class FindMedianFromDataStream {
 
@@ -52,14 +53,15 @@ public class FindMedianFromDataStream {
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class MedianFinder {
-        PriorityQueue<Integer> minHeap = new PriorityQueue<>();
-        PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Comparator.reverseOrder());
         private int count = 0;
+        private Queue<Integer> minHeap = new PriorityQueue<>();
+        private Queue<Integer> maxHeap = new PriorityQueue<>(Comparator.reverseOrder());
 
         /**
          * initialize your data structure here.
          */
         public MedianFinder() {
+            count = 0;
 
         }
 
@@ -75,10 +77,10 @@ public class FindMedianFromDataStream {
         }
 
         public double findMedian() {
-            if (count % 2 == 1) {
-                return minHeap.peek();
+            if (count % 2 == 0) {
+                return (minHeap.peek() + maxHeap.peek()) / 2.0;
             }
-            return (maxHeap.peek() + minHeap.peek()) / 2.0;
+            return minHeap.peek();
 
         }
     }
