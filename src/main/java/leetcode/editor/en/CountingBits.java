@@ -41,7 +41,7 @@ public class CountingBits {
             }
             int[] ret = new int[num + 1];
             for (int i = 1; i <= num; i++) {
-                ret[i] = ret[i / 2] + (i % 2 == 1 ? 1 : 0);
+                ret[i] = ret[i >> 1] + (i % 2);
             }
             return ret;
         }
