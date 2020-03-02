@@ -19,13 +19,14 @@ public class Solution {
     }
 
     public ListNode sort(ListNode root) {
-        if (root == null) {
-            return root;
-        }
         return mergeSort(root);
     }
 
     private ListNode mergeSort(ListNode root) {
+        // null校验啊
+        if (root == null || root.next == null) {
+            return root;
+        }
         ListNode fast = root, slow = root, pre = null;
         while (fast != null && fast.next != null) {
             pre = slow;
