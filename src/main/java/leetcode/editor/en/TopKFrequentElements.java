@@ -26,8 +26,6 @@
 
 package leetcode.editor.en;
 
-import javafx.scene.layout.Priority;
-
 import java.util.*;
 
 public class TopKFrequentElements {
@@ -39,11 +37,14 @@ public class TopKFrequentElements {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public List<Integer> topKFrequent(int[] nums, int k) {
+            if (nums == null || nums.length == 0) {
+                return null;
+            }
             Map<Integer, Integer> map = new HashMap<>();
             for (int num : nums) {
                 map.put(num, map.getOrDefault(num, 0) + 1);
             }
-            PriorityQueue<Integer> minHeap = new PriorityQueue<>(Comparator.comparing(map::get));
+            PriorityQueue<Integer> minHeap = new PriorityQueue<Integer>(Comparator.comparing(map::get));
             for (Integer n : map.keySet()) {
                 minHeap.offer(n);
                 if (minHeap.size() > k) {
@@ -52,9 +53,8 @@ public class TopKFrequentElements {
             }
             List<Integer> ret = new ArrayList<>();
             while (!minHeap.isEmpty()) {
-                ret.add(minHeap.poll());
+                ret.add(0, minHeap.poll());
             }
-            Collections.reverse(ret);
             return ret;
         }
     }
