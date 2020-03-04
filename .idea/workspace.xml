@@ -333,7 +333,7 @@
       <workItem from="1583132961507" duration="4854000" />
       <workItem from="1583140243457" duration="638000" />
       <workItem from="1583240266433" duration="156000" />
-      <workItem from="1583290587213" duration="2105000" />
+      <workItem from="1583290587213" duration="3235000" />
     </task>
     <servers />
   </component>
@@ -457,10 +457,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="427" y="76" key="refactoring.ChangeSignatureDialog/0.0.1440.900@0.0.1440.900" timestamp="1579513822881" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1583139900032">
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1583294099939">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1583139900032" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1583294099939" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

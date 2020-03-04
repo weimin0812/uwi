@@ -35,10 +35,12 @@ public class DecodeString {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public String decodeString(String s) {
-//            s = "3[a2[c]]", return "accaccacc".
-            String res = "";
+            if (s == null || s.isEmpty()) {
+                return s;
+            }
             Stack<Integer> countStack = new Stack<>();
             Stack<String> strStack = new Stack<>();
+            String res = "";
             int index = 0;
             while (index < s.length()) {
                 char c = s.charAt(index);
@@ -54,7 +56,7 @@ public class DecodeString {
                     res = "";
                     index++;
                 } else if (c == ']') {
-                    StringBuffer sb = new StringBuffer(strStack.pop());
+                    StringBuilder sb = new StringBuilder(strStack.pop());
                     int repeatTimes = countStack.pop();
                     for (int i = 0; i < repeatTimes; i++) {
                         sb.append(res);
