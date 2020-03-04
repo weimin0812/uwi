@@ -35,6 +35,7 @@ public class DecodeString {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public String decodeString(String s) {
+//            s = "3[a2[c]]", return "accaccacc".
             String res = "";
             Stack<Integer> countStack = new Stack<>();
             Stack<String> strStack = new Stack<>();
@@ -61,7 +62,7 @@ public class DecodeString {
                     res = sb.toString();
                     index++;
                 } else {
-                    res += c;
+                    res = res + c;
                     index++;
                 }
             }
