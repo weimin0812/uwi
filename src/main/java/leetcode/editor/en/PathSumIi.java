@@ -63,11 +63,12 @@ public class PathSumIi {
                 return;
             }
             list.add(root.val);
-            if (root.left == null && root.right == null && root.val == sum) {
+            sum -= root.val;
+            if (sum == 0 && root.right == null && root.left == null) {
                 ret.add(new ArrayList<>(list));
             }
-            pathSum(root.left, sum - root.val, ret, list);
-            pathSum(root.right, sum - root.val, ret, list);
+            pathSum(root.left, sum, ret, list);
+            pathSum(root.right, sum, ret, list);
             list.remove(list.size() - 1);
         }
     }

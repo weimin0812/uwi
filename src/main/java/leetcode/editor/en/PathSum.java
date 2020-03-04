@@ -49,11 +49,10 @@ public class PathSum {
             if (root == null) {
                 return false;
             }
-            if (root.left == null && root.right == null) {
-                return sum == root.val;
+            if (root.val == sum && root.left == null && root.right == null) {
+                return true;
             }
-            return hasPathSum(root.left, sum - root.val) ||
-                    hasPathSum(root.right, sum - root.val);
+            return hasPathSum(root.left, sum - root.val) || hasPathSum(root.right, sum - root.val);
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
