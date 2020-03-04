@@ -38,10 +38,10 @@ public class DecodeString {
             if (s == null || s.isEmpty()) {
                 return s;
             }
+            int index = 0;
             Stack<Integer> countStack = new Stack<>();
             Stack<String> strStack = new Stack<>();
             String res = "";
-            int index = 0;
             while (index < s.length()) {
                 char c = s.charAt(index);
                 if (Character.isDigit(c)) {
