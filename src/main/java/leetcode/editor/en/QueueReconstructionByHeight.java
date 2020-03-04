@@ -31,17 +31,26 @@ public class QueueReconstructionByHeight {
 
     public static void main(String[] args) {
         Solution solution = new QueueReconstructionByHeight().new Solution();
+        int[][] people = {
+                {7, 0},
+                {4, 4},
+                {7, 1},
+                {5, 0},
+                {6, 1},
+                {5, 2},
+        };
+        solution.reconstructQueue(people);
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int[][] reconstructQueue(int[][] people) {
             Arrays.sort(people, (a, b) -> (a[0] == b[0] ? a[1] - b[1] : b[0] - a[0]));
-            List<int[]> res = new ArrayList<>();
+            List<int[]> ret = new ArrayList<>();
             for (int[] person : people) {
-                res.add(person[1], person);
+                ret.add(person[1], person);
             }
-            return res.toArray(new int[0][0]);
+            return ret.toArray(new int[0][0]);
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
