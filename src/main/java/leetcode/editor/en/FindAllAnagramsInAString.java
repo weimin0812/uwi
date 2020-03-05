@@ -51,30 +51,33 @@ public class FindAllAnagramsInAString {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public List<Integer> findAnagrams(String s, String p) {
-            List<Integer> ret = new ArrayList<>();
+            if (s == null || s.isEmpty() || p == null || p.isEmpty()) {
+                return new ArrayList<>();
+            }
             Map<Character, Integer> needs = new HashMap<>();
             for (char c : p.toCharArray()) {
                 needs.put(c, needs.getOrDefault(c, 0) + 1);
             }
             Map<Character, Integer> windows = new HashMap<>();
-            int l = 0, r = 0, total = 0;
+            int l = 0, r = 0, count = 0, length = p.length();
+            List<Integer> ret = new ArrayList<>();
             while (r < s.length()) {
                 char c = s.charAt(r);
                 if (needs.containsKey(c)) {
                     windows.put(c, windows.getOrDefault(c, 0) + 1);
                     if (windows.get(c) <= needs.get(c)) {
-                        total++;
+                        count++;
                     }
                 }
-                while (total == p.length()) {
-                    if (r - l + 1 == p.length()) {
+                while (count == length) {
+                    if (r - l + 1 == length) {
                         ret.add(l);
                     }
                     char lc = s.charAt(l);
                     if (needs.containsKey(lc)) {
                         windows.put(lc, windows.get(lc) - 1);
                         if (windows.get(lc) < needs.get(lc)) {
-                            total--;
+                            count--;
                         }
                     }
                     l++;
