@@ -22,6 +22,8 @@
 
 package leetcode.editor.en;
 
+import java.util.Arrays;
+
 public class ShortestUnsortedContinuousSubarray {
 
     public static void main(String[] args) {
@@ -31,8 +33,20 @@ public class ShortestUnsortedContinuousSubarray {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int findUnsortedSubarray(int[] nums) {
-            // todo
-            return 0;
+            if (nums == null || nums.length == 0) {
+                return 0;
+            }
+            int[] a = Arrays.copyOf(nums, nums.length);
+            Arrays.sort(a);
+            int start = 0;
+            while (start < a.length && a[start] == nums[start]) {
+                start++;
+            }
+            int end = a.length - 1;
+            while (start <= end && a[end] == nums[end]) {
+                end--;
+            }
+            return end - start + 1;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
