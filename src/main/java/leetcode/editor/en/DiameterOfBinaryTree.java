@@ -46,23 +46,24 @@ public class DiameterOfBinaryTree {
      * }
      */
     class Solution {
-        private int ret = 1;
+        private int diameter = 0;
 
         public int diameterOfBinaryTree(TreeNode root) {
-            ret = 1;
+            diameter = 0;
             depth(root);
-            return ret - 1;
+            return diameter;
         }
 
         private int depth(TreeNode root) {
             if (root == null) {
                 return 0;
             }
-            int left = depth(root.left);
-            int right = depth(root.right);
-            ret = Math.max(ret, left + right + 1);
-            return Math.max(left, right) + 1;
+            int l = depth(root.left);
+            int r = depth(root.right);
+            diameter = Math.max(diameter, l + r);
+            return Math.max(l, r) + 1;
         }
+
     }
 //leetcode submit region end(Prohibit modification and deletion)
 
