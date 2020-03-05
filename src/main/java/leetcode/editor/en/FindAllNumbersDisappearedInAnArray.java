@@ -25,6 +25,8 @@ public class FindAllNumbersDisappearedInAnArray {
 
     public static void main(String[] args) {
         Solution solution = new FindAllNumbersDisappearedInAnArray().new Solution();
+        int[] nums = {4, 3, 2, 7, 8, 2, 3, 1};
+        solution.findDisappearedNumbers(nums);
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
@@ -36,7 +38,7 @@ public class FindAllNumbersDisappearedInAnArray {
                     index += nums.length;
                 }
                 if (nums[index - 1] > 0) {
-                    nums[index - 1] = nums[index - 1] - nums.length;
+                    nums[index - 1] -= nums.length;
                 }
             }
             List<Integer> ret = new ArrayList<>();
