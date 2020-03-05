@@ -31,11 +31,14 @@ public class SubarraySumEqualsK {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int subarraySum(int[] nums, int k) {
-            int ret = 0, sum = 0;
+            if (nums == null || nums.length == 0) {
+                return 0;
+            }
             Map<Integer, Integer> map = new HashMap<>();
             map.put(0, 1);
-            for (int i = 0; i < nums.length; i++) {
-                sum += nums[i];
+            int sum = 0, ret = 0;
+            for (int num : nums) {
+                sum += num;
                 if (map.containsKey(sum - k)) {
                     ret += map.get(sum - k);
                 }
