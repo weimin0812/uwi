@@ -1,6 +1,9 @@
-//Given two binary trees and imagine that when you put one of them to cover the other, some nodes of the two trees are overlapped while the others are not. 
+//Given two binary trees and imagine that when you put one of them to cover the 
+//other, some nodes of the two trees are overlapped while the others are not. 
 //
-// You need to merge them into a new binary tree. The merge rule is that if two nodes overlap, then sum node values up as the new value of the merged node. Otherwise, the NOT null node will be used as the node of new tree. 
+// You need to merge them into a new binary tree. The merge rule is that if two 
+//nodes overlap, then sum node values up as the new value of the merged node. Othe
+//rwise, the NOT null node will be used as the node of new tree. 
 //
 // Example 1: 
 //
@@ -25,16 +28,16 @@
 //
 // Note: The merging process must start from the root nodes of both trees. 
 // Related Topics Tree
+
 package leetcode.editor.en;
 
-import swordoffer.common.TreeNode;
+import leetcode.common.TreeNode;
 
 public class MergeTwoBinaryTrees {
 
     public static void main(String[] args) {
         Solution solution = new MergeTwoBinaryTrees().new Solution();
     }
-
 
 //leetcode submit region begin(Prohibit modification and deletion)
 
@@ -49,16 +52,13 @@ public class MergeTwoBinaryTrees {
      */
     class Solution {
         public TreeNode mergeTrees(TreeNode t1, TreeNode t2) {
-            if (t1 == null) {
-                return t2;
+            if (t1 == null || t2 == null) {
+                return t1 == null ? t2 : t1;
             }
-            if (t2 == null) {
-                return t1;
-            }
-            TreeNode node = new TreeNode(t1.val + t2.val);
-            node.left = mergeTrees(t1.left, t2.left);
-            node.right = mergeTrees(t1.right, t2.right);
-            return node;
+            t1.val += t2.val;
+            t1.left = mergeTrees(t1.left, t2.left);
+            t1.right = mergeTrees(t1.right, t2.right);
+            return t1;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
