@@ -62,8 +62,7 @@ public class PathSumIii {
             if (root == null) {
                 return 0;
             }
-            return (root.val == sum ? 1 : 0) +
-                    pathSumFrom(root.left, sum - root.val) +
+            return (sum == root.val ? 1 : 0) + pathSumFrom(root.left, sum - root.val) +
                     pathSumFrom(root.right, sum - root.val);
         }
     }
