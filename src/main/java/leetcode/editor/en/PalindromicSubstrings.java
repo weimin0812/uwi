@@ -1,6 +1,8 @@
-//Given a string, your task is to count how many palindromic substrings in this string. 
+//Given a string, your task is to count how many palindromic substrings in this 
+//string. 
 //
-// The substrings with different start indexes or end indexes are counted as different substrings even they consist of same characters. 
+// The substrings with different start indexes or end indexes are counted as dif
+//ferent substrings even they consist of same characters. 
 //
 // Example 1: 
 //
@@ -29,6 +31,7 @@
 // 
 //
 // Related Topics String Dynamic Programming
+
 package leetcode.editor.en;
 
 public class PalindromicSubstrings {
@@ -37,24 +40,18 @@ public class PalindromicSubstrings {
         Solution solution = new PalindromicSubstrings().new Solution();
     }
 
-
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int countSubstrings(String s) {
-            if (s == null || s.length() == 0) {
+            if (s == null || s.isEmpty()) {
                 return 0;
             }
-            boolean[][] dp = new boolean[s.length()][s.length()];
-            int count = 0;
-            // todo 大意了吧 dp一定要注意扫表的顺序
-            // todo
-            for (int d = 0; d < s.length(); d++) {
-                for (int i = 0; i < s.length() - d; i++) {
-                    int j = i + d;
+            int n = s.length(), count = 0;
+            boolean[][] dp = new boolean[n][n];
+            for (int i = n - 1; i >= 0; i--) {
+                for (int j = i; j < n; j++) {
                     dp[i][j] = (s.charAt(i) == s.charAt(j)) && (i + 1 > j - 1 || dp[i + 1][j - 1]);
-                    if (dp[i][j]) {
-                        count++;
-                    }
+                    count += dp[i][j] ? 1 : 0;
                 }
             }
             return count;

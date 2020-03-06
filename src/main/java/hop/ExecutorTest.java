@@ -59,6 +59,24 @@ public class ExecutorTest {
         Thread.yield();
     }
 
+    private int getAndAdd() {
+        int i;
+        for (; ; ) {
+            i = getVolatileValue();
+            if (cas(i, i, i + 1)) {
+                return i;
+            }
+        }
+    }
+
+    private int getVolatileValue() {
+        return 0;
+    }
+
+    private boolean cas(int address, int expect, int update) {
+        return false;
+    }
+
     //  ReentrantLock
     //  BlockingQueue是怎么实现的
     //  Callable是怎么实现的
