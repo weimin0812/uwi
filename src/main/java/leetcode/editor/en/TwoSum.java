@@ -1,6 +1,8 @@
-//Given an array of integers, return indices of the two numbers such that they add up to a specific target. 
+//Given an array of integers, return indices of the two numbers such that they a
+//dd up to a specific target. 
 //
-// You may assume that each input would have exactly one solution, and you may not use the same element twice. 
+// You may assume that each input would have exactly one solution, and you may n
+//ot use the same element twice. 
 //
 // Example: 
 //
@@ -11,6 +13,7 @@
 //return [0, 1].
 // 
 // Related Topics Array Hash Table
+
 package leetcode.editor.en;
 
 import java.util.HashMap;
@@ -22,12 +25,11 @@ public class TwoSum {
         Solution solution = new TwoSum().new Solution();
     }
 
-
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int[] twoSum(int[] nums, int target) {
             if (nums == null || nums.length < 2) {
-                return new int[]{};
+                return null;
             }
             Map<Integer, Integer> map = new HashMap<>();
             for (int i = 0; i < nums.length; i++) {

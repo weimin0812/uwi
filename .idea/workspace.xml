@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b943ffc4-64d5-45d1-b0a2-ddfe91d4d056" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/DailyTemperatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/DailyTemperatures.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/TwoSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/TwoSum.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -337,7 +338,7 @@
       <workItem from="1583330258858" duration="154000" />
       <workItem from="1583376901166" duration="3799000" />
       <workItem from="1583391204725" duration="1073000" />
-      <workItem from="1583401903521" duration="6725000" />
+      <workItem from="1583401903521" duration="7285000" />
     </task>
     <servers />
   </component>
