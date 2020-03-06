@@ -31,19 +31,22 @@ public class ContainerWithMostWater {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int maxArea(int[] height) {
-            if (height == null || height.length <= 1) {
-                return 0;
+            int ret = 0;
+            if (height == null || height.length == 0) {
+                return ret;
             }
-            int l = 0, h = height.length - 1, ret = Math.min(height[l], height[h]) * (h - l);
+            int l = 0, h = height.length - 1;
             while (l < h) {
-                ret = Math.max(ret, Math.min(height[l], height[h]) * (h - l));
-                if (height[l] <= height[h]) {
+                if (height[l] < height[h]) {
+                    ret = Math.max(ret, (h - l) * height[l]);
                     l++;
                 } else {
+                    ret = Math.max(ret, (h - l) * height[h]);
                     h--;
                 }
             }
             return ret;
+
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
