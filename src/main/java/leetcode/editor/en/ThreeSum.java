@@ -39,7 +39,7 @@ public class ThreeSum {
             }
             Arrays.sort(nums);
             for (int i = 0; i < nums.length; i++) {
-                if (i != 0 && nums[i - 1] == nums[i]) {
+                if (i != 0 && nums[i] == nums[i - 1]) {
                     continue;
                 }
                 int l = i + 1, h = nums.length - 1;
@@ -55,10 +55,10 @@ public class ThreeSum {
                         while (l < h && nums[h] == nums[h + 1]) {
                             h--;
                         }
-                    } else if (sum < 0) {
-                        l++;
-                    } else {
+                    } else if (sum > 0) {
                         h--;
+                    } else {
+                        l++;
                     }
                 }
             }
