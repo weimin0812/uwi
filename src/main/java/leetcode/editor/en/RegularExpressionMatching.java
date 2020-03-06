@@ -79,14 +79,11 @@ public class RegularExpressionMatching {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public boolean isMatch(String s, String p) {
-            if (p == null || s == null) {
-                return p == s;
-            }
             if (p.isEmpty()) {
                 return s.isEmpty();
             }
-            boolean firstMatch = !s.isEmpty() && (s.charAt(0) == p.charAt(0) || '.' == p.charAt(0));
-            if (p.length() >= 2 && p.charAt(1) == '*') {
+            boolean firstMatch = !s.isEmpty() && (s.charAt(0) == p.charAt(0) || p.charAt(0) == '.');
+            if (p.length() > 1 && p.charAt(1) == '*') {
                 if (firstMatch) {
                     return isMatch(s, p.substring(2)) || isMatch(s.substring(1), p);
                 } else {
