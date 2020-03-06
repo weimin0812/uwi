@@ -51,14 +51,15 @@ public class LongestSubstringWithoutRepeatingCharacters {
             if (s == null || s.length() == 0) {
                 return 0;
             }
-            int ret = 1;
-            int l = 0;
             Map<Character, Integer> map = new HashMap<>();
+            int ret = 0;
+            int l = 0;
             for (int i = 0; i < s.length(); i++) {
-                if (map.containsKey(s.charAt(i))) {
-                    l = Math.max(l, map.get(s.charAt(i)) + 1);
+                char c = s.charAt(i);
+                if (map.containsKey(c)) {
+                    l = Math.max(l, map.get(c) + 1);
                 }
-                map.put(s.charAt(i), i);
+                map.put(c, i);
                 ret = Math.max(ret, i - l + 1);
             }
             return ret;
