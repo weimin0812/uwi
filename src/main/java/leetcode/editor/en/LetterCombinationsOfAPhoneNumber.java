@@ -32,30 +32,27 @@ public class LetterCombinationsOfAPhoneNumber {
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
-        private String[] numbers = {"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
-
         public List<String> letterCombinations(String digits) {
-            //letter combinations of a phone number
             List<String> ret = new ArrayList<>();
             if (digits == null || digits.isEmpty()) {
                 return ret;
             }
-            dfs(digits, 0, new StringBuffer(), ret);
+            String[] numbers = {"", "", "abc", "def", "ghi", "jkl", "mno", "qprs", "tuv", "wxyz"};
+            letterCombinations(digits, 0, ret, new StringBuffer(), numbers);
             return ret;
         }
 
-        private void dfs(String digits, int i, StringBuffer sb, List<String> ret) {
+        private void letterCombinations(String digits, int i, List<String> ret, StringBuffer sb, String[] numbers) {
             if (i == digits.length()) {
                 ret.add(sb.toString());
                 return;
             }
             for (char c : numbers[digits.charAt(i) - '0'].toCharArray()) {
                 sb.append(c);
-                dfs(digits, i + 1, sb, ret);
+                letterCombinations(digits, i + 1, ret, sb, numbers);
                 sb.deleteCharAt(sb.length() - 1);
             }
         }
-
     }
 //leetcode submit region end(Prohibit modification and deletion)
 
