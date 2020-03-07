@@ -35,7 +35,7 @@ public class SearchInRotatedSortedArray {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int search(int[] nums, int target) {
-            if (nums == null || nums.length < 1) {
+            if (nums == null || nums.length == 0) {
                 return -1;
             }
             int l = 0, h = nums.length - 1;
@@ -44,10 +44,10 @@ public class SearchInRotatedSortedArray {
                 if (nums[m] == target) {
                     return m;
                 }
-                if (nums[m] == nums[h] && nums[m] == nums[l]) {
+                if (nums[m] == nums[l] && nums[m] == nums[h]) {
                     l++;
                     h--;
-                } else if (nums[m] < nums[h]) {
+                } else if (nums[m] <= nums[h]) {
                     if (nums[m] < target && target <= nums[h]) {
                         l = m + 1;
                     } else {
