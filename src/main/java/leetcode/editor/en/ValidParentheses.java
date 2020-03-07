@@ -73,7 +73,7 @@ public class ValidParentheses {
                 if (map.containsKey(c)) {
                     stack.push(map.get(c));
                 } else {
-                    if (stack.isEmpty() || !stack.pop().equals(c)) {
+                    if (stack.isEmpty() || c != stack.pop()) {
                         return false;
                     }
                 }
