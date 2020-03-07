@@ -34,23 +34,23 @@ public class GenerateParentheses {
             if (n <= 0) {
                 return ret;
             }
-            generateParenthesis(n, 0, 0, new StringBuffer(), ret);
+            generateParenthesis(0, 0, n, ret, new StringBuilder());
             return ret;
         }
 
-        private void generateParenthesis(int n, int open, int close, StringBuffer sb, List<String> ret) {
+        private void generateParenthesis(int open, int close, int n, List<String> ret, StringBuilder sb) {
             if (open == n && close == n) {
                 ret.add(sb.toString());
                 return;
             }
             if (open < n) {
                 sb.append('(');
-                generateParenthesis(n, open + 1, close, sb, ret);
+                generateParenthesis(open + 1, close, n, ret, sb);
                 sb.deleteCharAt(sb.length() - 1);
             }
             if (close < open) {
                 sb.append(')');
-                generateParenthesis(n, open, close + 1, sb, ret);
+                generateParenthesis(open, close + 1, n, ret, sb);
                 sb.deleteCharAt(sb.length() - 1);
             }
         }
