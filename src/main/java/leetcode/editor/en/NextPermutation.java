@@ -38,28 +38,27 @@ public class NextPermutation {
                 int j = nums.length - 1;
                 for (; j > i; j--) {
                     if (nums[j] > nums[i]) {
-                        swap(nums, i, j);
                         break;
                     }
                 }
+                swap(nums, i, j);
             }
             reverse(nums, i + 1, nums.length - 1);
         }
 
-        private void swap(int[] nums, int i, int j) {
-            int t = nums[i];
-            nums[i] = nums[j];
-            nums[j] = t;
-        }
-
-        private void reverse(int[] nums, int l, int h) {
+        private void reverse(int[] a, int l, int h) {
             while (l < h) {
-                swap(nums, l, h);
+                swap(a, l, h);
                 l++;
                 h--;
             }
         }
 
+        private void swap(int[] a, int i, int j) {
+            int t = a[i];
+            a[i] = a[j];
+            a[j] = t;
+        }
     }
 //leetcode submit region end(Prohibit modification and deletion)
 
