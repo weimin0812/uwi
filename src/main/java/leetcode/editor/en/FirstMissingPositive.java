@@ -37,18 +37,16 @@ public class FirstMissingPositive {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int firstMissingPositive(int[] nums) {
-            if (nums == null || nums.length == 0) {
-                return 1;
-            }
             for (int i = 0; i < nums.length; ) {
                 int n = nums[i];
-                if (n >= 1 && n <= nums.length) {
+                if (1 <= n && n <= nums.length) {
                     if (nums[n - 1] == n) {
                         i++;
                     } else {
-                        int t = nums[n - 1];
-                        nums[n - 1] = n;
-                        nums[i] = t;
+                        //i位置的元素应换到n-1处
+                        int t = nums[i];
+                        nums[i] = nums[n - 1];
+                        nums[n - 1] = t;
                     }
                 } else {
                     i++;
