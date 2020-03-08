@@ -29,10 +29,10 @@ public class FindFirstAndLastPositionOfElementInSortedArray {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int[] searchRange(int[] nums, int target) {
-            return new int[]{search(nums, target, true), search(nums, target, false)};
+            return new int[]{binarySearch(nums, target, true), binarySearch(nums, target, false)};
         }
 
-        private int search(int[] nums, int target, boolean first) {
+        private int binarySearch(int[] nums, int target, boolean first) {
             if (nums == null || nums.length == 0) {
                 return -1;
             }
@@ -41,19 +41,17 @@ public class FindFirstAndLastPositionOfElementInSortedArray {
                 int m = l + (h - l) / 2;
                 if (nums[m] == target) {
                     if (first) {
-                        if (m == 0 || nums[m] != nums[m - 1]) {
+                        if (m == 0 || nums[m - 1] != target) {
                             return m;
-                        } else {
-                            h--;
                         }
+                        h = m - 1;
                     } else {
-                        if (m == nums.length - 1 || nums[m] != nums[m + 1]) {
+                        if (m == nums.length - 1 || nums[m + 1] != target) {
                             return m;
-                        } else {
-                            l++;
                         }
+                        l = m + 1;
                     }
-                } else if (nums[m] < target) {
+                } else if (target > nums[m]) {
                     l = m + 1;
                 } else {
                     h = m - 1;
@@ -61,6 +59,7 @@ public class FindFirstAndLastPositionOfElementInSortedArray {
             }
             return -1;
         }
+
     }
 //leetcode submit region end(Prohibit modification and deletion)
 

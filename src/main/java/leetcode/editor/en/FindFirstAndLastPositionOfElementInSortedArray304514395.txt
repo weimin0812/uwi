@@ -1,0 +1,38 @@
+    class Solution {
+        public int[] searchRange(int[] nums, int target) {
+            return new int[]{search(nums, target, true), search(nums, target, false)};
+        }
+
+        private int search(int[] nums, int target, boolean first) {
+            if (nums == null || nums.length == 0) {
+                return -1;
+            }
+            int l = 0, h = nums.length - 1;
+            while (l <= h) {
+                int m = l + (h - l) / 2;
+                if (nums[m] == target) {
+                    if (first) {
+                        if (m == 0 || nums[m] != nums[m - 1]) {
+                            return m;
+                        } else {
+                            h--;
+                        }
+                    } else {
+                        if (m == nums.length - 1 || nums[m] != nums[m + 1]) {
+                            return m;
+                        } else {
+                            l++;
+                        }
+                    }
+                } else if (nums[m] < target) {
+                    l = m + 1;
+                } else {
+                    h = m - 1;
+                }
+            }
+            return -1;
+        }
+    }
+
+//runtime:0 ms
+//memory:42.6 MB
