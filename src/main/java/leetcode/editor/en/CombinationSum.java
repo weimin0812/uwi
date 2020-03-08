@@ -51,14 +51,14 @@ public class CombinationSum {
     class Solution {
         public List<List<Integer>> combinationSum(int[] candidates, int target) {
             List<List<Integer>> ret = new ArrayList<>();
-            if (candidates == null || candidates.length < 1) {
+            if (candidates == null || candidates.length == 0) {
                 return ret;
             }
-            combinationSum(candidates, target, ret, new ArrayList<Integer>(), 0, 0);
+            combinationSum(candidates, target, 0, 0, ret, new ArrayList<Integer>());
             return ret;
         }
 
-        private void combinationSum(int[] candidates, int target, List<List<Integer>> ret, ArrayList<Integer> list, int start, int sum) {
+        private void combinationSum(int[] candidates, int target, int index, int sum, List<List<Integer>> ret, ArrayList<Integer> list) {
             if (sum > target) {
                 return;
             }
@@ -66,9 +66,9 @@ public class CombinationSum {
                 ret.add(new ArrayList<>(list));
                 return;
             }
-            for (int i = start; i < candidates.length; i++) {
+            for (int i = index; i < candidates.length; i++) {
                 list.add(candidates[i]);
-                combinationSum(candidates, target, ret, list, i, sum + candidates[i]);
+                combinationSum(candidates, target, i, sum + candidates[i], ret, list);
                 list.remove(list.size() - 1);
             }
         }
