@@ -45,13 +45,14 @@ public class Permutations {
                 return;
             }
             for (int i = 0; i < nums.length; i++) {
-                if (!visited[i]) {
-                    visited[i] = true;
-                    list.add(nums[i]);
-                    permute(nums, index + 1, ret, list, visited);
-                    visited[i] = false;
-                    list.remove(list.size() - 1);
+                if (visited[i]) {
+                    continue;
                 }
+                visited[i] = true;
+                list.add(nums[i]);
+                permute(nums, index + 1, ret, list, visited);
+                visited[i] = false;
+                list.remove(list.size() - 1);
             }
         }
     }
