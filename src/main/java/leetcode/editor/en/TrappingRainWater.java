@@ -24,16 +24,16 @@ public class TrappingRainWater {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int trap(int[] height) {
-            if (height == null || height.length < 2) {
+            //当前点能够存储的水取决于左侧最高，和右侧最高
+            if (height == null || height.length == 0) {
                 return 0;
             }
-            int l = 0, r = height.length - 1;
-            int lMax = height[0], rMax = height[r];
+            int l = 0, r = height.length - 1, lMax = height[l], rMax = height[r];
             int ret = 0;
             while (l <= r) {
                 lMax = Math.max(lMax, height[l]);
                 rMax = Math.max(rMax, height[r]);
-                if (lMax < rMax) {
+                if (lMax <= rMax) {
                     ret += (lMax - height[l]);
                     l++;
                 } else {
