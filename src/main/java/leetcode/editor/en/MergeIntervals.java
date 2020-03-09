@@ -23,7 +23,6 @@ package leetcode.editor.en;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.List;
 
 public class MergeIntervals {
@@ -35,10 +34,11 @@ public class MergeIntervals {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int[][] merge(int[][] intervals) {
-            if (intervals == null || intervals.length <= 1) {
+            if (intervals == null || intervals.length == 0) {
                 return intervals;
             }
-            Arrays.sort(intervals, Comparator.comparingInt(a -> a[0]));
+            //先排序
+            Arrays.sort(intervals, (a, b) -> (a[0] == b[0] ? a[1] - b[1] : a[0] - b[0]));
             List<int[]> ret = new ArrayList<>();
             int[] pre = intervals[0];
             ret.add(pre);
