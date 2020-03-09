@@ -57,7 +57,15 @@ public class RotateImage {
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public void rotate(int[][] matrix) {
-        
+        int len = matrix.length;
+        int i = 0, j = 0;
+        while (len > 0) {
+            //顺时针走 len-1步
+
+
+            //
+            len -= 2;
+        }
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

@@ -32,6 +32,9 @@ public class GroupAnagrams {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public List<List<String>> groupAnagrams(String[] strs) {
+            if (strs == null || strs.length == 0) {
+                return new ArrayList<>();
+            }
             Map<String, List<String>> map = new HashMap<>();
             for (String str : strs) {
                 char[] chars = str.toCharArray();
