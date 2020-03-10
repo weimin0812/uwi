@@ -10,8 +10,7 @@
 // 
 //Above is a 7 x 3 grid. How many possible unique paths are there? 
 //
-// Note: m and n will be at most 100. 
-//
+// 
 // Example 1: 
 //
 // 
@@ -29,7 +28,16 @@
 //
 // 
 //Input: m = 7, n = 3
-//Output: 28 
+//Output: 28
+// 
+//
+// 
+// Constraints: 
+//
+// 
+// 1 <= m, n <= 100 
+// It's guaranteed that the answer will be less than or equal to 2 * 10 ^ 9. 
+// 
 // Related Topics Array Dynamic Programming
 
 package leetcode.editor.en;
@@ -43,17 +51,13 @@ public class UniquePaths {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int uniquePaths(int m, int n) {
-            // dp[i][j] = dp[i][j-1] + dp[i-1][j]
-            if (m <= 0 || n <= 0) {
-                return 0;
-            }
             int[][] dp = new int[m][n];
             for (int i = 0; i < m; i++) {
                 for (int j = 0; j < n; j++) {
                     if (i == 0 && j == 0) {
                         dp[i][j] = 1;
                     } else {
-                        dp[i][j] = (j >= 1 ? dp[i][j - 1] : 0) + (i >= 1 ? dp[i - 1][j] : 0);
+                        dp[i][j] = (j - 1 >= 0 ? dp[i][j - 1] : 0) + (i - 1 >= 0 ? dp[i - 1][j] : 0);
                     }
                 }
             }
