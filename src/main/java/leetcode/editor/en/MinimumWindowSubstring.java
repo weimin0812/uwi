@@ -32,40 +32,36 @@ public class MinimumWindowSubstring {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public String minWindow(String s, String t) {
-            if (s == null || s.length() == 0 || t == null || t.length() == 0) {
-                return "";
-            }
             Map<Character, Integer> needs = new HashMap<>();
             for (char c : t.toCharArray()) {
                 needs.put(c, needs.getOrDefault(c, 0) + 1);
             }
-            int l = 0, r = 0, total = 0;
-            int start = -1, minLength = Integer.MAX_VALUE;
+            int l = 0, count = 0, total = t.length();
             Map<Character, Integer> windows = new HashMap<>();
-            for (; r < s.length(); r++) {
-                char rc = s.charAt(r);
-                if (needs.containsKey(rc)) {
-                    windows.put(rc, windows.getOrDefault(rc, 0) + 1);
-                    if (windows.get(rc) <= needs.get(rc)) {
-                        total++;
+            String ret = "";
+            for (int i = 0; i < s.length(); i++) {
+                char c = s.charAt(i);
+                if (needs.containsKey(c)) {
+                    windows.put(c, windows.getOrDefault(c, 0) + 1);
+                    if (windows.get(c) <= needs.get(c)) {
+                        count++;
                     }
                 }
-                while (total == t.length()) {
-                    if (r - l + 1 < minLength) {
-                        start = l;
-                        minLength = r - l + 1;
+                while (count == total) {
+                    if ("".equals(ret) || ret.length() > (i - l + 1)) {
+                        ret = s.substring(l, i + 1);
                     }
                     char lc = s.charAt(l);
                     if (needs.containsKey(lc)) {
                         windows.put(lc, windows.get(lc) - 1);
                         if (windows.get(lc) < needs.get(lc)) {
-                            total--;
+                            count--;
                         }
                     }
                     l++;
                 }
             }
-            return start == -1 ? "" : s.substring(start, start + minLength);
+            return ret;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
