@@ -40,11 +40,11 @@ public class SortColors {
                 return;
             }
             int l = 0, h = nums.length - 1;
-            for (int i = l; i <= h; ) {
+            for (int i = 0; i <= h; ) {
                 if (nums[i] == 0) {
                     swap(nums, i, l);
-                    i++;
                     l++;
+                    i++;
                 } else if (nums[i] == 2) {
                     swap(nums, i, h);
                     h--;
@@ -55,6 +55,9 @@ public class SortColors {
         }
 
         private void swap(int[] nums, int i, int j) {
+            if (i == j) {
+                return;
+            }
             int t = nums[i];
             nums[i] = nums[j];
             nums[j] = t;
