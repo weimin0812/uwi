@@ -36,8 +36,8 @@ public class MinimumWindowSubstring {
             for (char c : t.toCharArray()) {
                 needs.put(c, needs.getOrDefault(c, 0) + 1);
             }
-            int l = 0, count = 0, total = t.length();
             Map<Character, Integer> windows = new HashMap<>();
+            int l = 0, count = 0, total = t.length();
             String ret = "";
             for (int i = 0; i < s.length(); i++) {
                 char c = s.charAt(i);
@@ -48,7 +48,7 @@ public class MinimumWindowSubstring {
                     }
                 }
                 while (count == total) {
-                    if ("".equals(ret) || ret.length() > (i - l + 1)) {
+                    if (ret.isEmpty() || ret.length() > (i - l + 1)) {
                         ret = s.substring(l, i + 1);
                     }
                     char lc = s.charAt(l);
