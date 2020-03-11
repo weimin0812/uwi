@@ -14,6 +14,7 @@
 //
 // Follow up: Recursive solution is trivial, could you do it iteratively? 
 // Related Topics Hash Table Stack Tree
+
 package leetcode.editor.en;
 
 import leetcode.common.TreeNode;
@@ -27,7 +28,6 @@ public class BinaryTreeInorderTraversal {
     public static void main(String[] args) {
         Solution solution = new BinaryTreeInorderTraversal().new Solution();
     }
-
 
 //leetcode submit region begin(Prohibit modification and deletion)
 
@@ -55,15 +55,6 @@ public class BinaryTreeInorderTraversal {
                 current = current.right;
             }
             return ret;
-        }
-
-        private void inorder(TreeNode root, List<Integer> ret) {
-            if (root == null) {
-                return;
-            }
-            inorder(root.left, ret);
-            ret.add(root.val);
-            inorder(root.right, ret);
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)

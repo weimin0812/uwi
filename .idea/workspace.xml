@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b943ffc4-64d5-45d1-b0a2-ddfe91d4d056" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/WordSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/WordSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/BinaryTreeInorderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/BinaryTreeInorderTraversal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/LargestRectangleInHistogram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/LargestRectangleInHistogram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/MaximalRectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/MaximalRectangle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -343,7 +346,7 @@
       <workItem from="1583622280323" duration="7598000" />
       <workItem from="1583723698395" duration="2685000" />
       <workItem from="1583762213254" duration="4884000" />
-      <workItem from="1583895336779" duration="1231000" />
+      <workItem from="1583895336779" duration="2725000" />
     </task>
     <servers />
   </component>
@@ -475,10 +478,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="427" y="76" key="refactoring.ChangeSignatureDialog/0.0.1440.900@0.0.1440.900" timestamp="1579513822881" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1583896671103">
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1583898196632">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1583896671103" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1583898196632" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
