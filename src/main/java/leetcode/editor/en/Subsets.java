@@ -1,4 +1,5 @@
-//Given a set of distinct integers, nums, return all possible subsets (the power set). 
+//Given a set of distinct integers, nums, return all possible subsets (the power
+// set). 
 //
 // Note: The solution set must not contain duplicate subsets. 
 //
@@ -18,6 +19,7 @@
 //  []
 //] 
 // Related Topics Array Backtracking Bit Manipulation
+
 package leetcode.editor.en;
 
 import java.util.ArrayList;
@@ -29,7 +31,6 @@ public class Subsets {
         Solution solution = new Subsets().new Solution();
     }
 
-
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public List<List<Integer>> subsets(int[] nums) {
@@ -37,19 +38,18 @@ public class Subsets {
             if (nums == null || nums.length == 0) {
                 return ret;
             }
-            subsets(nums, ret, new ArrayList<Integer>(), 0);
+            subsets(nums, ret, 0, new ArrayList<Integer>());
             return ret;
         }
 
-        private void subsets(int[] nums, List<List<Integer>> ret, ArrayList<Integer> list, int start) {
+        private void subsets(int[] nums, List<List<Integer>> ret, int index, ArrayList<Integer> list) {
             ret.add(new ArrayList<>(list));
-            for (int i = start; i < nums.length; i++) {
+            for (int i = index; i < nums.length; i++) {
                 list.add(nums[i]);
-                subsets(nums, ret, list, i + 1);
+                subsets(nums, ret, i + 1, list);
                 list.remove(list.size() - 1);
             }
         }
-
     }
 //leetcode submit region end(Prohibit modification and deletion)
 
