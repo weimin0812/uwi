@@ -42,25 +42,29 @@ public class ConstructBinaryTreeFromPreorderAndInorderTraversal {
      */
     class Solution {
         public TreeNode buildTree(int[] preorder, int[] inorder) {
+            if (preorder == null || preorder.length == 0 || inorder == null || inorder.length == 0) {
+                return null;
+            }
             return buildTree(preorder, 0, preorder.length - 1, inorder, 0, inorder.length - 1);
         }
 
         private TreeNode buildTree(int[] pre, int preStart, int preEnd, int[] in, int inStart, int inEnd) {
-            if (pre == null || preStart > preEnd || in == null || inStart > inEnd) {
+            if (preStart > preEnd || inStart > inEnd) {
                 return null;
             }
-            TreeNode node = new TreeNode(pre[preStart]);
-            int i = inStart;
-            for (; i <= inEnd; i++) {
-                if (in[i] == pre[preStart]) {
+            TreeNode root = new TreeNode(pre[preStart]);
+            int rootIndex = inStart;
+            for (; rootIndex <= inEnd; rootIndex++) {
+                if (in[rootIndex] == pre[preStart]) {
                     break;
                 }
             }
-            int leftLen = i - inStart;
-            node.left = buildTree(pre, preStart + 1, preStart + leftLen, in, inStart, i - 1);
-            node.right = buildTree(pre, preStart + leftLen + 1, preEnd, in, i + 1, inEnd);
-            return node;
+            int leftLen = rootIndex - inStart;
+            root.left = buildTree(pre, preStart + 1, preStart + leftLen, in, inStart, rootIndex - 1);
+            root.right = buildTree(pre, preStart + leftLen + 1, preEnd, in, rootIndex + 1, inEnd);
+            return root;
         }
+
     }
 //leetcode submit region end(Prohibit modification and deletion)
 
