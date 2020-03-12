@@ -51,12 +51,12 @@ public class BinaryTreeLevelOrderTraversal {
      */
     class Solution {
         public List<List<Integer>> levelOrder(TreeNode root) {
-            TreeNode current = root;
             List<List<Integer>> ret = new ArrayList<>();
+            TreeNode current = root;
             if (current == null) {
                 return ret;
             }
-            Queue<TreeNode> queue = new LinkedList<>();
+            Queue<TreeNode> queue = new LinkedList();
             queue.offer(current);
             while (!queue.isEmpty()) {
                 int size = queue.size();
