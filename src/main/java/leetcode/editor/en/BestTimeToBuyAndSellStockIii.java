@@ -52,15 +52,15 @@ public class BestTimeToBuyAndSellStockIii {
             if (prices == null || prices.length == 0) {
                 return 0;
             }
-            int n = prices.length;
-            int[][][] dp = new int[n][3][2];
+            int k = 2, n = prices.length;
+            int[][][] dp = new int[n][k + 1][2];
             for (int i = 0; i < n; i++) {
-                for (int k = 1; k < 3; k++) {
-                    dp[i][k][0] = Math.max(i - 1 >= 0 ? dp[i - 1][k][0] : 0, (i - 1 >= 0 ? dp[i - 1][k][1] : Integer.MIN_VALUE) + prices[i]);
-                    dp[i][k][1] = Math.max(i - 1 >= 0 ? dp[i - 1][k][1] : Integer.MIN_VALUE, (i - 1 >= 0 ? dp[i - 1][k - 1][0] : 0) - prices[i]);
+                for (int j = 1; j <= k; j++) {
+                    dp[i][j][0] = Math.max(i - 1 >= 0 ? dp[i - 1][j][0] : 0, (i - 1 >= 0 ? dp[i - 1][j][1] : Integer.MIN_VALUE) + prices[i]);
+                    dp[i][j][1] = Math.max(i - 1 >= 0 ? dp[i - 1][j][1] : Integer.MIN_VALUE, (i - 1 >= 0 ? dp[i - 1][j - 1][0] : 0) - prices[i]);
                 }
             }
-            return dp[n - 1][2][0];
+            return dp[n - 1][k][0];
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
