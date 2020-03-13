@@ -46,8 +46,6 @@ public class BestTimeToBuyAndSellStockIi {
 
     public static void main(String[] args) {
         Solution solution = new BestTimeToBuyAndSellStockIi().new Solution();
-        int[] prices = {7, 6, 4, 3, 1};
-        solution.maxProfit(prices);
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
