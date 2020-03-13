@@ -52,22 +52,20 @@ public class FlattenBinaryTreeToLinkedList {
      */
     class Solution {
         public void flatten(TreeNode root) {
-            // 先序遍历根左右的迭代实现，注意入栈的顺序
-            if (root == null) {
+            TreeNode current = root;
+            if (current == null) {
                 return;
             }
-            TreeNode current = root, pre = null;
             Stack<TreeNode> stack = new Stack<>();
             stack.push(current);
+            TreeNode pre = null;
             while (!stack.isEmpty()) {
                 current = stack.pop();
-                if (pre == null) {
-                    pre = current;
-                } else {
+                if (pre != null) {
                     pre.right = current;
                     pre.left = null;
-                    pre = current;
                 }
+                pre = current;
                 if (current.right != null) {
                     stack.push(current.right);
                 }
@@ -76,7 +74,6 @@ public class FlattenBinaryTreeToLinkedList {
                 }
             }
         }
-
     }
 //leetcode submit region end(Prohibit modification and deletion)
 
