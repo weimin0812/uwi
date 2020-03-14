@@ -37,7 +37,7 @@ public class SingleNumber {
                 return ret;
             }
             for (int num : nums) {
-                ret ^= num;
+                ret = ret ^ num;
             }
             return ret;
         }

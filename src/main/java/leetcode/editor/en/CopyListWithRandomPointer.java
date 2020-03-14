@@ -60,7 +60,6 @@ import leetcode.common.Node;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.concurrent.Phaser;
 
 public class CopyListWithRandomPointer {
 
@@ -97,7 +96,8 @@ class Node {
                 map.get(current).random = map.get(current.random);
                 current = current.next;
             }
-            return map.get(head);
+            current = head;
+            return map.get(current);
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
