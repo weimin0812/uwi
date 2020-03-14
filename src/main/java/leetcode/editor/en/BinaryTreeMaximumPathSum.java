@@ -61,14 +61,14 @@ public class BinaryTreeMaximumPathSum {
             return ret;
         }
 
-        private int maxFrom(TreeNode node) {
-            if (node == null) {
+        private int maxFrom(TreeNode root) {
+            if (root == null) {
                 return 0;
             }
-            int l = Math.max(0, maxFrom(node.left));
-            int r = Math.max(0, maxFrom(node.right));
-            ret = Math.max(ret, l + r + node.val);
-            return node.val + Math.max(l, r);
+            int l = Math.max(0, maxFrom(root.left));
+            int r = Math.max(0, maxFrom(root.right));
+            ret = Math.max(ret, l + r + root.val);
+            return root.val + Math.max(l, r);
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
