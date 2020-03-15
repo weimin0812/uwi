@@ -23,27 +23,24 @@ public class MaximumProductSubarray {
 
     public static void main(String[] args) {
         Solution solution = new MaximumProductSubarray().new Solution();
-        int[] nums = {2, 3, -2, 4};
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int maxProduct(int[] nums) {
-            // todo use your fucking brain
-            // 需要记录两个值，一个最大值，一个最小值，当nums[i] < 0时候最大最小值互换
-            // max product
             if (nums == null || nums.length == 0) {
                 return 0;
             }
-            int preMax = 1, preMin = 1, ret = nums[0];
-            for (int num : nums) {
-                if (num < 0) {
+            int ret = nums[0], preMax = nums[0], preMin = nums[0];
+            for (int i = 1; i < nums.length; i++) {
+                int n = nums[i];
+                if (n < 0) {
                     int t = preMax;
                     preMax = preMin;
                     preMin = t;
                 }
-                preMax = Math.max(num, num * preMax);
-                preMin = Math.min(num, num * preMin);
+                preMax = Math.max(n, preMax * n);
+                preMin = Math.min(n, n * preMin);
                 ret = Math.max(ret, preMax);
             }
             return ret;
