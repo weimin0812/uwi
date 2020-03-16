@@ -29,11 +29,10 @@ public class MajorityElement {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int majorityElement(int[] nums) {
-            // majority element
             if (nums == null || nums.length == 0) {
-                return 0;
+                return -1;
             }
-            int count = 1, ret = nums[0];
+            int ret = nums[0], count = 1;
             for (int i = 1; i < nums.length; i++) {
                 if (ret == nums[i]) {
                     count++;
@@ -42,7 +41,7 @@ public class MajorityElement {
                 }
                 if (count == 0) {
                     ret = nums[i];
-                    count = 1;
+                    count++;
                 }
             }
             count = 0;
@@ -51,7 +50,7 @@ public class MajorityElement {
                     count++;
                 }
             }
-            return count > nums.length / 2 ? ret : 0;
+            return count > nums.length / 2 ? ret : -1;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
