@@ -59,18 +59,17 @@ public class HouseRobberIii {
      */
     class Solution {
         public int rob(TreeNode root) {
-            TreeNode node = root;
-            if (node == null) {
-                return 0;
+            int[] ret = robOrNot(root);
+            return Math.max(ret[0], ret[1]);
+        }
+
+        private int[] robOrNot(TreeNode root) {
+            if (root == null) {
+                return new int[]{0, 0};
             }
-            int amount = node.val;
-            if (node.left != null) {
-                amount += rob(root.left.left) + rob(root.left.right);
-            }
-            if (node.right != null) {
-                amount += rob(root.right.left) + rob(root.right.right);
-            }
-            return Math.max(amount, rob(root.left) + rob(root.right));
+            int[] left = robOrNot(root.left);
+            int[] right = robOrNot(root.right);
+            return new int[]{Math.max(left[0], left[1]) + Math.max(right[0], right[1]), root.val + left[0] + right[0]};
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
