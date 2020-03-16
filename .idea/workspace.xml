@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b943ffc4-64d5-45d1-b0a2-ddfe91d4d056" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/NumberOfIslands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/NumberOfIslands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/CourseSchedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/CourseSchedule.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -347,7 +347,7 @@
       <workItem from="1583984139240" duration="1593000" />
       <workItem from="1584013146871" duration="8896000" />
       <workItem from="1584087812126" duration="13606000" />
-      <workItem from="1584274844646" duration="7778000" />
+      <workItem from="1584274844646" duration="8217000" />
     </task>
     <servers />
   </component>
@@ -455,10 +455,10 @@
     <state width="887" height="454" key="GridCell.Tab.1.right/0.23.1440.824@0.23.1440.824" timestamp="1580720691971" />
     <state width="895" height="220" key="GridCell.Tab.1.right/0.23.1440.825@0.23.1440.825" timestamp="1583390046682" />
     <state width="884" height="443" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1582342665509" />
-    <state x="308" y="201" key="IDE.errors.dialog" timestamp="1584172745787">
+    <state x="308" y="201" key="IDE.errors.dialog" timestamp="1584342152492">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="308" y="201" key="IDE.errors.dialog/0.0.1440.900@0.0.1440.900" timestamp="1584172745787" />
+    <state x="308" y="201" key="IDE.errors.dialog/0.0.1440.900@0.0.1440.900" timestamp="1584342152492" />
     <state x="130" y="91" width="1097" height="722" key="SettingsEditor" timestamp="1584087549851">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
