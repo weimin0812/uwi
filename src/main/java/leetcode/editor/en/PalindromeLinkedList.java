@@ -52,14 +52,14 @@ public class PalindromeLinkedList {
                 if (fast.val != slow.val) {
                     return false;
                 }
-                fast = fast.next;
                 slow = slow.next;
+                fast = fast.next;
             }
             return true;
         }
 
         private ListNode reverse(ListNode node) {
-            ListNode pre = null, current = node, next = null;
+            ListNode current = node, pre = null, next = null;
             while (current != null) {
                 next = current.next;
                 current.next = pre;
