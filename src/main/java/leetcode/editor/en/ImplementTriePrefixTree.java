@@ -23,68 +23,72 @@
 
 package leetcode.editor.en;
 
+import leetcode.common.TreeNode;
+
 public class ImplementTriePrefixTree {
 
     public static void main(String[] args) {
-
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Trie {
-        private Node root = new Node();
+        class TrieNode {
+            private TrieNode[] children = new TrieNode[26];
+            private boolean word;
+        }
+
+        private TrieNode root;
+
 
         /**
          * Initialize your data structure here.
          */
         public Trie() {
-
+            root = new TrieNode();
         }
 
         /**
          * Inserts a word into the trie.
          */
         public void insert(String word) {
-            Node node = root;
+            TrieNode current = root;
             for (char c : word.toCharArray()) {
-                if (node.children[c - 'a'] == null) {
-                    node.children[c - 'a'] = new Node();
+                if (current.children[c - 'a'] == null) {
+                    current.children[c - 'a'] = new TrieNode();
                 }
-                node = node.children[c - 'a'];
+                current = current.children[c - 'a'];
             }
-            node.isWord = true;
+            current.word = true;
         }
 
         /**
          * Returns if the word is in the trie.
          */
         public boolean search(String word) {
-            Node node = root;
+            TrieNode current = root;
             for (char c : word.toCharArray()) {
-                if (node.children[c - 'a'] == null) {
+                int i = c - 'a';
+                if (current.children[i] == null) {
                     return false;
                 }
-                node = node.children[c - 'a'];
+                current = current.children[i];
             }
-            return node.isWord;
+            return current.word;
         }
 
         /**
          * Returns if there is any word in the trie that starts with the given prefix.
          */
         public boolean startsWith(String prefix) {
-            Node node = root;
+            TrieNode current = root;
             for (char c : prefix.toCharArray()) {
-                if (node.children[c - 'a'] == null) {
+                int i = c - 'a';
+                if (current.children[i] == null) {
                     return false;
                 }
-                node = node.children[c - 'a'];
+                current = current.children[i];
             }
             return true;
-        }
-
-        class Node {
-            private boolean isWord;
-            private Node[] children = new Node[26];
         }
     }
 
