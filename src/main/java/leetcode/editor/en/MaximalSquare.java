@@ -1,4 +1,5 @@
-//Given a 2D binary matrix filled with 0's and 1's, find the largest square containing only 1's and return its area. 
+//Given a 2D binary matrix filled with 0's and 1's, find the largest square cont
+//aining only 1's and return its area. 
 //
 // Example: 
 //
@@ -12,6 +13,7 @@
 //
 //Output: 4
 // Related Topics Dynamic Programming
+
 package leetcode.editor.en;
 
 public class MaximalSquare {
@@ -20,23 +22,20 @@ public class MaximalSquare {
         Solution solution = new MaximalSquare().new Solution();
     }
 
-
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int maximalSquare(char[][] matrix) {
             if (matrix == null || matrix.length == 0) {
                 return 0;
             }
-            int[][] dp = new int[matrix.length][matrix[0].length];
             int ret = 0;
-            for (int i = 0; i < matrix.length; i++) {
-                for (int j = 0; j < matrix[0].length; j++) {
+            int n = matrix.length;
+            int m = matrix[0].length;
+            int[][] dp = new int[n][m];
+            for (int i = 0; i < n; i++) {
+                for (int j = 0; j < m; j++) {
                     if (matrix[i][j] == '1') {
-                        if (i == 0 || j == 0) {
-                            dp[i][j] = 1;
-                        } else {
-                            dp[i][j] = Math.min(dp[i - 1][j], Math.min(dp[i][j - 1], dp[i - 1][j - 1])) + 1;
-                        }
+                        dp[i][j] = Math.min(i - 1 >= 0 ? dp[i - 1][j] : 0, Math.min(j - 1 >= 0 ? dp[i][j - 1] : 0, i - 1 >= 0 && j - 1 >= 0 ? dp[i - 1][j - 1] : 0)) + 1;
                         ret = Math.max(ret, dp[i][j] * dp[i][j]);
                     }
                 }
