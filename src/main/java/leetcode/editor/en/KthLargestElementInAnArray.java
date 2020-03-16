@@ -30,31 +30,32 @@ public class KthLargestElementInAnArray {
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
+        public int findKthLargest(int[] nums, int k) {
+            PriorityQueue<Integer> minHeap = new PriorityQueue<>();
+            for (int n : nums) {
+                minHeap.offer(n);
+                if (minHeap.size() > k) {
+                    minHeap.poll();
+                }
+            }
+            return minHeap.peek();
+        }
+
 //        public int findKthLargest(int[] nums, int k) {
-//            PriorityQueue<Integer> minHeap = new PriorityQueue<>();
-//            for (int n : nums) {
-//                minHeap.offer(n);
-//                if (minHeap.size() > k) {
-//                    minHeap.poll();
+//            int targetIndex = nums.length - k;
+//            int l = 0, h = nums.length - 1;
+//            int index = partition(nums, l, h);
+//            while (index != targetIndex) {
+//                if (index < targetIndex) {
+//                    l = index + 1;
+//                    index = partition(nums, l, h);
+//                } else {
+//                    h = index - 1;
+//                    index = partition(nums, l, h);
 //                }
 //            }
-//            return minHeap.peek();
+//            return nums[index];
 //        }
-
-        public int findKthLargest(int[] nums, int k) {
-            int targetIndex = nums.length - k;
-            int l = 0, h = nums.length - 1;
-            int index = partition(nums, l, h);
-            while (targetIndex != index) {
-                if (index > targetIndex) {
-                    h = index - 1;
-                } else {
-                    l = index + 1;
-                }
-                index = partition(nums, l, h);
-            }
-            return nums[index];
-        }
 
         private int partition(int[] nums, int l, int h) {
             int pivot = nums[l];
@@ -63,7 +64,7 @@ public class KthLargestElementInAnArray {
                     h--;
                 }
                 nums[l] = nums[h];
-                while (l < h && nums[l] < pivot) {
+                while (l < h && nums[l] <= pivot) {
                     l++;
                 }
                 nums[h] = nums[l];
