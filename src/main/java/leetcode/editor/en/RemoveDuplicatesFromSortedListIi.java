@@ -40,23 +40,22 @@ public class RemoveDuplicatesFromSortedListIi {
      */
     class Solution {
         public ListNode deleteDuplicates(ListNode head) {
-            if (head == null || head.next == null) {
-                return head;
-            }
-            ListNode current = head.next;
+            ListNode dummy = new ListNode(0);
+            dummy.next = head;
+            ListNode pre = dummy, current = head;
             while (current != null) {
-                if (current.val == head.val) {
+                while (current.next != null && current.val == current.next.val) {
+                    current = current.next;
+                }
+                if (pre.next == current) {
+                    pre = pre.next;
                     current = current.next;
                 } else {
-                    break;
+                    pre.next = current.next;
+                    current = current.next;
                 }
             }
-            if (current == head.next) {
-                head.next = deleteDuplicates(current);
-                return head;
-            } else {
-                return deleteDuplicates(current);
-            }
+            return dummy.next;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
