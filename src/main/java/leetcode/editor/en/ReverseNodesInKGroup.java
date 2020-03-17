@@ -49,9 +49,9 @@ public class ReverseNodesInKGroup {
         public ListNode reverseKGroup(ListNode head, int k) {
             ListNode dummy = new ListNode(0);
             dummy.next = head;
-            ListNode pre = dummy, end = dummy;
-            while (end.next != null) {
-                for (int i = 0; i < k; i++) {
+            ListNode pre = dummy, end = head;
+            while (end != null) {
+                for (int i = 1; i < k; i++) {
                     if (end == null) {
                         break;
                     }
@@ -60,19 +60,19 @@ public class ReverseNodesInKGroup {
                 if (end == null) {
                     break;
                 }
-                ListNode start = pre.next;
                 ListNode next = end.next;
                 end.next = null;
+                ListNode start = pre.next;
                 pre.next = reverse(start);
                 start.next = next;
                 pre = start;
-                end = start;
+                end = start.next;
             }
             return dummy.next;
         }
 
         private ListNode reverse(ListNode node) {
-            ListNode current = node, pre = null, next = null;
+            ListNode pre = null, current = node, next = null;
             while (current != null) {
                 next = current.next;
                 current.next = pre;
@@ -81,6 +81,7 @@ public class ReverseNodesInKGroup {
             }
             return pre;
         }
+
     }
 //leetcode submit region end(Prohibit modification and deletion)
 
