@@ -43,15 +43,19 @@ public class PalindromicSubstrings {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int countSubstrings(String s) {
-            if (s == null || s.isEmpty()) {
-                return 0;
+            int count = 0;
+            if (s == null || s.length() == 0) {
+                return count;
             }
-            int n = s.length(), count = 0;
+            int n = s.length();
             boolean[][] dp = new boolean[n][n];
-            for (int i = n - 1; i >= 0; i--) {
+            // dp[i][j] = s[i]==s[j] && dp[i+1][j-1]
+            for (int i = n; i >= 0; i--) {
                 for (int j = i; j < n; j++) {
-                    dp[i][j] = (s.charAt(i) == s.charAt(j)) && (i + 1 > j - 1 || dp[i + 1][j - 1]);
-                    count += dp[i][j] ? 1 : 0;
+                    dp[i][j] = s.charAt(i) == s.charAt(j) && (i + 1 > j - 1 || dp[i + 1][j - 1]);
+                    if (dp[i][j]) {
+                        count++;
+                    }
                 }
             }
             return count;
