@@ -1,0 +1,21 @@
+    class Solution {
+        public int[] dailyTemperatures(int[] T) {
+            if (T == null || T.length == 1) {
+                return T;
+            }
+            Stack<Integer> stack = new Stack<>();
+            int[] ret = new int[T.length];
+            for (int i = 0; i < T.length; i++) {
+                int t = T[i];
+                while (!stack.isEmpty() && t > T[stack.peek()]) {
+                    ret[stack.peek()] = i - stack.peek();
+                    stack.pop();
+                }
+                stack.push(i);
+            }
+            return ret;
+        }
+    }
+
+//runtime:17 ms
+//memory:45.8 MB

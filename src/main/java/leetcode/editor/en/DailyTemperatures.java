@@ -25,16 +25,15 @@ public class DailyTemperatures {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int[] dailyTemperatures(int[] T) {
-            if (T == null || T.length == 1) {
+            if (T == null || T.length == 0) {
                 return T;
             }
-            Stack<Integer> stack = new Stack<>();
             int[] ret = new int[T.length];
+            Stack<Integer> stack = new Stack<>();
             for (int i = 0; i < T.length; i++) {
-                int t = T[i];
-                while (!stack.isEmpty() && t > T[stack.peek()]) {
-                    ret[stack.peek()] = i - stack.peek();
-                    stack.pop();
+                while (!stack.isEmpty() && T[i] > T[stack.peek()]) {
+                    Integer index = stack.pop();
+                    ret[index] = i - index;
                 }
                 stack.push(i);
             }
