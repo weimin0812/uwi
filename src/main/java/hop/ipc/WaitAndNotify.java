@@ -31,6 +31,7 @@ public class WaitAndNotify {
                 System.out.println("B notify");
                 boolean flag = true;
                 lock.notify();
+                lock.notifyAll();
                 while (flag) {
 
                 }

@@ -33,17 +33,14 @@ public class ShortestUnsortedContinuousSubarray {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int findUnsortedSubarray(int[] nums) {
-            if (nums == null || nums.length == 0) {
-                return 0;
-            }
-            int[] a = Arrays.copyOf(nums, nums.length);
-            Arrays.sort(a);
+            int[] clone = nums.clone();
+            Arrays.sort(clone);
             int start = 0;
-            while (start < a.length && a[start] == nums[start]) {
+            while (start < nums.length && nums[start] == clone[start]) {
                 start++;
             }
-            int end = a.length - 1;
-            while (start <= end && a[end] == nums[end]) {
+            int end = nums.length - 1;
+            while (end > start && nums[end] == clone[end]) {
                 end--;
             }
             return end - start + 1;

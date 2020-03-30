@@ -19,6 +19,8 @@ public class ExecutorTest {
         Condition condition = reentrantLock.newCondition();
         condition.wait();
         condition.signal();
+        condition.signalAll();
+        condition.await();
         Callable<String> callable = () -> "1";
 
         CountDownLatch countDownLatch = new CountDownLatch(10);
