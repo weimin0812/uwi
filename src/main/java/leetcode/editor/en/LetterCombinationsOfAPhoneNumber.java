@@ -38,18 +38,18 @@ public class LetterCombinationsOfAPhoneNumber {
                 return ret;
             }
             String[] numbers = {"", "", "abc", "def", "ghi", "jkl", "mno", "qprs", "tuv", "wxyz"};
-            letterCombinations(digits, 0, ret, new StringBuffer(), numbers);
+            letterCombinations(digits, 0, numbers, ret, new StringBuilder());
             return ret;
         }
 
-        private void letterCombinations(String digits, int i, List<String> ret, StringBuffer sb, String[] numbers) {
-            if (i == digits.length()) {
+        private void letterCombinations(String digits, int index, String[] numbers, List<String> ret, StringBuilder sb) {
+            if (index == digits.length()) {
                 ret.add(sb.toString());
                 return;
             }
-            for (char c : numbers[digits.charAt(i) - '0'].toCharArray()) {
+            for (char c : numbers[digits.charAt(index) - '0'].toCharArray()) {
                 sb.append(c);
-                letterCombinations(digits, i + 1, ret, sb, numbers);
+                letterCombinations(digits, index + 1, numbers, ret, sb);
                 sb.deleteCharAt(sb.length() - 1);
             }
         }
