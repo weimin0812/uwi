@@ -28,19 +28,18 @@ public class LongestPalindromicSubstring {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public String longestPalindrome(String s) {
-            if (s == null || s.isEmpty()) {
+            if (s == null || s.length() <= 1) {
                 return s;
             }
             int n = s.length();
             boolean[][] dp = new boolean[n][n];
             String ret = "";
-            for (int i = n; i >= 0; i--) {
+            //dp[i][j] = s[i] == s[j] && dp[i+1][j-1]
+            for (int i = n - 1; i >= 0; i--) {
                 for (int j = i; j < n; j++) {
                     dp[i][j] = s.charAt(i) == s.charAt(j) && (i + 1 > j - 1 || dp[i + 1][j - 1]);
-                    if (dp[i][j]) {
-                        if (j - i + 1 > ret.length()) {
-                            ret = s.substring(i, j + 1);
-                        }
+                    if (dp[i][j] && j - i + 1 > ret.length()) {
+                        ret = s.substring(i, j + 1);
                     }
                 }
             }
