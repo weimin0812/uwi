@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b943ffc4-64d5-45d1-b0a2-ddfe91d4d056" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/ThreeSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/ThreeSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/ValidParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/en/ValidParentheses.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -361,7 +360,7 @@
       <workItem from="1585019388261" duration="869000" />
       <workItem from="1585052256021" duration="181000" />
       <workItem from="1585212468548" duration="2970000" />
-      <workItem from="1585555634065" duration="6341000" />
+      <workItem from="1585555634065" duration="7416000" />
     </task>
     <servers />
   </component>
@@ -489,10 +488,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="427" y="76" key="refactoring.ChangeSignatureDialog/0.0.1440.900@0.0.1440.900" timestamp="1579513822881" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1585580018764">
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1585581934452">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1585580018764" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1585581934452" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
