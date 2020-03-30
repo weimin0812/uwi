@@ -32,17 +32,17 @@ public class ContainerWithMostWater {
     class Solution {
         public int maxArea(int[] height) {
             int ret = 0;
-            if (height == null || height.length < 2) {
-                return 0;
+            if (height == null || height.length <= 1) {
+                return ret;
             }
-            int l = 0, h = height.length - 1;
-            while (l < h) {
-                if (height[l] <= height[h]) {
-                    ret = Math.max(ret, (h - l) * height[l]);
+            int l = 0, r = height.length - 1;
+            while (l < r) {
+                if (height[l] < height[r]) {
+                    ret = Math.max(ret, (r - l) * height[l]);
                     l++;
                 } else {
-                    ret = Math.max(ret, (h - l) * height[h]);
-                    h--;
+                    ret = Math.max(ret, (r - l) * height[r]);
+                    r--;
                 }
             }
             return ret;
