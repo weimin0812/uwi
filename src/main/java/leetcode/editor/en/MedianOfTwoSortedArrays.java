@@ -40,25 +40,27 @@ public class MedianOfTwoSortedArrays {
                 nums1 = nums2;
                 nums2 = t;
             }
-            int l1 = nums1.length, l2 = nums2.length;
-            int l = 0, h = l1, half = (l1 + l2 + 1) / 2;
+            int l1 = nums1.length, l2 = nums2.length, half = (l1 + l2 + 1) / 2;
+            int l = 0, h = l1;
             while (l <= h) {
                 int i = l + (h - l) / 2;
                 int j = half - i;
                 if (i > 0 && nums1[i - 1] > nums2[j]) {
+                    // i too large
                     h = i - 1;
                 } else if (i < l1 && nums2[j - 1] > nums1[i]) {
+                    // i too small
                     l = i + 1;
                 } else {
-                    int leftMax = i == 0 ? nums2[j - 1] : j == 0 ? nums1[i - 1] : Math.max(nums1[i - 1], nums2[j - 1]);
+                    int maxLeft = i == 0 ? nums2[j - 1] : j == 0 ? nums1[i - 1] : Math.max(nums1[i - 1], nums2[j - 1]);
                     if ((l1 + l2) % 2 == 1) {
-                        return leftMax;
+                        return maxLeft;
                     }
-                    int rightMin = i == l1 ? nums2[j] : j == l2 ? nums1[i] : Math.min(nums1[i], nums2[j]);
-                    return (leftMax + rightMin) / 2.0;
+                    int minRight = i == l1 ? nums2[j] : j == l2 ? nums1[i] : Math.min(nums1[i], nums2[j]);
+                    return (maxLeft + minRight) / 2.0;
                 }
             }
-            return -1;
+            return 0;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)

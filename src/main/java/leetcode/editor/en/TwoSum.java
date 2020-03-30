@@ -39,7 +39,7 @@ public class TwoSum {
                 }
                 map.put(n, i);
             }
-            return new int[]{};
+            return null;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
