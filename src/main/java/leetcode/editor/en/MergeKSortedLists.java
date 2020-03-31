@@ -39,23 +39,36 @@ public class MergeKSortedLists {
             if (lists == null || lists.length == 0) {
                 return null;
             }
-            int d = 1;
-            while (d < lists.length) {
-                for (int i = 0; i < lists.length - d; i = i + 2 * d) {
-                    lists[i] = mergeTwo(lists[i], lists[i + d]);
+            int d = 1, l = lists.length;
+            while (d < l) {
+                for (int i = 0; i < l - d; i = i + 2 * d) {
+                    lists[i] = mergeTwoLists(lists[i], lists[i + d]);
                 }
                 d = d * 2;
             }
             return lists[0];
         }
 
-        private ListNode mergeTwo(ListNode l1, ListNode l2) {
-            if (l1 == null || l2 == null) {
-                return l1 == null ? l2 : l1;
+        private ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+            ListNode ret = new ListNode(0);
+            ListNode current = ret;
+            while (l1 != null && l2 != null) {
+                if (l1.val <= l2.val) {
+                    current.next = l1;
+                    l1 = l1.next;
+                } else {
+                    current.next = l2;
+                    l2 = l2.next;
+                }
+                current = current.next;
             }
-            ListNode ret = l1.val <= l2.val ? l1 : l2;
-            ret.next = mergeTwo(l1.val <= l2.val ? l1.next : l1, l1.val <= l2.val ? l2 : l2.next);
-            return ret;
+            if (l1 != null) {
+                current.next = l1;
+            }
+            if (l2 != null) {
+                current.next = l2;
+            }
+            return ret.next;
         }
 
     }
