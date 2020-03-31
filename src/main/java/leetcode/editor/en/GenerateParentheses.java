@@ -31,26 +31,23 @@ public class GenerateParentheses {
     class Solution {
         public List<String> generateParenthesis(int n) {
             List<String> ret = new ArrayList<>();
-            if (n <= 0) {
-                return ret;
-            }
-            generateParenthesis(0, 0, n, ret, new StringBuilder());
+            generateParenthesis(ret, n, 0, 0, new StringBuilder());
             return ret;
         }
 
-        private void generateParenthesis(int open, int close, int n, List<String> ret, StringBuilder sb) {
+        private void generateParenthesis(List<String> ret, int n, int open, int close, StringBuilder sb) {
             if (open == n && close == n) {
                 ret.add(sb.toString());
                 return;
             }
             if (open < n) {
                 sb.append('(');
-                generateParenthesis(open + 1, close, n, ret, sb);
+                generateParenthesis(ret, n, open + 1, close, sb);
                 sb.deleteCharAt(sb.length() - 1);
             }
             if (close < open) {
                 sb.append(')');
-                generateParenthesis(open, close + 1, n, ret, sb);
+                generateParenthesis(ret, n, open, close + 1, sb);
                 sb.deleteCharAt(sb.length() - 1);
             }
         }
