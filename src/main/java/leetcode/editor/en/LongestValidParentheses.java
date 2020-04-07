@@ -29,19 +29,20 @@ public class LongestValidParentheses {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int longestValidParentheses(String s) {
-            if (s == null || s.length() < 2) {
+            if (s == null || s.length() == 0) {
                 return 0;
             }
-            int[] dp = new int[s.length()];
-            int ret = 0;
-            for (int i = 1; i < s.length(); i++) {
-                if (s.charAt(i) == ')') {
+            int n = s.length(), ret = 0;
+            int[] dp = new int[n];
+            for (int i = 0; i < s.length(); i++) {
+                char c = s.charAt(i);
+                if (c == ')' && i - 1 >= 0) {
                     if (s.charAt(i - 1) == '(') {
                         dp[i] = (i - 2 >= 0 ? dp[i - 2] : 0) + 2;
                     } else {
                         int index = i - 1 - dp[i - 1];
                         if (index >= 0 && s.charAt(index) == '(') {
-                            dp[i] = dp[i - 1] + (index - 1 >= 0 ? dp[index - 1] : 0) + 2;
+                            dp[i] = dp[i - 1] + 2 + (index - 1 >= 0 ? dp[index - 1] : 0);
                         }
                     }
                     ret = Math.max(ret, dp[i]);
